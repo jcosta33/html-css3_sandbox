@@ -2,7 +2,7 @@
 
 ## Technologies used
 
-* [HTML][(hhttps://www.typescripttranslations.table.org/](https://www.w3schools.com/html/html_intro.asp))
+* [HTML](https://www.w3schools.com/html/default.asp)
 * [CSS3](https://www.w3schools.com/css/default.asp)
 
 ## Tools and Text editor
