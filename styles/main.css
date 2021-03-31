@@ -5,6 +5,10 @@ body {
   font-size:16px;
 }
 
+main{
+  clear:both;
+}
+
 .has-background-primary {
   background-color: #665df5;
 }
@@ -12,6 +16,8 @@ body {
 .has-text-primary {
   color: #665df5;
 }
+
+
 
 figure {
   margin: 0;
@@ -28,6 +34,10 @@ figure {
 
 .title.is-1 {
   font-size: 48px;
+}
+
+.title.is-2 {
+  font-size: 32px;
 }
 
 .title~.subtitle {

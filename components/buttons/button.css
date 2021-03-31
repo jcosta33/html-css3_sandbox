@@ -5,6 +5,7 @@
 .button{
   border:1px solid transparent;
   padding:12px 16px;
+  height:40px;
   color:#fff;
   border-radius:4px;
   background-color:#333;
@@ -75,4 +76,17 @@
 .button.is-warning:hover{
   cursor: pointer;
   background-color: #c77802;
+}
+
+
+/*
+ Page specific styles, not to be used in component
+*/
+
+.buttons-page{
+ 
+}
+.buttons-page code{
+  float:right;
+  line-height:40px;
 }
