@@ -1,0 +1,53 @@
+.buttons{
+
+}
+
+.button{
+    border: 1px solid transparent;
+    padding: 12px 16px;
+    color #fff;
+    border-radius:4px;
+    background:#cdcdcd;
+    transition: background-color .2s ease-in;
+}
+
+/* Button Primary*/
+
+.button.is-primary{
+    border-color: #333333;
+    background-color: #373737;
+}
+
+.button.is-primary: hover{
+    cursor:pointer;
+    background-color:#000;
+    }
+
+
+/* Button Info*/
+
+.button.is-info{
+    border-color: darkblue;
+    background-color: blue;
+}
+
+/* Button Warning*/
+
+.button.is-warning{
+    border-color: orangered;
+    background-color: darkorange;
+}
+
+/* Button Danger*/
+.button.is-danger{
+    border-color: darkred;
+    background-color: red;
+}
+
+/* Button Sucess*/
+.button.is-success{
+    border-color: darkgreen;
+    background-color: green;
+}
+
+
