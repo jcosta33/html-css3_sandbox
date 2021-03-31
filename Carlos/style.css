@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background: #f1f1f1;
+}
+figure{
+    margin: 0;
+}
+.header{
+    background: #F2EFEA;
+    padding: 8px;
+}
+.header .logo{
+    float: left;
+    padding: 8px;
+    margin: 0;
+}
+.header .page-title {
+    font-weight: 600;
+}
+.header .navbar .menu-list a{
+    text-decoration: none;
+    color: #111;
+}
+.menu-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-list .menu-item {
+    display: inline-block;
+    padding: 8px;
+}
+.navbar{
+    float: right;
+}
+.hero{
+    margin: 64px 0 32px;
+    clear: both;
+}
+.hero .image{
+    border-radius: 50px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.column{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 16px;
+
+}
+.column.is-3 {
+
+}
+.column.is-4 {
+    width: 33%;
+}
+.column.is-6{
+    width: 49.7%;
+}
