@@ -17,8 +17,6 @@ main{
   color: #665df5;
 }
 
-
-
 figure {
   margin: 0;
 }
@@ -170,7 +168,7 @@ figure {
   color: #f1f1f1;
 }
 
-.column {
+/* .column {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -187,4 +185,4 @@ figure {
 
 .column.is-6 {
   width: 49.7%;
-}
+} */
