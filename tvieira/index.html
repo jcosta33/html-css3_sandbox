@@ -4,78 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roda-Cork</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet buttons" href="/tvieira/Components/Buttons/button.css" > 
     <link rel="stylesheet cards" href="/tvieira/Components/Cards/cards.css" > 
     <link rel="stylesheet forms" href="/tvieira/Components/forms/forms.css" > 
     <link rel="stylesheet sidebar" href="/tvieira/Components/sidebar/sidebar.css" > 
-    <title>Roda-Cork</title>
 </head>
+
 <body>
-<header class="header">
-    <figure class="logo">
-        <img src="/tvieira/Img/logo-thumbnail.jpg" alt="logo">
-        <span class="page-title">Sandbox
-        </span>
-    </figure>
+
+    <header class="header">
+        
+        <figure class="logo">
+            <img src="/tvieira/Img/logo-thumbnail.jpg" alt="logo">
+            <span class="page-title">
+                Sandbox
+            </span>
+        </figure>
+
     <nav class="navbar">
         <ul class="menu-list">
             <li class="menu-item">
-                <a href="tvieira/" target="_blank">Fenêtres & Menuiseries</a>
+                <a href="Components/Buttons/index.html" target="_blank">Buttons</a>
             </li>
             <li class="menu-item">
-                <a href="tvieira/" target="_blank">Services</a>
+                <a href="Components/Cards/index.html" target="_blank">Cards</a>
             </li>
             <li class="menu-item">
-                <a href="tvieira/" target="_blank"> Guides & Conseils</a>
+                <a href="Components/forms/index.html" target="_blank">Forms</a>
             </li>
             <li class="menu-item">
-                <a href="tvieira/" target="_blank">Galerie Photos</a>
-            </li>
-            <li class="menu-item">
-                <a href="tvieira/" target="_blank">A Propos</a>
+                <a href="Components/sidebar/index.html" target="_blank">Sidebar</a>
             </li>
         </ul>
     </nav>
+
     <section class="hero">
         <div class="container">
         <figure class="column is-6">
-            <img class="image" src="/tvieira/Img/undraw_Traveling_re_weve.svg" alt="">
+            <img class="image" src="/tvieira/Img/undraw_Traveling_re_weve.svg" alt="Hero Image">
         </figure>
 
         <div class="column is-6 is-vertical-top">
-            <h1 class="title is-1">My page title</h1>
+            <h1 class="title is-1">
+                My page title
+            </h1>
             <h2 class="subtitle">My page subtitle</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-               Explicabo, atque quas ipsum distinctio earum esse laborum fugit alias quos facilis.
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Explicabo, atque quas ipsum distinctio earum esse laborum fugit 
+                alias quos facilis.
             </p>
         </div>
     </div>
-</section>    
+</section> 
+
 </header>
 
 <main id="content">
-    <section id="content">
+    <section class="main-section">
         <div class="column is-4">
-            <h3> Section 1</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo saepe adipisci reprehenderit voluptatibus dicta, 
-            modi eligendi aliquam tempora quod praesentium!
+            <div class="card">
+                <div class="card-content">
+                    <span class="icon is-yellow">
+                        <i class="fas fa-chart-bar"></i>
+                    </span>
+                    <h3> Section 1</h3>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                      Nemo saepe adipisci reprehenderit voluptatibus dicta, 
+                      modi eligendi aliquam tempora quod praesentium!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <span class="icon is-green">
+                    <i class="fas fa-user"></i>
+                </span>
+                <h3> Section 2</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Nemo saepe adipisci reprehenderit voluptatibus dicta, 
+                  modi eligendi aliquam tempora quod praesentium!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="icon is-purple">
+                <i class="fas fa-search"></i>
+            </span>
+            <h3> Section 3</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Nemo saepe adipisci reprehenderit voluptatibus dicta, 
+              modi eligendi aliquam tempora quod praesentium!
             </p>
         </div>
-        <div class="column is-4">
-            <h3> Section 2</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo saepe adipisci reprehenderit voluptatibus dicta, 
-            modi eligendi aliquam tempora quod praesentium!
-            </p>
-        </div>
-        <div class="column is-4">
-            <h3> Section 1</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo saepe adipisci reprehenderit voluptatibus dicta, 
-            modi eligendi aliquam tempora quod praesentium!
-            </p>
-        </div>
+    </div>
+</div>
     </section>
 
 
@@ -85,219 +119,52 @@
 </main>
    
 <footer class="footer">
+    <nav class="footer-nav">
         <div class="column is-3">
-            <figure>
+            <figure class="logo">
                 <img src=/tvieira/Img/logo-thumbnail.jpg alt="logo">
                 <span>Sandbox</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, velit.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, minus.</p>
             </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, velit.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
         </div>
+
     <div clas="column is-3">
         <ul class="menu-list">
             <li class="menu-item">
-                <a href="tvieira/" target="_blank">Fenêtres & Menuiseries</a>
-            </li>
-            <li class="menu-item"> 
-                <a href="tvieira/" target="_blank">Services</a>
+                <a href="Alexandre/index.html" target="_blank">Alexandre</a>
             </li>
             <li class="menu-item">
-                <a href="tvieira/" target="_blank"> Guides & Conseils</a>
+                <a href="Carlos/index.html" target="_blank">Carlos Campos</a>
             </li>
         </ul>
     </div>
-    <div clas="column is-3">
-        <ul class="menu-list"> 
-            <li class="menu-item">
-                <a href="tvieira/" target="_blank">Fenêtres & Menuiseries</a>
-            </li>
-            <li class="menu-item">
-                <a href="tvieira/" target="_blank">Services</a>
-            </li>
-            <li class="menu-item">
-                <a href="tvieira/" target="_blank"> Guides & Conseils</a>
-            </li>
-        </ul>
-    </div>
+
     <div clas="column is-3">
         <ul class="menu-list">
             <li class="menu-item">
-                <a href="tvieira/" target="_blank">Fenêtres & Menuiseries</a>
+                <a href="inesCorreia/index.html" target="_blank">Inês Correia</a>
             </li>
             <li class="menu-item">
-                <a href="tvieira/" target="_blank">Services</a>
-            </li>
-            <li class="menu-item">
-                <a href="tvieira/" target="_blank"> Guides & Conseils</a>
+                <a href="pedro/index.html" target="_blank">Pedro Barbosa</a>
             </li>
         </ul>
     </div>
+
+    <div clas="column is-3">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="tvieira/index.html" target="_blank">Tânia Vieira</a>
+            </li>
+
+            <li class="menu-item">
+                <a href="vitor/index.html" target="_blank">Vitor Coelho</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 </footer>
 
 </body>
 
-<style>
-
-    body{
-        margin:0px;
-        background-color: #f1e8e8;
-    }
-
-    figure{
-        margin:0px;
-    }
-
-    .title{
-        margin: 0 0 16px;
-        font-weight: 300;
-    }
-
-    .title .is-1 {
-        font-size: 48px;
-    }
-
-    .title ~ .subtitle{
-        margin-top:-16px;
-    }
-
-    .header{
-        background-color: #f1e8e8;
-        padding:8px;
-    }
-
-    .header .logo {
-        float: left;
-        padding:8px;
-        margin: 0px;
-    }
-    .header .logo img{
-        height: 32px;
-        border-radius:4px;
-    }
-
-    .footer .logo img{
-        height: 32px;
-        border-radius:4px;
-    }
-    
-    .header .page-title{
-        font-weight:600 /*300 Light , 400 Regular, 500/600 Medium, 700 Semibold, 800 bold, 900 Black - 400 é o regular */
-        
-    }
-
-    .header .navbar{
-        float:right
-    }
-
-
-    .hero{
-        margin: 64px 0;
-        position: relative;
-        clear:both; /*depois de um float deve ser inserido*/
-    }
-
-    .hero .title{
-        margin-top:64px;
-    }
-
-    .hero .title{}
-    .hero .sutitle{}
-
-
-    .hero .image{
-        width:100%;
-        padding: 48px;
-        box-sizing:border-box;
-    }
-
-    .menu-list{
-        list-style:none;
-    }
-
-    .menu-list .menu-item {
-        display: inline-block;
-        padding: 8px;
-        background:rgb(235, 231, 231);
-    }
-
-    .menu-list .menu-item a{
-        text-decoration: none;
-        line-height:18px;
-        color: #111;
-    }
-
-    .container{
-        width: 800px;
-        margin: auto;
-        vertical-align:top;
-    }
-
-    .card{
-        background:#fff;
-    }
-
-    .card > .card-content{
-        padding:16px;
-    }
-
-    .icon.is-yellow{
-        background: #faf8e8;
-        color:yellow;
-        padding:8px;
-        border-radius:4px;
-    }
-
-    .icon.is-green{
-        background: #f5fae8;
-        color:green;
-        padding:8px;
-        border-radius:4px;
-    }
-    
-    .icon.is-purple{
-        background: #f5e8fa;
-        color:purple;
-        padding:8px;
-        border-radius:4px;
-    }
-
-    .footer{
-        background-color:#111;
-    }
-
-    .footer .title{
-        color: white;
-    }
-
-    .footer p,
-    .footer label,
-    .footer a,
-    .footer span {
-        color: white;
-    }
-
-    .is-vertical-top{
-        vertical-align: top;
-    }
-
-    .column {
-        display: inline-block;
-        vertical-align: top;
-        box-sizing: border-box;
-        padding:16px;
-    }
-
-    .column .is-3{
-        width:25.5%;
-    }
-
-    .column .is-4{
-
-    }
-
-    .column .is-6{
-        width:49.7%
-    }
-
-</style>
 </html>

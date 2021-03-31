@@ -1,0 +1,164 @@
+<style>
+
+    body{
+        margin:0px;
+        background-color: #f1e8e8;
+    }
+
+    figure{
+        margin:0px;
+    }
+
+    .title{
+        margin: 0 0 16px;
+        font-weight: 300;
+    }
+
+    .title .is-1 {
+        font-size: 48px;
+    }
+
+    .title ~ .subtitle{
+        margin-top:-16px;
+    }
+
+    .header{
+        background-color: #f1e8e8;
+        padding:8px;
+    }
+
+    .header .logo {
+        float: left;
+        padding:8px;
+        margin: 0px;
+    }
+    .header .logo img{
+        height: 32px;
+        border-radius:4px;
+    }
+
+    .footer .logo img{
+        height: 32px;
+        border-radius:4px;
+    }
+    
+    .header .page-title{
+        font-weight:600 /*300 Light , 400 Regular, 500/600 Medium, 700 Semibold, 800 bold, 900 Black - 400 é o regular */
+        
+    }
+
+    .header .navbar{
+        float:right
+    }
+
+
+    .hero{
+        margin: 64px 0;
+        position: relative;
+        clear:both; /*depois de um float deve ser inserido*/
+    }
+
+    .hero .title{
+        margin-top:64px;
+    }
+
+    .hero .title{}
+    .hero .sutitle{}
+
+
+    .hero .image{
+        width:100%;
+        padding: 48px;
+        box-sizing:border-box;
+    }
+
+    .menu-list{
+        list-style:none;
+    }
+
+    .menu-list .menu-item {
+        display: inline-block;
+        padding: 8px;
+        background:rgb(235, 231, 231);
+    }
+
+    .menu-list .menu-item a{
+        text-decoration: none;
+        line-height:18px;
+        color: #111;
+    }
+
+    .container{
+        width: 800px;
+        margin: auto;
+        vertical-align:top;
+    }
+
+    .card{
+        background:#fff;
+    }
+
+    .card > .card-content{
+        padding:16px;
+    }
+
+    .icon.is-yellow{
+        background: #faf8e8;
+        color:yellow;
+        padding:8px;
+        border-radius:4px;
+    }
+
+    .icon.is-green{
+        background: #f5fae8;
+        color:green;
+        padding:8px;
+        border-radius:4px;
+    }
+    
+    .icon.is-purple{
+        background: #f5e8fa;
+        color:purple;
+        padding:8px;
+        border-radius:4px;
+    }
+
+    .footer{
+        background-color:#111;
+    }
+
+    .footer .title{
+        color: white;
+    }
+
+    .footer p,
+    .footer label,
+    .footer a,
+    .footer span {
+        color: white;
+    }
+
+    .is-vertical-top{
+        vertical-align: top;
+    }
+
+    .column {
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        padding:16px;
+    }
+
+    .column .is-3{
+        width:25.5%;
+    }
+
+    .column .is-4{
+
+    }
+
+    .column .is-6{
+        width:49.7%
+    }
+
+</style>
