@@ -13,3 +13,4 @@ Intellisense for CSS class
 Live server
 Prettier - code formatter
 vscode-icons
+Visual Studio IntelliCode
