@@ -1,0 +1,10 @@
+.card{
+  display:block;
+  background:#fff;
+  border-radius:4px;
+}
+
+.card .card-content{
+  padding:16px;
+  box-sizing: border-box;
+}
