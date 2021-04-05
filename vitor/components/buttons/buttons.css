@@ -87,3 +87,18 @@
     cursor: pointer;
     background-color: #a04d0a;
 }
+
+
+/*
+ Page specific styles, not to be used in component
+*/
+
+
+
+.buttons-page{
+ 
+}
+.buttons-page code{
+  float:right;
+  line-height:40px;
+}

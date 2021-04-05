@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
         <link rel="stylesheet" href="../../styles/main.css" />
         <link rel="stylesheet" href="forms.css" />
+        <link rel="stylesheet" href="../buttons/buttons.css" />
     </head>
 
     <body>
@@ -25,31 +26,102 @@
     
             <ul class="menu-list">
                 <li class="menu-item">
-                    <a href="components/buttons/index.html" target="_blank">Buttons</a>
+                    <a href="../../components/buttons/index.html" target="_blank">Buttons</a>
                 </li>
                 <li class="menu-item">
-                    <a href="components/cards/index.html" target="_blank">Cards</a>
+                    <a href="../../components/cards/index.html" target="_blank">Cards</a>
                 </li>
                 <li class="menu-item">
-                    <a href="components/forms/index.html" target="_blank">Forms</a>
+                    <a href="index.html" target="_blank">Forms</a>
                 </li>
                 <li class="menu-item">
-                    <a href="components/grid/index.html" target="_blank">Grid</a>
+                    <a href="../../components/grid/index.html" target="_blank">Grid</a>
                 </li>
                 <li class="menu-item">
-                    <a href="components/sidebar/index.html" target="_blank">Sidebar</a>
+                    <a href="../../components/sidebar/index.html" target="_blank">Sidebar</a>
                 </li>
             </ul>
         </nav>
         </header>
     
         <main class="forms-page">
-            <br>
-            <section class="forms">
+            <div class="container">
+                <h1 class="title is-2">Forms</h1>
+                <h6 class="subtitle">All form inputs for all sorts of uses</h6>
+                <hr>
+                <form class="form">
+                    <div class="field">
+                        <label for="input-name">Your name</label>
+                        <input type="text" id="input-name" placeholder="Please insert your name" class="input">
+                    </div>
+                    <div class="field">
+                        <label for="input-siblings">Your nr of siblings</label>
+                        <input type="number" id="input-siblings" placeholder="Your number of siblings" class="input">
+                    </div>
+                    <div class="field">
+                        <label for="input-birth">Date of birth</label>
+                        <input type="date" id="input-birth" class="input">
+                    </div>
+                    <div class="field">
+                        <label for="textarea-about">About me</label>
+                        <textarea id="textarea-about" class="textarea"> </textarea>
+                        <!-- maxlength="20" -->
+                    </div>
+                    <div class="field">
+                        <label for="select-pet">What's your favorite type of pet</label>
+                        <select name="select_pet" id="select-pet" class="select">
+                            <option value="dog" >
+                                Dog
+                            </option>
+                            <option value="cat" >
+                                Cat
+                            </option>
+                            <option value="bird" >
+                                Bird
+                            </option>
+                            <option value="iguana" >
+                                Iguana
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>What are your favorite movie genres (from a list of 3)</label>
+                        <div class="control">
+                            <label for="checkbox-movies-comedy">Comedy</label>
+                            <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                        </div>
+                        <div class="control">
+                            <label for="checkbox-movies-action">Action</label>
+                            <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                        </div>
+                        <div class="control">
+                            <label for="checkbox-movies-thriller">Thriller</label>
+                            <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox" checked />
+                        </div>
+                    </div>
 
-            </section>
-            <br>
+                    <div class="field">
+                        <label>Select a thing</label>
+                        <div class="control">
+                            <label for="radio-thing-1">Thing 1</label>
+                            <input type="radio" id="radio-thing-1" value="thing-1" name="radio-thing" class="radio" checked />
+                        </div>
+                        <div class="control">
+                            <label for="cradio-thing-2">Thing 2</label>
+                            <input type="radio" id="radio-thing-2" value="thing-2" name="radio-thing" class="radio" />
+                        </div>
+                        <div class="control">
+                            <label for="radio-thing-3">Thing 3</label>
+                            <input type="radio" id="radio-thing-3" value="thing-3" name="radio-thing" class="radio" />
+                        </div>
+                    </div>
+                    <button class="button is-danger"> Send nukes </button>
+                    <button class="button is-success"> Submit </button>
+                </form>
+                <br>
+            </div>
         </main>
+
     
         <footer class="footer">
             <nav class="footer-nav">

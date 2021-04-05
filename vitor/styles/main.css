@@ -28,7 +28,10 @@
     }
 
     .subtitle{
-        font-weight: 300;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Roboto;
+        margin: -16px 0 24px 0;
     }
 
     .title.is-1{
@@ -37,7 +40,7 @@
     }
 
     /* we put (~) to define hierarchies */
-    .title~.subtitle{
+    .title.is-1 ~ .subtitle{
         font-size: 18px;
         font-family: Londrina Solid;
         color: #df798c;
@@ -215,4 +218,5 @@
     .column.is-6{
         width: 49.7%;
     }    
+
 
