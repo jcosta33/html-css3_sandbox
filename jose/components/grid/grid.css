@@ -7,6 +7,9 @@
   box-sizing: border-box;
   padding: 16px;
 }
+.column.is-3{
+  width:25%;
+}
 .column.is-4{
   width:33.3333333%;
 }
