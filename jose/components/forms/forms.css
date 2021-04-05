@@ -22,22 +22,43 @@
 }
 
 .input{
-  height:40px;
-  min-width: 200px;
+  height:42px;
+  min-width: 100px;
+  width:100%;
   padding:4px 8px;
   border:none;
   background:none;
   outline:0!important;
-  border-bottom:1px solid #555;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  background:#f1f1f1;
+}
+
+.input.is-dark{
+  color:#fff;
+  background:#333;
+  border:1px solid #333;
+}
+
+.input ~ .message{
+  margin-top:6px;
+  font-size:12px;
+  color:#777;
+}
+.input ~ .message.is-danger{
+  color:#f44336;
+}
+
+.input ~ .message.is-info{
+  color:#665df5;
 }
 
 .input:hover{
-  border-bottom:1px solid #000;
+  border:1px solid #555;
 }
 
 .input:focus{
-  border:none;
-  border-bottom:1px solid #665df5;
+  border:1px solid #665df5;
 }
 
 .textarea{
@@ -59,7 +80,7 @@
 }
 
 .select{
-  height:40px;
+  height:42px;
   min-width: 200px;
   padding:4px 8px;
   border:none;

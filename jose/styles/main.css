@@ -4,6 +4,10 @@ body {
   font-family: Roboto;
   font-size:16px;
 }
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 main{
   clear:both;
@@ -35,20 +39,34 @@ figure {
 }
 
 .title.is-1 {
-  font-size: 48px;
+  font-size: 64px;
+  font-weight:800;
 }
 
 .title.is-2 {
   font-size: 32px;
 }
 
+.title.is-3 {
+  font-size: 24px;
+}
+
 .title~.subtitle {
   margin-top: -16px;
 }
 
+.link{
+  color:#665df5;
+  text-decoration: underline;
+}
+
+.link:hover{
+  color:#524ac2;
+}
+
 .header {
-  background: #665df5;
-  padding: 8px;
+  background: #04050A;
+  padding: 16px;
   min-height:40px;
 }
 
@@ -56,6 +74,7 @@ figure {
   float: left;
   padding: 8px;
   margin: 0;
+  padding: 4px 0 0;
 }
 
 .header .logo img{
@@ -75,31 +94,40 @@ figure {
 .header .page-title {
   font-weight: 600;
   color: #fff;
+  vertical-align: 50%;
 }
 
 .header .navbar {
-  float: right;
+}
+
+.navbar-wrapper{
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero {
-  margin: 64px 0 32px;
+  padding: 64px 0 32px;
+  margin:0;
   clear: both;
+  background: #04050A;
 }
-
-.hero .title {
-  margin-top: 64px;
-}
-
 .hero .title,
-.hero .subtitle,
-.hero p {
+.hero .subtitle{
   color: #fff;
+}
+
+.hero p {
+  color: #bbb;
 }
 
 .hero .image {
   max-width: 100%;
-  padding: 48px;
+  padding: 16px;
   box-sizing: border-box;
+}
+
+.hero .button{
+  width:100%;
 }
 
 .menu-list {
@@ -115,7 +143,7 @@ figure {
 
 .navbar .menu-list .menu-item a {
   text-decoration: none;
-  color: #fff;
+  color: #bbb;
   line-height: 18px;
 }
 
@@ -125,6 +153,11 @@ figure {
 
 .container {
   width: 800px;
+  margin: 0 auto;
+}
+
+.container.is-small{
+  width: 500px;
   margin: 0 auto;
 }
 
