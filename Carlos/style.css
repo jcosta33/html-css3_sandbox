@@ -1,44 +1,59 @@
 body {
     margin: 0;
     background: #f1f1f1;
+    font-family: Roboto;
+}
+div{
+    display: block;
 }
 figure{
     margin: 0;
 }
-.header{
-    background: #F2EFEA;
-    padding: 8px;
+figure .logo{
+    display: inline-block;
 }
-.header .logo{
+.header{
+    background: #FFC107;
+    padding: 8px;
+    min-height: 40px;
+}
+.header.logo{
     float: left;
     padding: 8px;
     margin: 0;
 }
+.header .logo img{
+    height: 55px;
+   }
+.header .logo .page-title{
+    color: white;
+}
 .header .page-title {
     font-weight: 600;
 }
+.header .navbar{
+    float: right;
+}
 .header .navbar .menu-list a{
     text-decoration: none;
-    color: #111;
+    color: rgb(245, 243, 243);
 }
 .menu-list{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.menu-list .menu-item {
+.navbar .menu-list .menu-item{
     display: inline-block;
     padding: 8px;
-}
-.navbar{
-    float: right;
 }
 .hero{
     margin: 64px 0 32px;
     clear: both;
+    color: white;
 }
-.hero .image{
-    border-radius: 50px;
+.hero .container img{
+    margin-right: 200px;
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -51,10 +66,34 @@ figure{
     vertical-align: top;
     box-sizing: border-box;
     padding: 16px;
-
+}
+.card .card-content{
+    background: white;
+}
+.icon{
+    padding: 8px;
+    border-radius: 8px;
+}
+.icon.is-yellow{
+    color: rgb(255, 196, 2);
+    background: rgb(255, 235, 169);
+}
+.icon.is-green{
+    color: rgb(2,232,121);
+    background: rgb(220,252,239);
+}
+.footer{
+    background: black;
+    color: blanchedalmond;
+}
+.footer .logo img{
+    height: 55px;
+    border-radius: 5px;
+    border:solid rgb(255, 166, 0) 2px;
+    background: rgb(252, 209, 129);
 }
 .column.is-3 {
-
+    width: 24.99%;
 }
 .column.is-4 {
     width: 33%;
