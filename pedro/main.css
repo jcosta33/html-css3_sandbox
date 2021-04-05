@@ -13,6 +13,10 @@ h1{
     font-weight: 500;
 }
 
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0;
     background: #f1f1f1;
