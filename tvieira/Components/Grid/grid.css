@@ -6,6 +6,7 @@
 .column {
     vertical-align:top;
     box-sizing: border-box;
+    padding: 16px;
 }
 
 .column is-4{
