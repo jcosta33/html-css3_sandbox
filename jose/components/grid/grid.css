@@ -1,20 +1,42 @@
 .row {
   display:flex;
   justify-content: space-between;
+  margin-left: -16px;
+  margin-right: -16px;
+  flex-wrap: wrap;
 } 
 .column{
   vertical-align: top;
   box-sizing: border-box;
   padding: 16px;
 }
+
+.row.is-small{
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row.is-small .column{
+  padding: 8px;
+}
+
 .column.is-3{
   width:25%;
 }
 .column.is-4{
   width:33.3333333%;
 }
+.column.is-5{
+  width:41.6666666667%;
+}
 .column.is-6{
   width:50%;
+}
+.column.is-7{
+  width:58.3333333333%;
+}
+.column.is-8{
+  width:66.6666666667%;
 }
 .column.is-12{
   width:100%;
