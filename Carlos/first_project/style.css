@@ -60,13 +60,23 @@ figure{
 }
 .hero .container img{
     margin-right: 200px;
-    width: 400px;
-    /*max-width: 100%;*/
+    width: 600px;
+    max-width: 100%;
     box-sizing: border-box;
 }
 .container {
-    width: 800px;
+    width: 1100px;
     margin: 0 auto;
+}
+.product-discretion{
+    padding-left: 15px;
+}
+.product-image img{
+    width: 50%;
+    display: flex;
+}
+.card .product-card{
+    display: flex;
 }
 .column{
     display: inline-block;
