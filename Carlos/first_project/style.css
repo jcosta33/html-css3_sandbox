@@ -6,11 +6,16 @@ body {
 div{
     display: block;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
 figure{
     margin: 0;
-}
-figure .logo{
-    display: inline-block;
+    display: contents;
 }
 .header{
     background: #FFC107;
@@ -27,8 +32,6 @@ figure .logo{
    }
 .header .logo .page-title{
     color: white;
-}
-.header .page-title {
     font-weight: 600;
 }
 .header .navbar{
@@ -52,9 +55,13 @@ figure .logo{
     clear: both;
     color: white;
 }
+.hero .container{
+    font-size: x-large;
+}
 .hero .container img{
     margin-right: 200px;
-    max-width: 100%;
+    width: 400px;
+    /*max-width: 100%;*/
     box-sizing: border-box;
 }
 .container {
@@ -66,9 +73,11 @@ figure .logo{
     vertical-align: top;
     box-sizing: border-box;
     padding: 16px;
-}
-.card .card-content{
-    background: white;
+} 
+.main-section .row .card{
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 5px;
 }
 .icon{
     padding: 8px;
@@ -82,14 +91,18 @@ figure .logo{
     color: rgb(2,232,121);
     background: rgb(220,252,239);
 }
+.icon.is-black{
+    color: rgb(0, 0, 0);
+    background: rgb(124, 124, 124);
+}
 .footer{
     background: black;
     color: blanchedalmond;
 }
 .footer .logo img{
     height: 55px;
-    border-radius: 5px;
-    border:solid rgb(255, 166, 0) 2px;
+    border-radius: 3px;
+    border:solid rgb(0, 0, 0) 1px;
     background: rgb(252, 209, 129);
 }
 .column.is-3 {
@@ -98,6 +111,15 @@ figure .logo{
 .column.is-4 {
     width: 33%;
 }
+.column.is-5 {
+    width: 41%;
+}
 .column.is-6{
-    width: 49.7%;
+    width: 49.5%;
+}
+.column.is-7 {
+    width: 58%;
+}
+.column.is-8{
+    width: 66%;
 }
