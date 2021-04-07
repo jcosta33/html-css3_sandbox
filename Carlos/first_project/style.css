@@ -44,7 +44,7 @@ figure{
 .menu-list{
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 15px;
 }
 .navbar .menu-list .menu-item{
     display: inline-block;
