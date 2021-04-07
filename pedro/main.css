@@ -44,14 +44,14 @@ figure {
 
 .header .page-title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
 }
 
 .page-titleCV{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
     padding-left: 28px;
     font-size: 18px;
 }
