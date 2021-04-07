@@ -1,3 +1,11 @@
-.slider .slider-item{
+.slider .slider-item .image{
   max-width:100px;
+}
+
+.slider .slider-items{
+  display:flex;
+}
+
+.slider .slider-item {
+  max-width:33.3%;
 }
