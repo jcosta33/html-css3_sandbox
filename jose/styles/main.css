@@ -14,7 +14,7 @@ main{
 }
 
 section{
-  padding:32px 16px;
+  margin:32px 16px;
 }
 
 .has-background-primary {
@@ -44,14 +44,10 @@ figure {
 }
 
 .title.is-2 {
-  font-size: 48px;
-}
-
-.title.is-3 {
   font-size: 32px;
 }
 
-.title.is-4 {
+.title.is-3 {
   font-size: 24px;
 }
 
@@ -86,27 +82,6 @@ figure {
   border-radius:8px;
 }
 
-.main-section{
-  background: #04050A;
-}
-
-.main-section h1,
-.main-section h2,
-.main-section h3,
-.main-section h4,
-.main-section h5,
-.main-section h6{
-  color:#fff;
-}
-
-.main-section .card{
-  background:#212121;
-}
-
-.main-section p{
-  color:#bbb;
-}
-
 .footer .logo img{
   height:32px;
   border-radius:8px;
@@ -136,11 +111,6 @@ figure {
   clear: both;
   background: #04050A;
 }
-
-.hero .column.is-7{
-  padding-right:128px;
-}
-
 .hero .title,
 .hero .subtitle{
   color: #fff;
@@ -152,6 +122,7 @@ figure {
 
 .hero .image {
   max-width: 100%;
+  padding: 16px;
   box-sizing: border-box;
 }
 
@@ -176,80 +147,27 @@ figure {
   line-height: 18px;
 }
 
-.navbar .menu-list .menu-item:last-child a {
-  color:#fff;
-}
-
 .footer-nav .menu-list {
 
 }
 
 .container {
-  width: 1100px;
+  width: 800px;
   margin: 0 auto;
 }
 
 .container.is-small{
-  width: 600px;
+  width: 500px;
   margin: 0 auto;
 }
 
 .card {
   background: #fff;
-  border-radius:8px;
 }
 
 .card>.card-content {
-  padding: 32px;
+  padding: 16px;
 }
-
-.product-card .card-content{
-  display: flex;
-  justify-content: space-between;
-}
-
-.product-image{
-  width:40%;
-  height:220px;
-  border-radius:8px;
-}
-
-.product-detail{
-  width:60%;
-  padding-left:32px;
-}
-.sales-price{
-  color:#FFD045;
-}
-.price{
-  font-size:70%;
-  color:#bbb;
-  text-decoration: line-through;
-}
-
-#product-row .column:nth-child(1) .product-image{
-  background-image:url('https://unsplash.com/photos/LxVxPA1LOVM/download?force=true');
-  background-size: cover;
-  background-position: center;
-}
-
-#product-row .column:nth-child(2) .product-image{
-  background-image:url('https://unsplash.com/photos/164_6wVEHfI/download?force=true');
-  background-size: cover;
-  background-position: center;
-}
-#product-row .column:nth-child(3) .product-image{
-  background-image:url('https://unsplash.com/photos/4qSb_FWhHKs/download?force=true');
-  background-size: cover;
-  background-position: center;
-}
-#product-row .column:nth-child(4) .product-image{
-  background-image:url('https://unsplash.com/photos/_fOL6ebfECQ/download?force=true');
-  background-size: cover;
-  background-position: center;
-}
-
-
 
 .icon {
   padding: 8px;
@@ -269,16 +187,6 @@ figure {
 .icon.is-purple {
   background: #F4EBFD;
   color: #B753E7;
-}
-
-.image img{
-  max-width: 100%;
-  display: block;
-}
-
-.image.has-radius{
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .footer {
