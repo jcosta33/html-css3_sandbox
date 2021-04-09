@@ -8,6 +8,16 @@
   overflow:hidden;
 }
 
+figure.image.slider-image img{
+  width: 550px;
+  height: auto;
+}
+
+figure.image img{
+  width: 120px;
+  height: 90px;
+}
+
 .slider .slider-items{
   display:flex;
 }
