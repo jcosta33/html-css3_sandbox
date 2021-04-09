@@ -19,7 +19,6 @@
   box-sizing: border-box;
   transition: background-color .2s ease-in;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .button:not(:last-child){
