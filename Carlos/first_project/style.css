@@ -115,6 +115,8 @@ figure{
     border:solid rgb(0, 0, 0) 1px;
     background: rgb(252, 209, 129);
 }
+
+/* Grid Columns */
 .column.is-3 {
     width: 24.99%;
 }
@@ -238,4 +240,32 @@ input:nth-of-type(5):checked ~ main#carousel {
 .carousel img{
 	width: 400px;
   height: 400px;
+}
+
+/* Buttons */
+.button{
+  padding: 6px 8px;
+  font-size: 1rem;
+  width: 80px;
+  border-radius: 5px;
+}
+.button.is-primary{
+  border:1px solid rgb(114, 235, 217);
+  background-color: rgb(1,209,178);
+}
+.button.is-info{
+  border:1px solid rgb(147, 191, 226);
+ background-color: rgb(52, 133, 255);
+}
+.button.is-success{
+  border:1px solid rgb(86, 197, 89);
+  background-color: rgb(76,175,80);
+}
+.button.is-warning{
+  border:1px solid  rgb(238, 228, 199);
+  background-color: rgb(247, 233, 31);
+}
+.button.is-danger{
+  border:1px solid rgb(255, 163, 182);
+  background-color: rgb(233, 30, 30);
 }
