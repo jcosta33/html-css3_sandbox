@@ -21,7 +21,7 @@
   margin-bottom:8px;
 }
 
-.input{
+.input, .select{
   height:42px;
   min-width: 100px;
   width:100%;
@@ -32,6 +32,22 @@
   border:1px solid #ccc;
   border-radius: 4px;
   background:#f1f1f1;
+}
+
+.field .icon{
+  position: absolute;
+  line-height: 42px;
+  padding: 0 10px;
+  color:#999;
+}
+
+.field:hover .icon{
+  color:#000;
+  display: block;
+}
+
+.field .icon ~ .input{
+  padding-left: 32px;
 }
 
 .input.is-dark{
@@ -80,14 +96,22 @@
 }
 
 .select{
-  height:42px;
-  min-width: 200px;
-  padding:4px 8px;
-  border:none;
-  background:none;
-  outline:0!important;
-  border-bottom:1px solid #555;
+  /* -moz-appearance:none; 
+    -webkit-appearance:none; 
+    appearance:none; */
 }
+
+.select:after{
+  /* font-family: "Font Awesome 5 Free"; 
+  font-weight: 400; 
+  content: "\f078";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; */
+}
+
 .control{
   display:inline-block;
 }

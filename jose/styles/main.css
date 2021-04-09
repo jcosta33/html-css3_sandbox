@@ -4,9 +4,15 @@ body {
   font-family: Roboto;
   font-size:16px;
 }
-* {
+
+*, ::after, ::before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+p{
+  margin:0;
 }
 
 main{
@@ -49,6 +55,10 @@ figure {
 
 .title.is-3 {
   font-size: 24px;
+}
+
+.title.is-5 {
+  font-size: 20px;
 }
 
 .title~.subtitle {
@@ -152,12 +162,12 @@ figure {
 }
 
 .container {
-  width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .container.is-small{
-  width: 500px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -166,7 +176,53 @@ figure {
 }
 
 .card>.card-content {
-  padding: 16px;
+  padding: 32px;
+}
+
+.product-card .card-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-image{
+  width:40%;
+  height:220px;
+  border-radius:8px;
+}
+
+.product-card .product-detail{
+  width:60%;
+  padding-left:32px;
+}
+.sales-price{
+  color:#FFD045;
+}
+.price{
+  font-size:70%;
+  color:#bbb;
+  text-decoration: line-through;
+}
+
+#product-row .column:nth-child(1) .product-image{
+  background-image:url('https://unsplash.com/photos/LxVxPA1LOVM/download?force=true');
+  background-size: cover;
+  background-position: center;
+}
+
+#product-row .column:nth-child(2) .product-image{
+  background-image:url('https://unsplash.com/photos/164_6wVEHfI/download?force=true');
+  background-size: cover;
+  background-position: center;
+}
+#product-row .column:nth-child(3) .product-image{
+  background-image:url('https://unsplash.com/photos/4qSb_FWhHKs/download?force=true');
+  background-size: cover;
+  background-position: center;
+}
+#product-row .column:nth-child(4) .product-image{
+  background-image:url('https://unsplash.com/photos/_fOL6ebfECQ/download?force=true');
+  background-size: cover;
+  background-position: center;
 }
 
 .icon {
@@ -223,3 +279,12 @@ figure {
 .column.is-6 {
   width: 49.7%;
 } */
+
+
+/*
+  Helpers
+*/
+
+.has-text-green{
+  color:#4e9400;
+}
