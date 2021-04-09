@@ -3,12 +3,17 @@
   justify-content: space-between;
   margin-left: -16px;
   margin-right: -16px;
-  flex-wrap: wrap;
 } 
+
+.row.is-multiline{
+  flex-wrap: wrap;
+}
+
 .column{
   vertical-align: top;
   box-sizing: border-box;
   padding: 16px;
+  width:100%;
 }
 
 .row.is-small{

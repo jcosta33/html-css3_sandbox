@@ -4,9 +4,15 @@ body {
   font-family: Roboto;
   font-size:16px;
 }
-* {
+
+*, ::after, ::before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+p{
+  margin:0;
 }
 
 main{
@@ -53,6 +59,10 @@ figure {
 
 .title.is-4 {
   font-size: 24px;
+}
+
+.title.is-5 {
+  font-size: 20px;
 }
 
 .title~.subtitle {
@@ -185,12 +195,12 @@ figure {
 }
 
 .container {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .container.is-small{
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -214,7 +224,7 @@ figure {
   border-radius:8px;
 }
 
-.product-detail{
+.product-card .product-detail{
   width:60%;
   padding-left:32px;
 }
@@ -315,3 +325,12 @@ figure {
 .column.is-6 {
   width: 49.7%;
 } */
+
+
+/*
+  Helpers
+*/
+
+.has-text-green{
+  color:#4e9400;
+}

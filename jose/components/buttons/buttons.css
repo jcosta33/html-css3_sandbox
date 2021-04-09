@@ -30,6 +30,14 @@
   padding:8px 12px;
 }
 
+.button.is-fullwidth{
+  width:100%;
+}
+
+.button.is-large{
+  font-size: 20px;
+}
+
 /*
   Button primary
 */
