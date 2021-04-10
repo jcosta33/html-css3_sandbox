@@ -10,6 +10,10 @@
         clear:both;
       }
 
+    section{
+        margin:32px 16px;
+    }
+
     .has-background-primary {
         background-color: #665df5;
     }
@@ -39,8 +43,21 @@
         font-size: 32px;
     }
 
+    .title.is-3 {
+        font-size: 24px;
+    }
+
     .title~.subtitle{
         margin-top:-16px;
+    }
+
+    .link{
+        color:slateblue;
+        text-decoration:underline;
+    }
+
+    .link:hover{
+        color:purple;
     }
 
     .header{
@@ -60,6 +77,7 @@
         border-radius:4px;
     }
 
+
     .footer .logo img{
         height: 32px;
         filter:invert(100%);
@@ -75,9 +93,13 @@
     }
 
     .header .navbar{
-        float:right;
+        justify-content:space-between;
     }
 
+    .navbar-wrapper{
+        display:flex;
+        justify-content: space-between;
+    }
 
     .hero{
         margin: 64px 0 32px;
@@ -136,6 +158,11 @@
         margin: auto;
         vertical-align:middle;
     }
+
+    
+    .container.is-small {
+        width: 500px;
+        margin: auto;    }
 
     .card{
         background:#fff;

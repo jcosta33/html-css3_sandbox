@@ -27,6 +27,7 @@
 .input{
     height:40px;
     min-width:200px;
+    width: 100%;
     padding:4px 8px;
     border: none;
     background-color: none;
@@ -34,8 +35,20 @@
     border: 1px solid #e1e1e1;
 }
 
+.input ~.message.is-info{
+    margin-top:6px;
+    font-size: 6px;
+    color:royalblue;
+}
+
+.input ~.message{
+    margin-top:6px;
+    font-size: 6px;
+    color:tomato;
+}
+
 .input: hover{
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #cdcdcd;
 }
 
 .input: focus{

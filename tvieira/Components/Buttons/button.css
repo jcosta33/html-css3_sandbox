@@ -1,5 +1,6 @@
 .buttons{
-
+    display:flex;
+    margin-top: 8px;
 }
 
 .button{
@@ -9,6 +10,14 @@
     border-radius:4px;
     background:#cdcdcd;
     transition: background-color .2s ease-in;
+}
+
+.buttons.is-aligned-right{
+    justify-content:right;
+}
+
+.buttons.is-spaced-between{
+    justify-content:space-between;
 }
 
 /* Button Primary*/
