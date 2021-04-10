@@ -1,0 +1,73 @@
+
+.field:not(last-child){
+    magin-bottom:32px;
+}
+
+.field input, .field textarea, .field select{
+    box-sizing: border-box;
+}
+
+.control{
+    display: inline-block;
+}
+
+.form-page .title.is-2{
+    margin-top:50px;
+}
+
+.form{
+    margin-top: 32px;
+}
+
+.form label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input{
+    height:40px;
+    min-width:200px;
+    width: 100%;
+    padding:4px 8px;
+    border: none;
+    background-color: none;
+    outline:0 !important;
+    border: 1px solid #e1e1e1;
+}
+
+.input ~.message.is-info{
+    margin-top:6px;
+    font-size: 6px;
+    color:royalblue;
+}
+
+.input ~.message{
+    margin-top:6px;
+    font-size: 6px;
+    color:tomato;
+}
+
+.input: hover{
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.input: focus{
+    border-bottom: 1px solid #ef6021;
+}
+
+.texarea{
+    min-height:800px;
+    min-width:200px;
+    padding:8px 8px;
+    border: n1xone;
+    background-color: none;
+    outline:0 !important;
+}
+
+.textarea: hover{
+    border-bottom: 1px solid #000;
+}
+
+.textarea: focus{
+    border-bottom: 1px solid #ef6021;
+}
