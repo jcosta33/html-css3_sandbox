@@ -6,9 +6,19 @@
         font-size:14px;
     }
 
+    *, ::after, ::before {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+      }
+
+    p{
+        margin:0;
+    }   
+
     main{
         clear:both;
-      }
+    }
 
     section{
         margin:32px 16px;
@@ -37,6 +47,7 @@
 
     .title.is-1 {
         font-size: 48px;
+        font-weight:800;
     }
 
     .title.is-2 {
@@ -47,29 +58,47 @@
         font-size: 24px;
     }
 
+    .title.is-4 {
+        font-size: 20px;
+    }
+
+    .title.is-5 {
+        font-size: 18px;
+    }
+
+    .title.is-6 {
+        font-size: 16px;
+    }
+
     .title~.subtitle{
-        margin-top:-16px;
+        margin-top:-12px;
     }
 
     .link{
-        color:slateblue;
+        color:#019DCC ;
         text-decoration:underline;
     }
 
     .link:hover{
-        color:purple;
+        color:#008bb6;
     }
 
     .header{
-        background-color: #f1e8e8;
-        padding:8px;
+        background-color: #fafafa;
+        padding:12px;
         min-height:40px;
     }
 
     .header .logo {
         float: left;
         padding: 8px;
+        padding: 0 8px 0 0;
         margin: 0;
+    }
+
+    .header .logo img{
+        height: 32px;
+        border-radius:8px;
     }
 
     .header .logo img{
@@ -81,15 +110,17 @@
     .footer .logo img{
         height: 32px;
         filter:invert(100%);
+        border-radius: 8px;
     }
 
-    .footer .logo span{
-        vertical-align: top;
+    .footer-nav .logo span{
+        vertical-align: 62%;
       }
     
     .header .page-title{
         font-weight:600;
         color: #000;
+        vertical-align: 62%;
     }
 
     .header .navbar{
@@ -105,6 +136,7 @@
         margin: 64px 0 32px;
         position: relative;
         clear:both; /*depois de um float deve ser inserido*/
+        background: #373737;
     }
 
     .hero .title{

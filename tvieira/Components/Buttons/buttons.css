@@ -1,0 +1,230 @@
+.buttons{
+    display:flex;
+    margin-top: 16px;
+}
+
+.buttons.is-aligned-right{
+    justify-content:flex-end;
+}
+
+.buttons.is-spaced-between{
+    justify-content:space-between;
+}
+
+.button{
+    border: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius:3px;
+    background:#333;
+    box-sizing: border-box;
+    transition: background-color .1s ease-in;
+    text-decoration: none;
+    outline: none;
+    font-family: ubuntu;
+    font-weight:lighter;
+    font-size:12px;
+    min-width:125px;
+}
+
+.button:not(:last-child){
+    margin-right:8px;
+  }
+  
+
+  .button.is-small{
+    padding:8px 12px;
+  }
+  
+  .button.is-fullwidth{
+    width:100%;
+  }
+  
+  .button.is-large{
+    font-size: 20px;
+  }
+
+/* Button Primary*/
+
+/* FM */
+.button.is-primary-orange{
+    border-left: 4px solid #333333;
+    background-color:#ef6021;
+}
+
+.button.is-primary-orange:hover{
+    cursor:pointer;
+    background-color:#333333;
+    border-right: 4px solid #ef6021;
+    color: #ffffff;
+}
+
+/* Blog */
+.button.is-primary-light-orange{
+    border-left: 4px solid #333333;
+    background-color:#FF783D;
+}
+
+.button.is-primary-light-orange:hover{
+    cursor:pointer;
+    background-color:#333333;
+    border-right: 4px solid #FF783D;
+    color: #ffffff;
+}
+
+/* Products */
+.button.is-primary-dark-orange{
+    border-left: 4px solid #333333;
+    background-color:#D83313;
+}
+
+.button.is-primary-dark-orange:hover{
+    cursor:pointer;
+    background-color:#333333;
+    border-right: 4px solid #D83313;
+    color: #ffffff;
+}
+
+/* Galerie */
+.button.is-primary-yellow{
+    border-left: 4px solid #333333;
+    background-color:#F8E816;
+}
+
+.button.is-primary-yellow:hover{
+    cursor:pointer;
+    background-color:#333333;
+    border-right: 4px solid #F8E816;
+    color: #ffffff;
+}
+
+
+/* Services */
+.button.is-primary-greyblue{
+    border-left: 4px solid #333333;
+    background-color:#126476;
+}
+
+.button.is-primary-greyblue:hover{
+    cursor:pointer;
+    background-color:#333333;
+    border-right: 4px solid #126476;
+    color: #ffffff;
+}
+
+
+/* Contacts */
+.button.is-primary-black{
+    border-left: 4px solid #333333;
+    background-color:#000000;
+    color: #ffffff;
+}
+
+.button.is-primary-black:hover{
+    cursor:pointer;
+    background-color:#333333;
+    border-right: 4px solid #000000;
+    color: #ffffff;
+}
+
+
+/* Button Secondary*/
+
+.button.is-secondary{
+    border-left: 4px solid #000;
+    background-color:#333333 ;
+    color: #ffffff;
+}
+
+.button.is-secondary:hover{
+    cursor:pointer;
+    background-color:#000000;
+    color: #ffffff;
+}
+
+/* Savoir Plus*/
+
+.button.is-savoir{
+    border-left: 4px solid transparent;
+    border: 1px solid #333333;
+    background-color: rgba(51, 51, 51, 0.1);
+    color: #000;
+}
+
+.button.is-savoir:hover{
+    cursor:pointer;
+    font-weight:normal;
+    background-color: rgba(51, 51, 51, 0.2);
+    color: #000;
+}
+
+/*
+  Button success
+*/
+
+.button.is-success{
+    border-left-color:#3d8e40;
+    background-color:#4CAF50;
+  }
+  
+  .button.is-success:hover{
+    cursor: pointer;
+    background-color: #3d8e40;
+    color: #ffffff;    
+  }
+
+
+/* Button Info*/
+
+.button.is-info{
+    border-left-color: #008bb6 ;
+    background-color: #019DCC ;
+}
+
+.button.is-info:hover{
+    cursor: pointer;
+    background-color: #008bb6;
+    color: #ffffff;
+  }
+
+
+/* Button Danger*/
+
+.button.is-danger{
+    border-left-color: darkred;
+    background-color: red;
+}
+
+.button.is-danger:hover{
+    cursor:pointer;
+    background-color:darkred;
+    color: #ffffff;
+}
+
+/* Button Warning*/
+
+.button.is-warning{
+    border-left-color:#c77802;
+    background-color:#ff9800;
+  }
+  
+  .button.is-warning:hover{
+    cursor: pointer;
+    background-color: #c77802;
+    color: #ffffff;
+  }
+
+  /*
+ Page specific styles, not to be used in component
+*/
+
+.buttons-page {
+    margin-top:50px;
+  }
+
+  .buttons-page code{
+  float:right;
+  line-height: 42px;
+}

@@ -1,18 +1,18 @@
-
+body {
+    background-color:#fff;
+}
 .field:not(last-child){
     magin-bottom:32px;
 }
 
-.field input, .field textarea, .field select{
+.field input, 
+.field textarea, 
+.field select{
     box-sizing: border-box;
 }
 
-.control{
-    display: inline-block;
-}
-
-.form-page .title.is-2{
-    margin-top:50px;
+.forms-page .container .title.is-2{
+    margin-top:32px;
 }
 
 .form{
@@ -22,18 +22,55 @@
 .form label{
     display: block;
     margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top:20px;
 }
 
-.input{
-    height:40px;
-    min-width:200px;
+.input, .select{
+    height: 42px;
+    min-width:100px;
     width: 100%;
-    padding:4px 8px;
+    padding:24px 8px;
     border: none;
     background-color: none;
     outline:0 !important;
-    border: 1px solid #e1e1e1;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    background: #fafafa;
 }
+
+.field .icon{
+    position:absolute;
+    line-height: 42px;
+    padding:0 10px;
+    color: #999;
+}
+
+.field:hover .icon{
+    color: #333;
+    display: block;
+}
+
+.field .icon ~ .input{
+    padding-left: 32px;
+}
+
+.input.is-dark{
+    color: #fff;
+    background: #333;
+    border:1px solid #333;
+}
+
+.input ~.message{
+    margin-top:6px;
+    font-size: 12px;
+    color:777;
+}
+
+.input ~ .message.is-danger{
+    color:#f44336;
+  }
 
 .input ~.message.is-info{
     margin-top:6px;
@@ -41,33 +78,52 @@
     color:royalblue;
 }
 
-.input ~.message{
-    margin-top:6px;
-    font-size: 6px;
-    color:tomato;
+
+.input:hover{
+    border: 1px solid #B0B0B0;
 }
 
-.input: hover{
-    border-bottom: 1px solid #cdcdcd;
+.input:focus{
+    border: 1px solid #373737;
 }
 
-.input: focus{
-    border-bottom: 1px solid #ef6021;
-}
-
-.texarea{
-    min-height:800px;
+.textarea{
+    min-height:200px;
     min-width:200px;
-    padding:8px 8px;
-    border: n1xone;
-    background-color: none;
+    padding:8px;
+    border: 1px solid #cdcdcd;
+    border-radius: 8px;
+    background-color: #fafafa;
     outline:0 !important;
 }
 
-.textarea: hover{
-    border-bottom: 1px solid #000;
+.textarea:hover{
+    border: 1px solid #B0B0B0;
 }
 
-.textarea: focus{
-    border-bottom: 1px solid #ef6021;
+.textarea:focus{
+    border: 1px solid #ef6021;
 }
+
+
+.control{
+    display: inline-block;
+}
+
+.control label{
+    display:inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    vertical-align: 20%;
+    margin-top:0;
+}
+
+  
+.control input{
+    display:inline-block;
+}
+
+.container button{
+    margin: 25px 0;
+}
+  
