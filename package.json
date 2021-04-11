@@ -4,7 +4,6 @@
   "description": "## Technologies used",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "scss-jose": "node-sass --watch jose/scss -o jose/css",
     "scss-alex": "node-sass --watch Alexandre/scss -o Alexandre/css",
     "scss-carlos": "node-sass --watch Carlos/scss -o Carlos/css",
