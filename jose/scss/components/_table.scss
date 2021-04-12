@@ -1,0 +1,32 @@
+.table{
+background:#f1f1f1;
+}
+
+
+.table thead{
+  background:#e1e1e1;
+}
+
+.table th{
+  padding:16px;
+}
+
+.table thead th{
+  border-bottom:1px solid #bbb;
+}
+
+.table tbody tr th{
+  border-bottom:1px solid #bbb;
+}
+.table tbody tr td{
+  border-bottom:1px solid #bbb;
+}
+
+
+.table th > i{
+  float:right;
+}
+
+.table td{
+  padding:24px;
+}
