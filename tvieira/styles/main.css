@@ -1,9 +1,8 @@
-
     body{
         margin:0px;
         background-color: #f1e8e8;
         font-family: ubuntu; 
-        font-size:14px;
+        font-size:16px;
     }
 
     *, ::after, ::before {
@@ -134,6 +133,7 @@
 
     .hero{
         margin: 64px 0 32px;
+        margin:0;
         position: relative;
         clear:both; /*depois de um float deve ser inserido*/
         background: #373737;
@@ -149,10 +149,18 @@
         color: #373737;
     }
 
+    .hero p{
+        color:#fafafa;
+    }
+
     .hero .image{
         width:100%;
         padding: 48px;
         box-sizing:border-box;
+    }
+
+    .hero .button{
+        width:100%;
     }
 
     .menu-list{
@@ -166,10 +174,27 @@
         padding: 8px;
     }
 
-    .navbar .menu-list .menu-item a{
+    .navbar .menu-list .menu-item a {
         text-decoration: none;
         line-height:18px;
-        color: #111;
+        color: #333;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .navbar .menu-list .menu-item a:hover{
+        font-weight: 500;
+        border-left:2px solid #333;
+        border-right:2px solid #333;
+    }
+
+    .navbar .menu-list .menu-item a.button{
+        color: #fff;
+        padding: 15px 35px;
+    }
+
+    .navbar .menu-list .menu-item a.button:hover{
+        color: #fff;
     }
 
     .footer-nav .menu-list {
@@ -186,15 +211,20 @@
 
 
     .container{
-        width: 800px;
-        margin: auto;
+        max-width: 1100px;
+        margin: 0 auto;
         vertical-align:middle;
     }
+
+    .container .button{
+        margin: 0 auto;
+        }
 
     
     .container.is-small {
         width: 500px;
-        margin: auto;    }
+        margin: auto;    
+    }
 
     .card{
         background:#fff;
@@ -203,6 +233,56 @@
     .card>.card-content{
         padding:16px;
     }
+
+    .product-card .card-content{
+        display:flex;
+        justify-content:space-between;
+    }
+
+    .product-image{
+        width:40%;
+        height:220px;
+        border-radius: 8px;
+    }
+
+    .product-card .product-detail{
+        width: 60%;
+        padding-left:32px;
+    }
+
+    .sales-price{
+        color:#FFD045;
+    }
+
+    .price{
+        font-size:70%;
+        color:#fafafa;
+        text-decoration: line-through;
+    }
+
+    .product-row .column:nth-child(1) .product-image{
+        background-image:url('https://unsplash.com/photos/LxVxPA1LOVM/download?force=true');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #product-row .column:nth-child(2) .product-image{
+        background-image:url('https://unsplash.com/photos/164_6wVEHfI/download?force=true');
+        background-size: cover;
+        background-position: center;
+      }
+      #product-row .column:nth-child(3) .product-image{
+        background-image:url('https://unsplash.com/photos/4qSb_FWhHKs/download?force=true');
+        background-size: cover;
+        background-position: center;
+      }
+      #product-row .column:nth-child(4) .product-image{
+        background-image:url('https://unsplash.com/photos/_fOL6ebfECQ/download?force=true');
+        background-size: cover;
+        background-position: center;
+      }
+
+
 
     .icon{
         padding: 8px;
@@ -231,7 +311,7 @@
     }
 
     .footer{
-        background-color:#111;
+        background-color:#333;
         padding: 32px;
     }
 
@@ -254,21 +334,6 @@
         vertical-align:baseline;
     }
 
-   /* .column {
-        display: inline-block;
-        vertical-align: top;
-        box-sizing: border-box;
-        padding:16px;
+    .has-text-green{
+        color:seagreen;
     }
-
-    .column .is-3{
-        width:25.5%;
-    }
-
-    .column .is-4{
-
-    }
-
-    .column .is-6{
-        width:49.7%
-    }  */
