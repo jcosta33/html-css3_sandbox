@@ -1,0 +1,104 @@
+.buttons{
+
+}
+
+.button{
+    border: 0.5px solid transparent;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #333;
+}
+
+/* button primary */
+
+.button.is-primary{
+    border-color: #4a917e;
+    background-color: #55a38e;
+    transition: background-color .2s ease-in;
+}
+
+.button.is-primary:hover{
+    cursor: pointer;
+    background-color: #4a917e;
+}
+
+/* button secondary */
+
+.button.is-secondary{
+    border-color: #575757;
+    background-color: #6b6b6b;
+    transition: background-color .2s ease-in;
+}
+
+.button.is-secondary:hover{
+    cursor: pointer;
+    background-color: #575757;
+}
+
+/* button danger */
+
+.button.is-danger{
+    border-color: #bb162c;
+    background-color: #dd1732;
+    transition: background-color .2s ease-in;
+}
+
+.button.is-danger:hover{
+    cursor: pointer;
+    background-color: #bb162c;
+}
+
+/* button success */
+
+.button.is-success{
+    border-color: #1e7c3e;
+    background-color: #239248;
+    transition: background-color .2s ease-in;
+}
+
+.button.is-success:hover{
+    cursor: pointer;
+    background-color: #1e7c3e;
+}
+
+/* button info */
+
+.button.is-info{
+    border-color: #274e88;
+    background-color: #305fa5;
+    transition: background-color .2s ease-in;
+}
+
+.button.is-info:hover{
+    cursor: pointer;
+    background-color: #274e88;
+}
+
+/* button warning */
+
+.button.is-warning{
+    border-color: #a04d0a;
+    background-color: #c56312;
+    transition: background-color .2s ease-in;
+}
+
+.button.is-warning:hover{
+    cursor: pointer;
+    background-color: #a04d0a;
+}
+
+
+/*
+ Page specific styles, not to be used in component
+*/
+
+
+
+.buttons-page{
+ 
+}
+.buttons-page code{
+  float:right;
+  line-height:40px;
+}
