@@ -6,7 +6,7 @@
   "scripts": {
     "scss-jose": "node-sass --watch jose/scss -o jose/css",
     "scss-alex": "node-sass --watch Alexandre/scss -o Alexandre/css",
-    "scss-carlos": "node-sass --watch Carlos/scss -o Carlos/css",
+    "scss-carlos": "node-sass --watch Carlos/first_project/scss -o Carlos/first_project/css",
     "scss-ines": "node-sass --watch inesfolder/scss -o inesfolder/css",
     "scss-pedro": "node-sass --watch pedro/scss -o pedro/css",
     "scss-tvieira": "node-sass --watch tvieira/scss -o tvieira/css",
