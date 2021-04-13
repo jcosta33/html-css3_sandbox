@@ -1,0 +1,28 @@
+{
+  "name": "html-css3_sandbox",
+  "version": "1.0.0",
+  "description": "## Technologies used",
+  "main": "index.js",
+  "scripts": {
+    "scss-jose": "node-sass --watch jose/scss -o jose/css",
+    "scss-alex": "node-sass --watch Alexandre/scss -o Alexandre/css",
+    "scss-carlos": "node-sass --watch Carlos/first_project/scss -o Carlos/first_project/css",
+    "scss-ines": "node-sass --watch inesfolder/scss -o inesfolder/css",
+    "scss-pedro": "node-sass --watch pedro/scss -o pedro/css",
+    "scss-tvieira": "node-sass --watch tvieira/scss -o tvieira/css",
+    "scss-vitor": "node-sass --watch vitor/scss -o vitor/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcosta33/html-css3_sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcosta33/html-css3_sandbox/issues"
+  },
+  "homepage": "https://github.com/jcosta33/html-css3_sandbox#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
