@@ -4,7 +4,6 @@
 @import 'components/grid.scss';
 @import 'components/header.scss';
 @import 'components/footer.scss';
-@import 'components/table.scss';
 @import 'components/tabs.scss';
 @import 'mixin.scss';
 @import 'variables.scss';
@@ -205,7 +204,10 @@
     }
 
     .navbar .menu-list .menu-item a.button:hover{
-        color: #fff;
+        cursor:pointer;
+        background-color:#333333;
+        border-right: 4px solid #000000;
+        color: #ffffff;
     }
 
     .footer-nav .menu-list {

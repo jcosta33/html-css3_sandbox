@@ -1,17 +1,29 @@
 @import 'mixin.scss';
 @import 'variables.scss';
 
+$btn-border-darkgrey:4px solid $FM-darkgrey;
+$btn-border-orange:4px solid $FM-orange;
+$btn-border-coral:4px solid $FM-coral;
+$btn-border-red:4px solid $FM-red;
+$btn-border-yellow:4px solid $FM-yellow;
+$btn-border-greyblue:4px solid $FM-greyblue;
+$btn-border-grey:4px solid $FM-grey;
+$btn-border-lightgrey:4px solid $FM-lightgrey;
+$btn-border-white:4px solid $FM-white;
+$button-text-color: #fff;
+
+
 .buttons{
     display:flex;
     margin-top: 16px;
-}
 
-.buttons.is-aligned-right{
-    justify-content:flex-end;
-}
+    &.is-aligned-right{
+        justify-content:flex-end;
+    }
 
-.buttons.is-spaced-between{
-    justify-content:space-between;
+    &.is-spaced-between{
+        justify-content:space-between;
+    }
 }
 
 .button{
