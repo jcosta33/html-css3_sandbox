@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/tvieira/css/all.css" />
+
+</head>
+
+<body class="product-list">
+
+    <header class="header">
+        <div class="navbar-wrapper">
+            <a href="index.html">        
+        <figure class="logo">
+            <img src="/tvieira/images/rodacork.png" alt="logo Rodacork">
+            <span class="page-title is-vertical-middle">
+                RodaCork
+            </span>
+        </figure>
+
+    <nav class="navbar">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="/tvieira/components/buttons/index.html" target="_blank">Buttons</a>
+            </li>
+            <li class="menu-item">
+                <a href="/tvieira/components/cards/index.html" target="_blank">Cards</a>
+            </li>
+            <li class="menu-item">
+                <a href="/tvieira/components/forms/index.html" target="_blank">Forms</a>
+            </li>
+            <li class="menu-item">
+                <a href="/tvieira/components/sidebar/index.html" target="_blank">Sidebar</a>
+            </li>
+            <li class="menu-item">
+                <a href="/tvieira/components/grid/index.html" target="_blank">Grid</a>
+            </li>
+            <li class="menu-item">
+                <a href="/tvieira/dashboard/index.html" target="_blank">Dashboard</a>
+            </li>
+            <li class="menu-item">
+                <a href="/tvieira/products/product-1.html" target="_blank">Product-1</a>
+            </li>
+            <li class="menu-item">
+                <a href="/tvieira/login.html" class="button is-primary-black is-small" style="margin-left:16px;" target="_blank">Login</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <main id="content">
+
+        <section class="breadcrumbs-block">
+            <div class="container wrapper">
+                <div class="row">
+                    <ul class="menu-list">
+                        <li class="menu-item"> Grandes electrodomésticos</li>
+                        <!--li (not last child) after:      <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>    -->
+                        <li class="menu-item">Máquinas de Lavar Roupa</li>
+                    </ul>
+                    <h1 class="title breadcrumbs"></h1> 
+                </div>
+            </div>
+        </section>
+
+                
+        <section class="section product-banner">
+            <a href="#">
+                <div class="container wrapper">
+                    <div class="row">
+                        <!-- OU SERA FLEXBOX ? -->
+                        <div class="column-is-4">
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                        </div>
+                        <div class="column-is-4">
+                            <div class="card">
+                                <div class="content">
+                                    <p class="title">Até 35% desconto direto</p>
+                                    <p class="subtitle">numa selecção de Máquinas Roupa</p>
+                                    <p class="text">Válido de 13 de abril a 19 de abril. Limitado ao stock existente. *Em artigos vendidos e entregues pela Worten.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <section class="product-section">
+            <div class="row">
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title">Filtros</p>
+                            <div class="field">
+                                <label for=""><span class="icon"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>Melhores escolhas</label>
+                                    <br>
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Worten Recomends <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                    <br>
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Worten Recomends <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                    <br>
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Worten Recomends <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                <label for=""><span class="icon"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>Capacidade</label>
+                                <br>
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Worten Recomends <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                <br>
+                                </div>
+                                <div class="field">
+                                <label for=""><span class="icon"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>Melhores escolhas</label>
+                                    <br>
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Worten Recomends <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                    <br>
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Worten Recomends <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                    <br>
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Worten Recomends <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </div>                                
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <label for=""></label>
+                            <div class="control"></div>
+                            <div class="control"></div>
+                            <div class="control"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <label for=""></label>
+                            <div class="control"></div>
+                            <div class="control"></div>
+                            <div class="control"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <label for=""></label>
+                            <div class="control"></div>
+                            <div class="control"></div>
+                            <div class="control"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product-list" class="column is-8">
+                    <div class="container" id="main-filter">
+                        <div class="row">
+                            <span class="view-quantity">1 - 24 de 127 produtos</span>
+                            <span class="page-quantity">artigos por página</span>
+                            <select id="select-pageview" id="select-pageview" class="select">
+                                <option value="12">12</option>
+                                <option value="24">24</option>
+                                <option value="48">48</option>
+                            </select>
+                            <select id="select-pageview-by" id="select-pageview-by" class="select">
+                                <option value="Relevance">Relevance</option>
+                                <option value="Lower price">Lower price</option>
+                                <option value="higher price">higher price</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row is-multiline">
+                        <div class="card is-4">  <!--item 1-->
+                            <figure>
+                                <img src="" alt="">
+                                <div class="discount">
+                                    <p class="reduction">-28%</p>
+                                    <p class="bonus">Bonus Days*</p>
+                                </div>
+                            </figure>
+                            <div class="product-description">
+                                <p class="title">Máquina de Lavar Roupa SAMSUNG<br>WW90T4540TH (9 kg - 1400 rpm - Branco)</p>
+                                <img src="" alt="">
+                                <p class="category"></p>
+                                <div class="stars-icon">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                                <p class="sales-price"></p>
+                                <p class="price"></p>
+                            </div>
+                            <div class="save-compare">
+                                <span><i class="fa fa-heart" aria-hidden="true"></i> Favoritos</span>
+                                <span><i class="fa fa-" aria-hidden="true"></i> 
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Comparar <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card is-4">  <!--item 2-->
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <div class="product-description">
+                                <p class="title">Máquina de Lavar Roupa SAMSUNG<br>WW90T4540TH (9 kg - 1400 rpm - Branco)</p>
+                                <img src="" alt="">
+                                <p class="category"></p>
+                                <div class="stars-icon">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                                <p class="sales-price"></p>
+                                <p class="price"></p>
+                            </div>
+                            <div class="save-compare">
+                                <span><i class="fa fa-heart" aria-hidden="true"></i> Favoritos</span>
+                                <span><i class="fa fa-" aria-hidden="true"></i> 
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Comparar <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card is-4">  <!--item 3-->
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <div class="product-description">
+                                <p class="title">Máquina de Lavar Roupa SAMSUNG<br>WW90T4540TH (9 kg - 1400 rpm - Branco)</p>
+                                <img src="" alt="">
+                                <p class="category"></p>
+                                <div class="stars-icon">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                                <p class="sales-price"></p>
+                                <p class="price"></p>
+                            </div>
+                            <div class="save-compare">
+                                <span><i class="fa fa-heart" aria-hidden="true"></i> Favoritos</span>
+                                <span><i class="fa fa-" aria-hidden="true"></i> 
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Comparar <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card is-4">  <!--item 4-->
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <div class="product-description">
+                                <p class="title">Máquina de Lavar Roupa SAMSUNG<br>WW90T4540TH (9 kg - 1400 rpm - Branco)</p>
+                                <img src="" alt="">
+                                <p class="category"></p>
+                                <div class="stars-icon">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                                <p class="sales-price"></p>
+                                <p class="price"></p>
+                            </div>
+                            <div class="save-compare">
+                                <span><i class="fa fa-heart" aria-hidden="true"></i> Favoritos</span>
+                                <span><i class="fa fa-" aria-hidden="true"></i> 
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Comparar <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card is-4">  <!--item 5-->
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <div class="product-description">
+                                <p class="title">Máquina de Lavar Roupa SAMSUNG<br>WW90T4540TH (9 kg - 1400 rpm - Branco)</p>
+                                <img src="" alt="">
+                                <p class="category"></p>
+                                <div class="stars-icon">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                                <p class="sales-price"></p>
+                                <p class="price"></p>
+                            </div>
+                            <div class="save-compare">
+                                <span><i class="fa fa-heart" aria-hidden="true"></i> Favoritos</span>
+                                <span><i class="fa fa-" aria-hidden="true"></i> 
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Comparar <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card is-4">  <!--item 6-->
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <div class="product-description">
+                                <p class="title">Máquina de Lavar Roupa SAMSUNG<br>WW90T4540TH (9 kg - 1400 rpm - Branco)</p>
+                                <img src="" alt="">
+                                <p class="category"></p>
+                                <div class="stars-icon">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                                <p class="sales-price"></p>
+                                <p class="price"></p>
+                            </div>
+                            <div class="save-compare">
+                                <span><i class="fa fa-heart" aria-hidden="true"></i> Favoritos</span>
+                                <span><i class="fa fa-" aria-hidden="true"></i> 
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Comparar <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card is-4">  <!--item 7-->
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <div class="product-description">
+                                <p class="title">Máquina de Lavar Roupa SAMSUNG<br>WW90T4540TH (9 kg - 1400 rpm - Branco)</p>
+                                <img src="" alt="">
+                                <p class="category"></p>
+                                <div class="stars-icon">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                                <p class="sales-price"></p>
+                                <p class="price"></p>
+                            </div>
+                            <div class="save-compare">
+                                <span><i class="fa fa-heart" aria-hidden="true"></i> Favoritos</span>
+                                <span><i class="fa fa-" aria-hidden="true"></i> 
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Comparar <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card is-4">  <!--item 8-->
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <div class="product-description">
+                                <p class="title">Máquina de Lavar Roupa SAMSUNG<br>WW90T4540TH (9 kg - 1400 rpm - Branco)</p>
+                                <img src="" alt="">
+                                <p class="category"></p>
+                                <div class="stars-icon">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                                <p class="sales-price"></p>
+                                <p class="price"></p>
+                            </div>
+                            <div class="save-compare">
+                                <span><i class="fa fa-heart" aria-hidden="true"></i> Favoritos</span>
+                                <span><i class="fa fa-" aria-hidden="true"></i> 
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Comparar <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card is-4">  <!--item 9-->
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <div class="product-description">
+                                <p class="title">Máquina de Lavar Roupa SAMSUNG<br>WW90T4540TH (9 kg - 1400 rpm - Branco)</p>
+                                <img src="" alt="">
+                                <p class="category"></p>
+                                <div class="stars-icon">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                                <p class="sales-price"></p>
+                                <p class="price"></p>
+                            </div>
+                            <div class="save-compare">
+                                <span><i class="fa fa-heart" aria-hidden="true"></i> Favoritos</span>
+                                <span><i class="fa fa-" aria-hidden="true"></i> 
+                                    <div class="control">
+                                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked>
+                                        <label for="checkbox-movies-comedy">Comparar <span class="product-quantity">(7)</span></label>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <span class="page-number">1</span>
+                            <span class="page-number">2</span>
+                            <span class="page-number">3</span>
+                            <span class="page-number">...</span>
+                            <span class="page-number">6</span>
+                            <span class="page-number"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                
+
+    </main>
+
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="row">
+                <div class="column is-6">
+                <figure class="logo">
+                    <img src="/tvieira/images/rodacork.png" alt="logo RodaCork">
+                    <span>RodaCork</span>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, velit.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            </div>
+            <div class="row">
+        <div clas="column is-3">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="/Alexandre/index.html" target="_blank">Alexandre</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/Carlos/first_project/index.html" target="_blank">Carlos Campos</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div clas="column is-3">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="/inesfolder/index.html" target="_blank">Inês Correia</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/pedro/index.html" target="_blank">Pedro Barbosa</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div clas="column is-3">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="/tvieira/index.html" target="_blank">Tânia Vieira</a>
+                </li>
+    
+                <li class="menu-item">
+                    <a href="/vitor/index.html" target="_blank">Vitor Coelho</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    </footer>
+    
+</body>
+    
+</html>
+
