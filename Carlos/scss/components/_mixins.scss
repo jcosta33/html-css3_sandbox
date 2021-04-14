@@ -1,0 +1,60 @@
+$control-padding-vertical: 16px;
+$control-padding-horizontal: 24px;
+$control-padding-vertical-small: 12px;
+$control-padding-horizontal-small: 16px;
+$control-line-height: 14px;
+$control-line-height-small: 14px;
+$control-border-width:1px;
+
+@mixin control($is-small: false){
+  position: relative;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  line-height: $control-line-height;
+  border-width:$control-border-width;
+  border-style: solid;
+  border-radius: $radius;
+  box-sizing: border-box;
+  transition:.2s ease-in;
+  outline:0!important;
+
+  @if not $is-small{
+    padding-bottom: $control-padding-vertical;
+    padding-top: $control-padding-vertical;
+    padding-left: $control-padding-horizontal;
+    padding-right: $control-padding-horizontal;
+    height:48px;
+    line-height: $control-line-height;
+  }
+
+  @if $is-small{
+    padding-bottom: $control-padding-vertical-small;
+    padding-top: $control-padding-vertical-small;
+    padding-left: $control-padding-horizontal-small;
+    padding-right: $control-padding-horizontal-small;
+    height:36px;
+    line-height: $control-line-height-small;
+  }
+
+  // States
+  &:focus,
+  &.is-focused,
+  &:active,
+  &.is-active {
+    outline: none;
+    box-shadow:none;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+}
+
+%control{
+  @include control;
+}
+
+%control-small {
+  @include control($is-small: true);
+}
