@@ -1,0 +1,117 @@
+.buttons {
+  display: flex;
+  margin-top:16px;
+}
+
+.buttons.is-aligned-right{
+  justify-content: flex-end;
+}
+.buttons.is-spaced-between{
+  justify-content: space-between;
+}
+
+.button{
+  border:1px solid transparent;
+  padding:12px 16px;
+  color:#fff;
+  border-radius:4px;
+  background-color:#333;
+  box-sizing: border-box;
+  transition: background-color .2s ease-in;
+  text-decoration: none;
+}
+
+.button:not(:last-child){
+  margin-right:8px;
+}
+
+.button.is-small{
+  padding:8px 12px;
+}
+
+.button.is-fullwidth{
+  width:100%;
+}
+
+.button.is-large{
+  font-size: 20px;
+}
+
+/*
+  Button primary
+*/
+
+.button.is-primary{
+  border-color:#524ac2;
+  background-color:#665df5;
+}
+
+.button.is-primary:hover{
+  cursor: pointer;
+  background-color: #524ac2;
+}
+/*
+  Button success
+*/
+
+.button.is-success{
+  border-color:#3d8e40;
+  background-color:#4CAF50;
+}
+
+.button.is-success:hover{
+  cursor: pointer;
+  background-color: #3d8e40;
+}
+/*
+  Button info
+*/
+
+.button.is-info{
+  border-color:#524ac2;
+  background-color:#665df5;
+}
+
+.button.is-info:hover{
+  cursor: pointer;
+  background-color: #524ac2;
+}
+/*
+  Button danger
+*/
+
+.button.is-danger{
+  border-color:#c63329;
+  background-color:#f44336;
+}
+
+.button.is-danger:hover{
+  cursor: pointer;
+  background-color: #c63329;
+}
+/*
+  Button warning
+*/
+
+.button.is-warning{
+  border-color:#c77802;
+  background-color:#ff9800;
+}
+
+.button.is-warning:hover{
+  cursor: pointer;
+  background-color: #c77802;
+}
+
+
+/*
+ Page specific styles, not to be used in component
+*/
+
+.buttons-page{
+ 
+}
+.buttons-page code{
+  float:right;
+  line-height:42px;
+}
