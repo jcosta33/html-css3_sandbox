@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-@import 'components/buttons.scss';
-@import 'components/cards.scss';
-@import 'components/grid.scss';
-@import 'components/forms.scss';
-=======
 @import 'components/buttons.scss';
 @import 'components/cards.scss';
 @import 'components/grid.scss';
 @import 'components/forms.scss';
 @import 'components/variables.scss';
->>>>>>> main
 
 body {
   margin: 0;
@@ -89,6 +82,10 @@ figure {
 
 .link:hover{
   color:#524ac2;
+}
+
+.is-pulled-right{
+  float:right;
 }
 
 .header {

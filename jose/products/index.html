@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/products.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/products.css" />
 </head>
 
 <body>
@@ -55,64 +55,344 @@
     </div>
   </header>
   <main id="content">
-    <ul class="breadcrumb">
-      <li>Products</li>
-      <li>Maquinas de lavar roupa</li>
-    </ul>
-    <section class="section product-banner">
-      <figure class="image">
-        <img src="" alt="">
+    <div class="container">
+      <section class="section product-section">
+        <ul class="breadcrumb">
+          <li>Products</li>
+          <li>
+            <span class="icon">
+              <i class="fas fa-chevron-right"></i>
+            </span>
+          </li>
+          <li>Maquinas de lavar roupa</li>
+        </ul>
+        <div class="product-banner">
+          <figure class="image">
+            <img src="https://unsplash.com/photos/qCbctB66bp4/download?force=true" alt="">
+          </figure>
         </div>
-    </section>
-    <section class="section product-section">
-      <div class="row">
-        <div class="columns is-3">
-          <div class="card">
-            <div class="card-content">
-              <label>
-                <span class="icon">
-                  <i class="fa fa-ico"></i>
-                </span>
-                What are your favorite movie genres (from a list of 3)
-              </label>
-              <div class="control">
-                <label for="checkbox-movies-comedy">Comedy</label>
-                <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
-              </div>
-              <div class="control">
-                <label for="checkbox-movies-action">Action</label>
-                <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
-              </div>
-              <div class="control">
-                <label for="checkbox-movies-thriller">Thriller</label>
-                <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox" checked />
+        <div class="row">
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-content">
+                <label>
+                  <span class="icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  Best choices
+                </label>
+                <div class="control">
+                  <label for="checkbox-movies-comedy">Comedy</label>
+                  <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-action">Action</label>
+                  <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-thriller">Thriller</label>
+                  <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox"
+                    checked />
+                </div>
+                <label>
+                  <span class="icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  Best choices
+                </label>
+                <div class="control">
+                  <label for="checkbox-movies-comedy">Comedy</label>
+                  <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-action">Action</label>
+                  <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-thriller">Thriller</label>
+                  <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox"
+                    checked />
+                </div>
+                <label>
+                  <span class="icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  Best choices
+                </label>
+                <div class="control">
+                  <label for="checkbox-movies-comedy">Comedy</label>
+                  <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-action">Action</label>
+                  <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-thriller">Thriller</label>
+                  <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox"
+                    checked />
+                </div>
               </div>
             </div>
-          </div>
 
-        </div>
-        <div class="columns is-9">
-          <div class="card">
-            <div class="card-content">
-              <div class="product-controls">
-                <span>
-                  1 - 24 de 127 produtos | Artigos por página:
-                </span>
-                <!-- inputs -->
-                <!-- inputs -->
-              </div>
-              <div class="products-list">
-                <div class="row">
-                  <div class="column is-4">
-                    <!--Product card-->
+          </div>
+          <div class="column is-9">
+            <div class="card">
+              <div class="card-content">
+                <div class="product-controls">
+                  <span>
+                    1 - 24 de 127 produtos | Artigos por página:
+                  </span>
+                  <select name="select_pet" id="select-pet" class="select is-small">
+                    <option value="dog">
+                      24
+                    </option>
+                    <option value="cat">
+                      32
+                    </option>
+                  </select>
+
+                  <select name="select_pet" id="select-pet" class="select is-small">
+                    <option value="rel">
+                      Relevancia
+                    </option>
+                    <option value="nome">
+                      Nome
+                    </option>
+                    <option value="preco">
+                      Preço
+                    </option>
+                  </select>
+                </div>
+                <div class="products-list">
+                  <div class="row is-multiline">
+                    <div class="column is-4">
+                      <figure class="image">
+                        <img src="https://unsplash.com/photos/164_6wVEHfI/download?force=true" alt="">
+                      </figure>
+                      <div class="product-detail">
+                        <h3 class="title is-4">
+                          Jogo Nintendo Switch Super Mario 3D World + Bowser's Fury
+                        </h3>
+                        <div class="stars">
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star-half-alt"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="far fa-star"></i>
+                          </span>
+                        </div>
+
+                        <p class="sales-price">$299</p>
+                        <p class="price">$399</p>
+
+                        <p style="margin-bottom:16px;">
+                          <span class="has-text-green">
+                            <i class="fas fa-star" style="display:inline-block;margin-right:4px;"></i>
+                            Disponível
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="column is-4">
+                      <figure class="image">
+                        <img src="https://unsplash.com/photos/164_6wVEHfI/download?force=true" alt="">
+                      </figure>
+                      <div class="product-detail">
+                        <h3 class="title is-4">
+                          Jogo Nintendo Switch Super Mario 3D World + Bowser's Fury
+                        </h3>
+                        <div class="stars">
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star-half-alt"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="far fa-star"></i>
+                          </span>
+                        </div>
+
+                        <p class="sales-price">$299</p>
+                        <p class="price">$399</p>
+
+
+                        <p style="margin-bottom:16px;">
+                          <span class="has-text-green"> <i class="fas fa-star"
+                              style="display:inline-block;margin-right:4px;"></i>Disponível</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="column is-4">
+                      <figure class="image">
+                        <img src="https://unsplash.com/photos/164_6wVEHfI/download?force=true" alt="">
+                      </figure>
+                      <div class="product-detail">
+                        <h3 class="title is-4">
+                          Jogo Nintendo Switch Super Mario 3D World + Bowser's Fury
+                        </h3>
+                        <div class="stars">
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star-half-alt"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="far fa-star"></i>
+                          </span>
+                        </div>
+
+                        <p class="sales-price">$299</p>
+                        <p class="price">$399</p>
+
+
+                        <p style="margin-bottom:16px;">
+                          <span class="has-text-green"> <i class="fas fa-star"
+                              style="display:inline-block;margin-right:4px;"></i>Disponível</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="column is-4">
+                      <figure class="image">
+                        <img src="https://unsplash.com/photos/164_6wVEHfI/download?force=true" alt="">
+                      </figure>
+                      <div class="product-detail">
+                        <h3 class="title is-4">
+                          Jogo Nintendo Switch Super Mario 3D World + Bowser's Fury
+                        </h3>
+                        <div class="stars">
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star-half-alt"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="far fa-star"></i>
+                          </span>
+                        </div>
+
+                        <p class="sales-price">$299</p>
+                        <p class="price">$399</p>
+
+
+                        <p style="margin-bottom:16px;">
+                          <span class="has-text-green"> <i class="fas fa-star"
+                              style="display:inline-block;margin-right:4px;"></i>Disponível</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="column is-4">
+                      <figure class="image">
+                        <img src="https://unsplash.com/photos/164_6wVEHfI/download?force=true" alt="">
+                      </figure>
+                      <div class="product-detail">
+                        <h3 class="title is-4">
+                          Jogo Nintendo Switch Super Mario 3D World + Bowser's Fury
+                        </h3>
+                        <div class="stars">
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star-half-alt"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="far fa-star"></i>
+                          </span>
+                        </div>
+
+                        <p class="sales-price">$299</p>
+                        <p class="price">$399</p>
+
+
+                        <p style="margin-bottom:16px;">
+                          <span class="has-text-green"> <i class="fas fa-star"
+                              style="display:inline-block;margin-right:4px;"></i>Disponível</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="column is-4">
+                      <figure class="image">
+                        <img src="https://unsplash.com/photos/164_6wVEHfI/download?force=true" alt="">
+                      </figure>
+                      <div class="product-detail">
+                        <h3 class="title is-4">
+                          Jogo Nintendo Switch Super Mario 3D World + Bowser's Fury
+                        </h3>
+                        <div class="stars">
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="fas fa-star-half-alt"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="far fa-star"></i>
+                          </span>
+                        </div>
+
+                        <p class="sales-price">$299</p>
+                        <p class="price">$399</p>
+
+
+                        <p style="margin-bottom:16px;">
+                          <span class="has-text-green"> <i class="fas fa-star"
+                              style="display:inline-block;margin-right:4px;"></i>Disponível</span>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+
+      </section>
+    </div>
+
   </main>
 
 </body>

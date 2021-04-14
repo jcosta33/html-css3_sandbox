@@ -1,15 +1,13 @@
 $control-padding-vertical: 16px;
 $control-padding-horizontal: 24px;
-$control-padding-vertical-small: 12px;
-$control-padding-horizontal-small: 16px;
+$control-padding-vertical-small: 8px;
+$control-padding-horizontal-small: 12px;
 $control-line-height: 14px;
-$control-line-height-small: 14px;
+$control-line-height-small: 12px;
 $control-border-width:1px;
 
 @mixin control($is-small: false){
   position: relative;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   line-height: $control-line-height;
   border-width:$control-border-width;
   border-style: solid;
