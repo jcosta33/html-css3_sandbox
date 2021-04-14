@@ -1,116 +1,111 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+$button-border:1px solid transparent;
+$button-border-hover:1px solid transparent;
+$button-text-color:#fff;
+
 .buttons {
   display: flex;
   margin-top:16px;
-}
 
-.buttons.is-aligned-right{
-  justify-content: flex-end;
-}
-.buttons.is-spaced-between{
-  justify-content: space-between;
+  &.is-aligned-right{
+    justify-content: flex-end;
+  }
+  &.is-spaced-between{
+    justify-content: space-between;
+  }
 }
 
 .button{
-  border:1px solid transparent;
-  padding:12px 16px;
-  color:#fff;
-  border-radius:4px;
+  &:not(.is-small){
+    @extend %control;
+  }
+
+  &.is-small{
+    @extend %control-small;
+  }
+
+  color:$button-text-color;
   background-color:#333;
-  box-sizing: border-box;
-  transition: background-color .2s ease-in;
   text-decoration: none;
+
+  &:not(:last-child){
+    margin-right:8px;
+  }
+
+  &.is-fullwidth{
+    width:100%;
+  }
+
+  &.is-large{
+    font-size: 20px;
+  }
+
+  /*
+    Button primary
+  */
+
+  &.is-primary{
+    background: darken($primary, 10%);
+    background-color: $primary;
+    &:hover{
+      cursor: pointer;
+      background: darken($primary, 10%);
+    }
+  }
+
+  /*
+    Button success
+  */
+
+  &.is-success{
+    border-color: darken($success, 10%);
+    background-color:$success;
+    &:hover{
+      cursor: pointer;
+      background: darken($success, 10%);
+    }
+  }
+
+  &.is-info{
+    background-color:$info;
+    border-color: darken($info, 10%);
+
+    &:hover{
+      cursor: pointer;
+      background: darken($info, 10%);
+    }
+  }
+
+  &.is-danger{
+    border-color: darken($danger, 10%);
+    background-color:$danger;
+    &:hover{
+      cursor: pointer;
+      background: darken($danger, 10%);
+    }
+  }
+
+  /*
+    Button warning TODO
+  */
+
+  &.is-warning{
+    border-color:#c77802;
+    background-color:$warning;
+    &:hover{
+      cursor: pointer;
+      background-color: #c77802;
+    }
+  }
 }
-
-.button:not(:last-child){
-  margin-right:8px;
-}
-
-.button.is-small{
-  padding:8px 12px;
-}
-
-.button.is-fullwidth{
-  width:100%;
-}
-
-.button.is-large{
-  font-size: 20px;
-}
-
-/*
-  Button primary
-*/
-
-.button.is-primary{
-  border-color:#524ac2;
-  background-color:#665df5;
-}
-
-.button.is-primary:hover{
-  cursor: pointer;
-  background-color: #524ac2;
-}
-/*
-  Button success
-*/
-
-.button.is-success{
-  border-color:#3d8e40;
-  background-color:#4CAF50;
-}
-
-.button.is-success:hover{
-  cursor: pointer;
-  background-color: #3d8e40;
-}
-/*
-  Button info
-*/
-
-.button.is-info{
-  border-color:#524ac2;
-  background-color:#665df5;
-}
-
-.button.is-info:hover{
-  cursor: pointer;
-  background-color: #524ac2;
-}
-/*
-  Button danger
-*/
-
-.button.is-danger{
-  border-color:#c63329;
-  background-color:#f44336;
-}
-
-.button.is-danger:hover{
-  cursor: pointer;
-  background-color: #c63329;
-}
-/*
-  Button warning
-*/
-
-.button.is-warning{
-  border-color:#c77802;
-  background-color:#ff9800;
-}
-
-.button.is-warning:hover{
-  cursor: pointer;
-  background-color: #c77802;
-}
-
 
 /*
  Page specific styles, not to be used in component
 */
 
-.buttons-page{
- 
-}
+
 .buttons-page code{
   float:right;
   line-height:42px;
