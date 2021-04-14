@@ -1,15 +1,40 @@
 .buttons {
+  display: flex;
+  margin-top:16px;
+}
 
+.buttons.is-aligned-right{
+  justify-content: flex-end;
+}
+.buttons.is-spaced-between{
+  justify-content: space-between;
 }
 
 .button{
   border:1px solid transparent;
   padding:12px 16px;
-  height:40px;
   color:#fff;
   border-radius:4px;
   background-color:#333;
+  box-sizing: border-box;
   transition: background-color .2s ease-in;
+  text-decoration: none;
+}
+
+.button:not(:last-child){
+  margin-right:8px;
+}
+
+.button.is-small{
+  padding:8px 12px;
+}
+
+.button.is-fullwidth{
+  width:100%;
+}
+
+.button.is-large{
+  font-size: 20px;
 }
 
 /*
@@ -43,8 +68,8 @@
 */
 
 .button.is-info{
-  border-color:#1a79c6;
-  background-color:#2196F3;
+  border-color:#524ac2;
+  background-color:#665df5;
 }
 
 .button.is-info:hover{
@@ -88,5 +113,5 @@
 }
 .buttons-page code{
   float:right;
-  line-height:40px;
+  line-height:42px;
 }
