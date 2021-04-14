@@ -54,24 +54,16 @@ figure.image img{
   width: 300px;
   margin-left: 150px;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden; /*especifica quando o conteúdo de um elemento de nível de bloco deve ser cortado, exibido com barras de rolagem ou se transborda do elemento. */
 }
 
 .slides {
   display: flex;
-  
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  
-  
-  
+  overflow-x: auto; /*sets what shows when content overflows a block-level element's left and right edges. This may be nothing, a scroll bar, or the overflow content.*/
+  scroll-snap-type: x mandatory; /*sets how strictly snap points are enforced on the scroll container in case there is one.*/
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; /*controls whether or not touch devices use momentum-based scrolling for a given element.*/
   
-  /*
-  scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: mandatory;
-  */
 }
 .slides::-webkit-scrollbar {
   width: 10px;
