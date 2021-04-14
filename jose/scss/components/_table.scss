@@ -1,7 +1,8 @@
-.table{
-background:#f1f1f1;
-}
+@import 'variables.scss';
 
+.table{
+  background:#f1f1f1;
+}
 
 .table thead{
   background:#e1e1e1;
@@ -18,10 +19,10 @@ background:#f1f1f1;
 .table tbody tr th{
   border-bottom:1px solid #bbb;
 }
+
 .table tbody tr td{
   border-bottom:1px solid #bbb;
 }
-
 
 .table th > i{
   float:right;
