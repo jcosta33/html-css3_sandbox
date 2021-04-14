@@ -1,11 +1,30 @@
-.field:not(:last-child){
-  margin-bottom:32px;
-}
+@import 'variables.scss';
+@import 'mixins.scss';
 
-.field input,
-.field textarea,
-.field select{
-  box-sizing: border-box;
+$input-bg:#f1f1f1;
+
+.field{
+  &:not(:last-child){
+    margin-bottom:32px;
+  }
+  &:hover .icon{
+    color:#000;
+    display: block;
+  }
+  input,
+  textarea,
+  select{
+    box-sizing: border-box;
+  }
+  .icon{
+    position: absolute;
+    line-height: 42px;
+    padding: 0 10px;
+    color:#999;
+     ~  .input{
+      padding-left: 32px;
+    }
+  }
 }
 
 .forms-page .title.is-2{
@@ -14,31 +33,51 @@
 
 .form{
   margin-top:32px;
+  label{
+    display:block;
+    margin-bottom:8px;
+  }
 }
 
-.form label{
-  display:block;
-  margin-bottom:8px;
+.input, .select{
+  background:$input-bg;
+  min-width: 100px;
+  width:100%;
+  border-color:#ccc;
+  
+  &:hover{
+    border:1px solid #555;
+  }
+  &:focus{
+    border:1px solid $primary;
+  }
+
+  &:not(.is-small){
+    @extend %control;
+  }
+
+  &.is-small{
+    @extend %control-small;
+  }
+
+  &.is-dark{
+    color:#fff;
+    background:#333;
+    border:1px solid #333;
+  }
+  ~ .message{
+    margin-top:6px;
+    font-size:12px;
+    color:#777;
+    &.is-danger{
+      color:#f44336;
+    }
+    &.is-info{
+      color:$primary;
+    }
+  }
 }
 
-.input{
-  height:40px;
-  min-width: 200px;
-  padding:4px 8px;
-  border:none;
-  background:none;
-  outline:0!important;
-  border-bottom:1px solid #555;
-}
-
-.input:hover{
-  border-bottom:1px solid #000;
-}
-
-.input:focus{
-  border:none;
-  border-bottom:1px solid #665df5;
-}
 
 .textarea{
   min-width: 200px;
@@ -48,33 +87,27 @@
   border:1px solid #555;
   border-radius: 8px;
   outline:0!important;
-}
-
-.textarea:hover{
-  border:1px solid #000;
-}
-
-.textarea:focus{
-  border:1px solid #665df5;
+  &:hover{
+    border:1px solid #000;
+  }
+  &:focus{
+    border:1px solid $primary;
+  }
 }
 
 .select{
-  height:40px;
-  min-width: 200px;
-  padding:4px 8px;
-  border:none;
-  background:none;
-  outline:0!important;
-  border-bottom:1px solid #555;
+  /* -moz-appearance:none; 
+    -webkit-appearance:none; 
+    appearance:none; */
 }
+
 .control{
   display:inline-block;
-}
-
-.control label{
-  display:inline-block;
-}
-
-.control input{
-  display:inline-block;
+  label{
+    display:inline-block;
+  }
+  
+ input{
+    display:inline-block;
+  }
 }
