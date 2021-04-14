@@ -1,0 +1,125 @@
+a {
+	text-decoration: none;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+h2 {
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	margin: 0;
+	background: #f1f1f1;
+}
+figure {
+	margin: 0;
+}
+.title {
+	margin: 0 0 16px;
+	&.is-1 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 36px;
+		line-height: 28.13px;
+	}
+}
+.header {
+	padding: 8px;
+	.logo {
+		float: left;
+		padding: 10px 0 0 10px;
+		margin: 0;
+	}
+	.page-title {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+	}
+	.navbar {
+		float: right;
+	}
+}
+.page-titleCV {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: 500;
+	padding-left: 28px;
+	font-size: 18px;
+}
+.hero {
+	margin: 64px 0 32px;
+	clear: both;
+	.title {
+		margin-top: 64px;
+	}
+	.image {
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+}
+.menu-list {
+	list-style: none;
+	padding: 10px 10px 0 0;
+	margin: 0;
+	float: right;
+	.menu-item {
+		display: inline-block;
+		padding: 8px;
+		a {
+			font-family: 'Roboto', sans-serif;
+			text-decoration: none;
+			color: #111;
+			line-height: 16px;
+			&:visited {
+				font-family: 'Roboto', sans-serif;
+				text-decoration: none;
+				color: #0057FF;
+				line-height: 16px;
+				font-weight: 600;
+			}
+		}
+	}
+}
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+.card {
+	background: #fff;
+	& > .card-content {
+		padding: 16px;
+	}
+}
+.footer {
+	background: #212121;
+	padding: 32px;
+	.title {
+		color: #fff;
+	}
+}
+.footer p,
+.footer label,
+.footer a,
+.footer span {
+	color: #f1f1f1;
+}
+.column {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 16px;
+	&.is-3 {
+		width: 24.5%;
+	}
+	&.is-4 {
+		width: 33%;
+	}
+	&.is-6 {
+		width: 49.7%;
+	}
+}
