@@ -1,0 +1,95 @@
+@import 'mixin.scss';
+@import 'variables.scss';
+
+body .grid-page{
+    background-color:#ffffff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -16px;
+    margin-right: -16px;
+    &.is-multiline{
+        flex-wrap: wrap;
+        .column{
+            padding:8px;
+        }
+    }
+    &.is-small{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .column{
+    vertical-align:top;
+    box-sizing: border-box;
+    padding: 16px;
+    width:100%;
+}
+
+.row.is-small{
+    margin-left:-8px;
+    margin-right:-8px;
+}
+
+.row.is-small .column{
+    padding: 8px;
+}
+
+.column.is-1{
+    width:8,33333333%;    
+}
+
+.column.is-2{
+    width: 16,66666667%;    
+}
+
+
+.column.is-3{
+    width:25%;    
+}
+
+.column.is-4{
+    width:33,33333333%; 
+}
+
+.column.is-5{
+    width:41,66666667%;        
+}
+
+.column.is-6{
+    width:50%;        
+}
+
+.column.is-7{
+    width:58,33333333%;    
+    
+}
+
+.column.is-8{
+    width:66,6666666667%;    
+    
+}
+
+.column.is-9{
+    width:75%;    
+}
+
+.column.is-10{
+    width:83,33333333%;    
+}
+
+.column.is-11{
+    width:91,66666667%;    
+}
+
+.column.is-12{
+    width:100%;    
+}
+
+.box{
+    height: 300px;
+    width:100%;
+    background-color: red;
+}
+

@@ -1,0 +1,87 @@
+.input, .button {
+  position: relative;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: .2s ease-in; }
+  .input:focus, .button:focus, .is-focused.input, .is-focused.button, .input:active, .button:active, .is-active.input, .is-active.button {
+    outline: none;
+    box-shadow: none; }
+  .input[disabled], .button[disabled],
+  fieldset[disabled] .input,
+  fieldset[disabled] .button {
+    cursor: not-allowed; }
+
+.buttons {
+  display: flex;
+  margin-top: 16px; }
+  .buttons.is-aligned-right {
+    justify-content: flex-end; }
+  .buttons.is-spaced-between {
+    justify-content: space-between; }
+
+.button {
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+  /*
+    Button primary
+  */
+  /*
+    Button success
+  */
+  /*
+    Button warning
+  */ }
+  .button:not(:last-child) {
+    margin-right: 8px; }
+  .button.is-small {
+    padding: 8px 12px; }
+  .button.is-fullwidth {
+    width: 100%; }
+  .button.is-large {
+    font-size: 20px; }
+  .button.is-primary {
+    border-color: #524ac2;
+    background-color: #665df5; }
+    .button.is-primary:hover {
+      cursor: pointer;
+      background-color: #524ac2; }
+  .button .is-success {
+    border-color: #3d8e40;
+    background-color: #4CAF50; }
+    .button .is-success:hover {
+      cursor: pointer;
+      background-color: #3d8e40; }
+  .button .is-info {
+    border-color: #524ac2;
+    background-color: #665df5; }
+    .button .is-info:hover {
+      cursor: pointer;
+      background-color: #524ac2; }
+  .button .is-danger {
+    border-color: #c63329;
+    background-color: #f44336; }
+    .button .is-danger:hover {
+      cursor: pointer;
+      background-color: #c63329; }
+  .button .is-warning {
+    border-color: #c77802;
+    background-color: #ff9800; }
+  .button .is-warning:hover {
+    cursor: pointer;
+    background-color: #c77802; }
+
+/*
+ Page specific styles, not to be used in component
+*/
+.buttons-page code {
+  float: right;
+  line-height: 42px; }
