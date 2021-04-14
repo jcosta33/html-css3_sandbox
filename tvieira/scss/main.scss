@@ -153,10 +153,12 @@
         margin-top:64px;
     }
 
-    .hero .title,
-    .hero .subtitle,
-    .hero p {
-        color: #373737;
+    .hero .title {
+        color: #ef6021;
+    }
+
+    .hero .subtitle,{
+        color: #ffffff;
     }
 
     .hero p{
@@ -339,9 +341,9 @@
         color: #fff;
     }
 
-    .is-vertical-top{
+    /*.is-vertical-top{
         vertical-align: top;
-    }
+    }*/
 
     .is-vertical-middle{
         vertical-align:baseline;
