@@ -1,12 +1,11 @@
 @import 'main.scss'; 
-@import 'components/buttons';
-@import 'components/cards';
-@import 'components/grid';
-@import 'components/slider';
-@import 'components/tabs';
-@import 'mixin';
-@import 'variables';
-
+@import 'components/buttons.scss';
+@import 'components/cards.scss';
+@import 'components/grid.scss';
+@import 'components/slider.scss';
+@import 'components/tabs.scss';
+@import 'mixin.scss';
+@import 'variables.scss';
 
 
 body.product-1 {

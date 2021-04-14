@@ -1,12 +1,14 @@
-@import 'main.scss'; 
-@import 'components/buttons';
-@import 'components/forms';
-@import 'components/grid';
-@import 'components/sidebar';
-@import 'components/table';
-@import 'components/tabs';
-@import 'mixin';
-@import 'variables';
+@import 'main.scss';
+@import 'components/buttons.scss';
+@import 'components/forms.scss';
+@import 'components/grid.scss';
+@import 'components/sidebar.scss';
+@import 'components/table.scss';
+@import 'components/tabs.scss';
+@import 'mixin.scss';
+@import 'variables.scss';
+
+
 
 .table {
     background: #f1f1f1; }
