@@ -23,7 +23,7 @@
         <figure class="logo">
           <img src="images/company_logo.png" alt="Company logo">
           <span class="page-title">
-            Sandbox
+            Products
           </span>
         </figure>
       </a>
@@ -31,19 +31,25 @@
       <nav class="navbar">
         <ul class="menu-list">
           <li class="menu-item">
-            <a href="components/buttons/index.html">Buttons</a>
+            <a href="../products/index.html">Products</a>
           </li>
           <li class="menu-item">
-            <a href="components/cards/index.html">Cards</a>
+            <a href="../dashboard.html">Dashboard</a>
           </li>
           <li class="menu-item">
-            <a href="components/forms/index.html">Forms</a>
+            <a href="../components/buttons/index.html">Buttons</a>
           </li>
           <li class="menu-item">
-            <a href="components/sidebar/index.html">Sidebar</a>
+            <a href="../components/cards/index.html">Cards</a>
           </li>
           <li class="menu-item">
-            <a href="login.html" class="button is-success is-small" style="margin-left:16px;">Login</a>
+            <a href="../components/forms/index.html">Forms</a>
+          </li>
+          <li class="menu-item">
+            <a href="../components/sidebar/index.html">Sidebar</a>
+          </li>
+          <li class="menu-item">
+            <a href="../login.html" class="button is-success is-small" style="margin-left:16px;">Login</a>
           </li>
         </ul>
       </nav>
@@ -51,24 +57,64 @@
   </header>
 
   <main id="content">
-    <ul>
-        <li>Products ></li>
-        <li>Maquinas de lavar roupa</li>
-        <li></li>
-        
+    <ul class="breadcrumb">
+      <li>Products</li>
+      <li>Maquinas de lavar roupa</li>
     </ul>
     <section class="section product-banner">
-        <figure class="image">
-            <img src="" alt="">
-        </figure>
+      <figure class="image">
+        <img src="" alt="">
+        </div>
     </section>
-
     <section class="section product-section">
-        <div class="">
+      <div class="row">
+        <div class="columns is-3">
+          <div class="card">
+            <div class="card-content">
+              <label>
+                <span class="icon">
+                  <i class="fa fa-ico"></i>
+                </span>
+                What are your favorite movie genres (from a list of 3)
+              </label>
+              <div class="control">
+                <label for="checkbox-movies-comedy">Comedy</label>
+                <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+              </div>
+              <div class="control">
+                <label for="checkbox-movies-action">Action</label>
+                <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+              </div>
+              <div class="control">
+                <label for="checkbox-movies-thriller">Thriller</label>
+                <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox" checked />
+              </div>
+            </div>
+          </div>
 
+        </div>
+        <div class="columns is-9">
+          <div class="card">
+            <div class="card-content">
+              <div class="product-controls">
+                <span>
+                  1 - 24 de 127 produtos | Artigos por página:
+                </span>
+                <!-- inputs -->
+                <!-- inputs -->
+              </div>
+              <div class="products-list">
+                <div class="row">
+                  <div class="column is-4">
+                    <!--Product card-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
   </main>
 </body>
 
