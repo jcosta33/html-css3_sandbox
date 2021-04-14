@@ -10,13 +10,17 @@ body .grid-page{
     justify-content: space-between;
     margin-left: -16px;
     margin-right: -16px;
-}
-
-.row.is-multiline{
-    flex-wrap: wrap;
-}
-
-.column{
+    &.is-multiline{
+        flex-wrap: wrap;
+        .column{
+            padding:8px;
+        }
+    }
+    &.is-small{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .column{
     vertical-align:top;
     box-sizing: border-box;
     padding: 16px;
