@@ -1,10 +1,14 @@
+@import 'variables.scss';
+
+$background:#fff;
+$padding:16px;
+
 .card{
   display:block;
-  background:#fff;
-  border-radius:4px;
-}
-
-.card .card-content{
-  padding:16px;
-  box-sizing: border-box;
+  background:$background;
+  border-radius:$radius;
+  .card-content{
+    padding:$padding;
+    box-sizing: border-box;
+  }
 }

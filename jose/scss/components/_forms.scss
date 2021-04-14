@@ -1,11 +1,30 @@
-.field:not(:last-child){
-  margin-bottom:32px;
-}
+@import 'variables.scss';
+@import 'mixins.scss';
 
-.field input,
-.field textarea,
-.field select{
-  box-sizing: border-box;
+$input-bg:#f1f1f1;
+
+.field{
+  &:not(:last-child){
+    margin-bottom:32px;
+  }
+  &:hover .icon{
+    color:#000;
+    display: block;
+  }
+  input,
+  textarea,
+  select{
+    box-sizing: border-box;
+  }
+  .icon{
+    position: absolute;
+    line-height: 42px;
+    padding: 0 10px;
+    color:#999;
+     ~  .input{
+      padding-left: 32px;
+    }
+  }
 }
 
 .forms-page .title.is-2{
@@ -14,68 +33,51 @@
 
 .form{
   margin-top:32px;
-}
-
-.form label{
-  display:block;
-  margin-bottom:8px;
+  label{
+    display:block;
+    margin-bottom:8px;
+  }
 }
 
 .input, .select{
-  height:42px;
+  background:$input-bg;
   min-width: 100px;
   width:100%;
-  padding:4px 8px;
-  border:none;
-  background:none;
-  outline:0!important;
-  border:1px solid #ccc;
-  border-radius: 4px;
-  background:#f1f1f1;
+  border-color:#ccc;
+  
+  &:hover{
+    border:1px solid #555;
+  }
+  &:focus{
+    border:1px solid $primary;
+  }
+
+  &:not(.is-small){
+    @extend %control;
+  }
+
+  &.is-small{
+    @extend %control-small;
+  }
+
+  &.is-dark{
+    color:#fff;
+    background:#333;
+    border:1px solid #333;
+  }
+  ~ .message{
+    margin-top:6px;
+    font-size:12px;
+    color:#777;
+    &.is-danger{
+      color:#f44336;
+    }
+    &.is-info{
+      color:$primary;
+    }
+  }
 }
 
-.field .icon{
-  position: absolute;
-  line-height: 42px;
-  padding: 0 10px;
-  color:#999;
-}
-
-.field:hover .icon{
-  color:#000;
-  display: block;
-}
-
-.field .icon ~ .input{
-  padding-left: 32px;
-}
-
-.input.is-dark{
-  color:#fff;
-  background:#333;
-  border:1px solid #333;
-}
-
-.input ~ .message{
-  margin-top:6px;
-  font-size:12px;
-  color:#777;
-}
-.input ~ .message.is-danger{
-  color:#f44336;
-}
-
-.input ~ .message.is-info{
-  color:#665df5;
-}
-
-.input:hover{
-  border:1px solid #555;
-}
-
-.input:focus{
-  border:1px solid #665df5;
-}
 
 .textarea{
   min-width: 200px;
@@ -85,14 +87,12 @@
   border:1px solid #555;
   border-radius: 8px;
   outline:0!important;
-}
-
-.textarea:hover{
-  border:1px solid #000;
-}
-
-.textarea:focus{
-  border:1px solid #665df5;
+  &:hover{
+    border:1px solid #000;
+  }
+  &:focus{
+    border:1px solid $primary;
+  }
 }
 
 .select{
@@ -101,25 +101,13 @@
     appearance:none; */
 }
 
-.select:after{
-  /* font-family: "Font Awesome 5 Free"; 
-  font-weight: 400; 
-  content: "\f078";
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased; */
-}
-
 .control{
   display:inline-block;
-}
-
-.control label{
-  display:inline-block;
-}
-
-.control input{
-  display:inline-block;
+  label{
+    display:inline-block;
+  }
+  
+ input{
+    display:inline-block;
+  }
 }
