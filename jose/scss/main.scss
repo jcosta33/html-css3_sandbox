@@ -2,6 +2,7 @@
 @import 'components/cards.scss';
 @import 'components/grid.scss';
 @import 'components/forms.scss';
+@import 'components/variables.scss';
 
 body {
   margin: 0;
@@ -29,11 +30,11 @@ section{
 }
 
 .has-background-primary {
-  background-color: #665df5;
+  background-color: $primary;
 }
 
 .has-text-primary {
-  color: #665df5;
+  color: $primary;
 }
 
 figure {
@@ -75,7 +76,7 @@ figure {
 }
 
 .link{
-  color:#665df5;
+  color:$primary;
   text-decoration: underline;
 }
 
@@ -160,7 +161,7 @@ figure {
   padding: 8px;
 }
 
-.navbar .menu-list .menu-item a {
+.navbar .menu-list .menu-item a:not(.button) {
   text-decoration: none;
   color: #bbb;
   line-height: 18px;
