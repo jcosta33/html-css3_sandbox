@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Register</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
     rel="stylesheet">
@@ -17,7 +17,6 @@
 
 <body>
   <header class="header">
-
     <div class="navbar-wrapper">
       <a href="index.html">
         <figure class="logo">
@@ -49,16 +48,20 @@
       </nav>
     </div>
   </header>
-
   <main class="login-page">
     <div class="container is-small">
       <section class="login-section">
         <div class="card">
           <div class="card-content">
-            <h3 class="title is-3">Login or register</h3>
+            <h3 class="title is-3">Register</h3>
             <h6 class="subtitle">Sign up for a free account today</h6>
             <hr>
             <form class="form login-form">
+              <div class="field">
+                <label for="input-name">Name</label>
+                <input type="text" id="input-name" name="input_name" placeholder="Please insert your name"
+                  class="input">
+              </div>
               <div class="field">
                 <label for="input-email">Email</label>
                 <input type="text" id="input-email" name="input_email" placeholder="Please insert your email"
@@ -69,27 +72,48 @@
                 </span>
               </div>
               <div class="field">
-                <label for="input-name">Password</label>
-                <input type="password" id="input-password" name="input_password"
-                  placeholder="Please insert your password" class="input">
-                <span class="message is-info">
-                  <i class="fas fa-exclamation-circle"></i>
-                  Your password must contain at least 1 character
-                </span>
+                <label for="input-name">Birthday</label>
+                <input type="date" id="input-birthday" name="input_birthday" class="input">
               </div>
+              <div class="field">
+                <label>Select a thing</label>
+                <div class="control">
+                  <label for="radio-thing-1">Thing 1</label>
+                  <input type="radio" id="radio-thing-1" value="thing-1" name="radio-thing" class="radio" checked />
+                </div>
+                <div class="control">
+                  <label for="radio-thing-2">Thing 2</label>
+                  <input type="radio" id="cradio-thing-2" value="thing-2" name="radio-thing" class="radio" />
+                </div>
+                <div class="control">
+                  <label for="radio-thing-3">Thing 3</label>
+                  <input type="radio" id="radio-thing-3" value="thing-3" name="radio-thing" class="radio" />
+                </div>
+              </div>
+              <div class="field">
 
-              <a class="link" href="/recover-password.html">
-                Forgot your password?
-              </a>
-
+                <label>What are your favorite movie genres (from a list of 3)</label>
+                <div class="control">
+                  <label for="checkbox-movies-comedy">Comedy</label>
+                  <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-action">Action</label>
+                  <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-thriller">Thriller</label>
+                  <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox"
+                    checked />
+                </div>
+              </div>
               <div class="buttons is-spaced-between">
-
-                <a href="register.html" class="button is-success">
-                  Register
+                <a href="login.html" class="button is-success">
+                  Login
                 </a>
 
-                <a href="index.html" type="button" class="button is-primary">
-                  Login
+                <a href="register-password.html" type="button" class="button is-primary">
+                  Next
                 </a>
               </div>
             </form>
