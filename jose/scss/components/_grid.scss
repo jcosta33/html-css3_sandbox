@@ -1,54 +1,45 @@
+@import 'variables.scss';
+
 .row {
   display:flex;
   justify-content: space-between;
   margin-left: -16px;
   margin-right: -16px;
+  &.is-multiline{
+    flex-wrap: wrap;
+    .column{
+      padding: 8px;
+    }
+  }
+  &.is-small{
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .column{
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 16px;
+    width:100%;
+    &.is-3{
+      width:25%;
+    }
+    &.is-4{
+      width:33.3333333%;
+    }
+    &.is-5{
+      width:41.6666666667%;
+    }
+    &.is-6{
+      width:50%;
+    }
+    &.is-7{
+      width:58.3333333333%;
+    }
+    &.is-8{
+      width:66.6666666667%;
+    }
+    &.is-12{
+      width:100%;
+    }
+  }
 } 
-
-.row.is-multiline{
-  flex-wrap: wrap;
-}
-
-.column{
-  vertical-align: top;
-  box-sizing: border-box;
-  padding: 16px;
-  width:100%;
-}
-
-.row.is-small{
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.row.is-small .column{
-  padding: 8px;
-}
-
-.column.is-3{
-  width:25%;
-}
-.column.is-4{
-  width:33.3333333%;
-}
-.column.is-5{
-  width:41.6666666667%;
-}
-.column.is-6{
-  width:50%;
-}
-.column.is-7{
-  width:58.3333333333%;
-}
-.column.is-8{
-  width:66.6666666667%;
-}
-.column.is-12{
-  width:100%;
-}
-
-.box{
-  height:300px;
-  width:100%;
-  background:red;
-}
