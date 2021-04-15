@@ -10,6 +10,18 @@
       }
 }
 
+.filtros{
+    background-color: white;
+    display: block;
+    .filtronome{
+        margin-bottom: 10px;
+        
+        i{
+            color: red;
+            margin-right: 5px;
+        }
+    }
+}
 
 
 .listaprodutos{
@@ -17,5 +29,33 @@
     .product-image img{
     width: 100%;
     display: flex;
+    margin: auto;
+    }
+    button{
+        border: none;
+        background-color: white;
+        padding: 0;
+        width: 0px;
+        &:hover{
+            color: red;
+        }
+    }
+    h4{
+        margin-bottom: 3px;
+    }
+    h2{
+        margin: 6px;
+        color: red;
+    }
+    .star{
+        color: #F7AA30;
+        .n{
+            font-size: .7rem;
+            color: black;
+        }
     }
 }
+
+
+
+
