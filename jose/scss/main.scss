@@ -48,31 +48,61 @@ figure {
 .title {
   margin: 0 0 16px;
   font-weight: 300;
+  &.is-1 {
+    font-size: 64px;
+    font-weight:800;
+  }
+  
+  &.is-2 {
+    font-size: 32px;
+  }
+  
+  &.is-3 {
+    font-size: 24px;
+  }
+  
+  &.is-5 {
+    font-size: 20px;
+  }
+  
+  ~.subtitle {
+    margin-top: -16px;
+  }
+  
 }
 
 .subtitle {
+  margin-top:-8px;
   font-weight: 300;
+  &.is-1 {
+    font-size: 64px;
+    font-weight:800;
+  }
+  
+  &.is-2 {
+    font-size: 32px;
+  }
+  
+  &.is-3 {
+    font-size: 24px;
+  }
+  
+  &.is-4 {
+    font-size: 20px;
+  }
+  
+  &.is-5 {
+    font-size: 18px;
+  }
 }
 
-.title.is-1 {
-  font-size: 64px;
-  font-weight:800;
+.subtitle{
+  margin-top:-8px;
 }
 
-.title.is-2 {
-  font-size: 32px;
-}
-
-.title.is-3 {
-  font-size: 24px;
-}
-
-.title.is-5 {
-  font-size: 20px;
-}
-
-.title~.subtitle {
-  margin-top: -16px;
+.hero__title{
+  @extend.title;
+  @extend.title.is-1;
 }
 
 .link{
@@ -115,16 +145,14 @@ figure {
   vertical-align: top;
 }
 
-.header .page-title {
+.logo__page-title {
   font-weight: 600;
   color: #fff;
   vertical-align: 50%;
 }
 
-.header .navbar {
-}
 
-.navbar-wrapper{
+.header{
   display: flex;
   justify-content: space-between;
 }
@@ -135,9 +163,12 @@ figure {
   clear: both;
   background: #04050A;
 }
-.hero .title,
-.hero .subtitle{
-  color: #fff;
+.hero__title{
+  color:#fff;
+}
+.hero__subtitle{
+  @extend .subtitle;
+  color: #e1e1e1;
 }
 
 .hero p {
@@ -154,21 +185,70 @@ figure {
   width:100%;
 }
 
-.menu-list {
+.menu__dropdown{
+  display:none;
+  position: absolute;
+  top:35px;
+  left:0;
+  padding:8px;
+  background:#fff;
+  border-radius:$radius;
+  width:120px;
+}
+
+.dropdown__item{
+  display:block;
+  a{
+    display:block;
+    color:$text;
+    padding:16px 12px;
+    text-decoration: none;
+  }
+}
+
+.menu__item:hover {
+  .menu__dropdown{
+    display:block;
+  }
+}
+
+.menu__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.navbar .menu-list .menu-item {
+.menu__item {
   display: inline-block;
+  position:relative;
   padding: 8px;
+  > a:not(.button), span {
+    text-decoration: none;
+    color: #bbb;
+    line-height: 18px;
+  }
 }
 
-.navbar .menu-list .menu-item a:not(.button) {
-  text-decoration: none;
-  color: #bbb;
-  line-height: 18px;
+.menu__item--expandable{
+  @extend .menu__item;
+  &:after{
+    content: "\f078";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-left: 4px;
+    font-size: 12px;
+    line-height: 20px;
+    color:#e1e1e1;
+  }
+  &:hover:after{
+    content: "\f077";
+  }
+}
+
+.menu__item--active{
+  @extend .menu__item;
+
+  color:#fff;
 }
 
 .footer-nav .menu-list {
