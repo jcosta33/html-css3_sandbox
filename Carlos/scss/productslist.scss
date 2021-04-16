@@ -31,6 +31,19 @@
     display: flex;
     margin: auto;
     }
+    .ordenar-numero-produtos{
+        float: right;
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #767676;
+        select{
+            border: 1px solid #dfdfdf;
+            background-color: #fafafa;
+            font-weight: 400;
+            color: #4d4f53;
+            height: 33px;
+        }
+    }
     button{
         border: none;
         background-color: white;
@@ -53,6 +66,25 @@
             font-size: .7rem;
             color: black;
         }
+    }
+}
+.product-search{
+    float: right;
+    color: #767676;
+    input{
+        width: 300px;
+        height: 25px;
+    }
+    button{
+        border: none;
+        color: #767676;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        
     }
 }
 
