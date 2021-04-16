@@ -161,6 +161,12 @@ figure {
   padding: 8px;
 }
 
+.navbar .menu-list .menu-item a:not(.button) {
+  text-decoration: none;
+  color: #bbb;
+  line-height: 18px;
+}
+
 .footer-nav .menu-list {
 
 }

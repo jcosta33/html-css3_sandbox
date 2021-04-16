@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/productslist.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <title>Lista de produtos</title>
+</head>
+<body> 
+    <header class="header">
+        <a href="../index.html">
+           <figure class="logo">
+               <img src="../img/logo.png" alt="">
+               <span class="page-title">
+                Sandbox
+                </span>
+            </figure> 
+        </a>
+           <nav class="navbar">
+               <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../components/buttons/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../components/cards/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../components/forms/index.html">Forms</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../components/sidebar/dashboard.html">Sidebar</a>
+                    </li>     
+                    <li class="menu-item">
+                        <a href="../register.html" class="button is-success">Login</a>
+                    </li>   
+               </ul>
+           </nav>
+    </header>
+    <nav class="nav2">
+        <ul>
+            <li><a href="">PRODUTOS</a></li>|
+            <li><a href="">PROMOÇÕES</a></li>|
+            <li><a href="">NOVIDADES</a></li>|
+            <li><a href="">SERVIÇOS</a></li>|
+            <li><a href="">LOJAS ABERTAS</a></li>|
+            <li><a href="">OUTLET</a></li>|
+            <li><a href="">EMPRESAS</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div>
+        <p style="font-size: .8125rem;
+        color: #4d4f53;
+        line-height: inherit;
+        margin: 10px;">
+        Grandes Eletrodomésticos <i class="fas fa-chevron-right"></i> Máquina de roupa
+        </p>
+        <span style="font-size: .875rem;
+        display: inline-block;
+        font-weight: 700;
+        line-height: 1;
+        padding-bottom: .3333333333rem;
+        padding-left: .5rem;">Máquinas de Lavar roupa</span>
+        <div class="product-search">
+            <input type="text" placeholder="O que estás à procura?">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        </div>
+        <div class="pub-products">
+            <figure>
+                <img src="../img/pub-products.png" alt="">
+            </figure>
+        </div>
+            <div class="filtros column is-3">
+                FILTROS <hr>
+                    <div class="listafiltors">
+                    <div class="filtronome">
+                        <i class="fas fa-chevron-up"></i>Marca<br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">AEG</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">SAMSUNG</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">CANDY</label>
+                    </div>
+                    <div class="filtronome">
+                        <i class="fas fa-chevron-up"></i>Capacidade<br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">10Kg</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">11Kg</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">12Kg</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">13Kg</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">14Kg</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">15Kg</label>
+                    </div>
+                    <div class="filtronome">
+                        <i class="fas fa-chevron-up"></i>Classe Energética<br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">AEG</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">SAMSUNG</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">CANDY</label>
+                    </div>
+                </div>
+            </div>
+        <div class="listaprodutos column is-9" style="margin-left: 5px;">
+            <div class="ordenar-numero-produtos">
+                1-24 de 126 produtos | Artigos por pagina <select><option value="">12</option><option value="">24</option><option value="">48</option></select> <select><option value="">Relevância</option><option value="">Nome</option><option value="">Preço Ascendente</option><option value="">Preço Descendente</option></select>
+            </div>
+            <div class="column is-12">
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <hr>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <hr>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <hr>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+            <div class="card column is-4">
+                <figure class="product-image">
+                    <img src="../img/products-img/maquina1.jpg" alt="">
+                </figure>
+                 <div class="product-discretion">
+                    <h4>Máquina de Lavar Roupa SAMSUNG</h4>
+                    <div class="star">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <em class="n">(50)</em>
+                    </div>
+                    <h2>€999.99</h2>
+                    <button class="button is-buy">Comprar</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <nav class="fotter-nav">
+            <div class="column is-3">
+                <figure class="logo">
+                    <img src="../img/logo.png" alt="">
+                    <span>Sanbox</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum adipisci quas deleniti expedita illo quidem.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </figure>
+            </div>
+            <div class="column is-3">
+                <ul>
+                    <li><a href="">Alexandre</a></li>
+                    <li><a href="">Carlos Campos</a></li>
+                    <li><a href="">Inês Correia</a></li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <ul>
+                    <li><a href="">Pedro Barbosa</a></li>
+                    <li><a href="">Tânia Vieira</a></li>
+                    <li><a href="">Vitor Coelho</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
