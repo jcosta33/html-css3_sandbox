@@ -1,0 +1,174 @@
+a {
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #BCBCBD;
+}
+
+figure {
+    margin: 0;
+}
+
+.title {
+    margin: 0 0 16px;
+}
+
+.title.is-1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    line-height: 28.13px;
+}
+
+.header {
+    padding: 8px;
+}
+
+.header .logo {
+    float: left;
+    padding: 8px;
+    margin: 0;
+    padding: 4px 0 0;
+    }
+
+.header .logo img{
+        height:32px;
+        border-radius:8px;
+      }
+
+.header .page-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.page-titleCV{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    padding-left: 28px;
+    font-size: 18px;
+}
+
+.header .navbar {
+    float: right;
+}
+
+.hero {
+    margin: 64px 0 32px;
+    clear: both;
+}
+
+.hero .title {
+    margin-top: 64px;
+}
+
+.hero .image {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 10px 10px 0 0;
+    margin: 0;
+    float: right;
+}
+
+.menu-list .menu-item {
+    display: inline-block;
+    padding: 8px;
+}
+
+.menu-list .menu-item a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #111;
+    line-height: 16px;
+    
+}
+
+.menu-list .menu-item a:visited {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #0057FF;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #fff;
+}
+
+.card>.card-content {
+    padding: 16px;
+}
+
+.footer {
+    background: #BCBCBD;
+    padding: 32px;
+}
+
+.footer .title {
+    color: rgb(12, 12, 12);
+}
+
+.footer .logo {
+    float: left;
+    padding: 8px;
+    margin: 0;
+    padding: 4px 0 0;
+    }
+
+.footer .logo img{
+        height:32px;
+        border-radius:8px;
+      }
+
+.footer p,
+.footer label,
+.footer a,
+.footer span {
+    color: #0c0c0c;
+}
+
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.column.is-3 {
+    width: 24.5%;
+}
+
+.column.is-4 {
+    width: 33%;
+}
+
+.column.is-6 {
+    width: 49.7%;
+}

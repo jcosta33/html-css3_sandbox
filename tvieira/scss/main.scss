@@ -5,8 +5,8 @@
 @import 'components/header.scss';
 @import 'components/footer.scss';
 @import 'components/tabs.scss';
-@import 'mixin.scss';
-@import 'variables.scss';
+@import 'components/mixin.scss';
+@import 'components/variables.scss';
 
     body{
         margin:0px;
@@ -43,6 +43,10 @@
 
     figure{
         margin:0;
+    }
+
+    .image img{
+        max-width:100%
     }
 
     .title{
@@ -144,20 +148,22 @@
     .hero{
         margin: 64px 0 32px;
         margin:0;
-        position: relative;
         clear:both; /*depois de um float deve ser inserido*/
         background: #373737;
     }
 
-    .hero .title{
+    .hero .title,
+    .hero .subtitle {
         margin-top:64px;
+        color: #ffffff;
     }
 
-    .hero .title {
-        color: #ef6021;
+    .hero .subtitle{
+        color: #ffffff;
     }
 
-    .hero .subtitle,{
+    .hero .title~.subtitle{
+        margin-top:0;
         color: #ffffff;
     }
 
@@ -167,7 +173,7 @@
 
     .hero .image{
         width:100%;
-        padding: 48px;
+        padding: 16px;
         box-sizing:border-box;
     }
 

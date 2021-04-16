@@ -1,2 +1,41 @@
 @import 'mixin.scss';
 @import 'variables.scss';
+
+.footer .logo img{
+    height: 32px;
+    filter:invert(100%);
+    border-radius: 8px;
+}
+
+.footer-nav .logo span{
+    vertical-align: 62%;
+}
+
+
+.footer-nav .menu-list {
+    display: inline-block;
+    padding: 8px;
+}
+
+.footer-nav .menu-list .menu-item a{
+    text-decoration: none;
+    line-height:18px;
+    color: #fff;
+}
+
+
+.footer{
+    background-color:#333;
+    padding: 32px;
+}
+
+.footer .title{
+    color: white;
+}
+
+.footer p,
+.footer label,
+.footer a,
+.footer span {
+    color: #fff;
+}
