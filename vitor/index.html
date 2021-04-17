@@ -1,56 +1,78 @@
+<!-- The shortcut to make structure of HTML is (!) -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML/CSS3 Sandbox</title>
-    <title>Sandbox</title>
+    <title>SPLASH | HTML5-CSS3 </title>
+    <title>SPLASH | Creative colors</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
+<!-- Body structure is (header) (section>content) and (footer) -->
 <body>
-
     <header class="header">
-        <div class="navbar-wrapper">
-            <a href="index.html">
-                <figure class="logo">
-                    <img src="images/company_logo.png" alt="Company logo">
-                    <span class="page-title">
-                        Sandbox
-                    </span>
-                </figure>
-            </a>
+        <a href="index.html">
+            <figure class="logo">
+                <img src="images/splash_logo.png" alt="Splash logo">
+                <span class="page-title">
+                    Splash
+                </span>
+            </figure>
+        </a>
 
-            <nav class="navbar">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a href="components/buttons/index.html">Buttons</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="components/cards/index.html">Cards</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="components/forms/index.html">Forms</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="components/sidebar/index.html">Sidebar</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="login.html" class="button is-success is-small" style="margin-left:16px;">Login</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item-active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="products/index.html">Products</a>
+                </li>
+                <li class="menu-item">
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="menu-item-expandable">
+                    <span>Components</span>
+                    <ul class="menu-dropdown menu-list">
+                        <li class="dropdown-item">
+                            <a href="components/buttons/index.html">Buttons</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/cards/index.html">Cards</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/forms/index.html">Forms</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/grid/index.html">Grid</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/sidebar/index.html">Sidebar</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/slider/index.html">Slider</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/table/index.html">Table</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/tabs/index.html">Tabs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="login.html" class="button is-sucess is-small" style="margin-left: 16px;">Login</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main id="content">
@@ -58,14 +80,12 @@
             <div class="container">
                 <div class="row">
                     <div class="column is-7 is-vertical-top">
-                        <h1 class="title is-1">
-                            The platform for local-first software.
+                        <h1 class="hero-title">
+                            The creative platform for your color selection.
                         </h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Deserunt facere non iure totam, a asperiores
-                            qui perferendis debitis sed aliquam.
-                        </p>
+                        <h2 class="hero-subtitle">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque cumque earum laboriosam modi velit pariatur voluptates libero ipsam porro?
+                        </h2>
                         <div class="row is-small">
                             <div class="column is-7">
                                 <div class="field">
@@ -74,32 +94,32 @@
                                 </div>
                             </div>
                             <div class="column is-5">
-                                <button type="button" class="button is-primary">Get early access</button>
+                                <button type="button" class="button is-primary">Get access</button>
                             </div>
                         </div>
                     </div>
 
                     <figure class="column is-5">
-                        <img class="image" src="images/undraw_jason_mask.svg" alt="Hero image">
+                        <img class="image" src="images/undraw_mello.svg" alt="Splash">
                     </figure>
                 </div>
             </div>
         </section>
+
         <section class="main-section">
-            <div class="container">
+            <div class="main-container">
                 <div class="row">
                     <div class="column is-4">
                         <div class="card">
                             <div class="card-content">
-                                <span class="icon is-yellow">
-                                    <i class="fas fa-chart-bar"></i>
+                                <span class="icon is-green">
+                                    <i class="fas fa-palette"></i>
                                 </span>
                                 <h3>Section 1</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Natus quasi recusandae cupiditate commodi doloribus voluptatem sit aut dolore?
-                                    Praesentium,
-                                    doloremque?
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Quasi fuga, tempora nulla harum magnam reiciendis
+                                    temporibus dolor nisi ducimus deserunt?
                                 </p>
                             </div>
                         </div>
@@ -107,15 +127,14 @@
                     <div class="column is-4">
                         <div class="card">
                             <div class="card-content">
-                                <span class="icon is-yellow">
-                                    <i class="fas fa-chart-bar"></i>
+                                <span class="icon is-blue">
+                                    <i class="fas fa-users"></i>
                                 </span>
-                                <h3>Section 1</h3>
+                                <h3>Section 2</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Natus quasi recusandae cupiditate commodi doloribus voluptatem sit aut dolore?
-                                    Praesentium,
-                                    doloremque?
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Quasi fuga, tempora nulla harum magnam reiciendis
+                                    temporibus dolor nisi ducimus deserunt?
                                 </p>
                             </div>
                         </div>
@@ -123,67 +142,66 @@
                     <div class="column is-4">
                         <div class="card">
                             <div class="card-content">
-                                <span class="icon is-yellow">
-                                    <i class="fas fa-chart-bar"></i>
+                                <span class="icon is-red">
+                                    <i class="fas fa-search"></i>
                                 </span>
-                                <h3>Section 1</h3>
+                                <h3>Section 3</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Natus quasi recusandae cupiditate commodi doloribus voluptatem sit aut dolore?
-                                    Praesentium,
-                                    doloremque?
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Quasi fuga, tempora nulla harum magnam reiciendis
+                                    temporibus dolor nisi ducimus deserunt?
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <h3 class="title is-3">
-                    Products
-                </h3>
-                <div class="row is-multiline" id="product-row">
-                    <div class="column is-6">
-                        <div class="card product-card">
-                            <div class="card-content">
-                                <figure class="product-image">
-                                </figure>
-                                <div class="product-detail">
-                                    <h4 class="title is-4">
-                                        Cold Pressed Bitality Shot - 250ml
-                                    </h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, qui!</p>
-                                    <span class="sales-price">$299</span>
-                                    <span class="price">$399</span>
-                                    <div class="buttons">
-                                        <button type="button" class="button is-primary">
-                                            Buy now!
-                                        </button>
-                                        <a href="products/product-1.html" type="button" class="button">
-                                            Learn more
-                                        </a>
+                    <h3 class="title is-3">
+                        Products
+                    </h3>
+                    <div class="row is multiline" id="producto-row">
+                        <div class="column is-6">
+                            <div class="card product-card">
+                                <div class="card-content">
+                                    <figure class="product-image">
+                                    </figure>
+                                    <div class="product-detail">
+                                        <h4 class="title is-4">
+                                            SWISS WOOD Pencils Gift Set
+                                        </h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+                                        <span class="sales-price">€ 40,20</span>
+                                        <span class="price">€ 20,99</span>
+                                        <div class="buttons">
+                                            <button type="button" class="button is-primary">
+                                                Buy Now
+                                            </button>
+                                            <a href="products/product.html" type="button" class="button">
+                                                Learn more
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="card product-card">
-                            <div class="card-content">
-                                <figure class="product-image">
-                                </figure>
-                                <div class="product-detail">
-                                    <h4 class="title is-4">
-                                        Cold Pressed Bitality Shot - 250ml
-                                    </h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, qui!</p>
-                                    <span class="sales-price">$299</span>
-                                    <span class="price">$399</span>
-                                    <div class="buttons">
-                                        <button type="button" class="button is-primary">
-                                            Buy now!
-                                        </button>
-                                        <a href="products/cold-pressed-bitality-1.html" type="button" class="button">
-                                            Learn more
-                                        </a>
+                        <div class="column is-6">
+                            <div class="card product-card">
+                                <div class="card-content">
+                                    <figure class="product-image">
+                                    </figure>
+                                    <div class="product-detail">
+                                        <h4 class="title is-4">
+                                            SWISS WOOD Pencils Gift Set
+                                        </h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+                                        <span class="sales-price">€ 40,20</span>
+                                        <span class="price">€ 20,99</span>
+                                        <div class="buttons">
+                                            <button type="button" class="button is-primary">
+                                                Buy Now
+                                            </button>
+                                            <a href="products/swiss-wood-pencils-set.html" type="button" class="button">
+                                                Learn more
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -192,60 +210,70 @@
                 </div>
             </div>
 
-            </div>
+
         </section>
+
+
+        
+
+
+        
+        
+
+
+
     </main>
 
     <footer class="footer">
         <nav class="footer-nav">
-            <div class="row">
-
-                <div class="column is-3">
-                    <figure class="logo">
-                        <img src="images/company_logo.png" alt="Company logo">
-                        <span>Sandbox</span>
-                    </figure>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, cum.</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="column is-3">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="Alexandre/index.html" target="_blank">Alexandre</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="Carlos/index.html" target="_blank">Carlos Campos</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="column is-3">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="inesCorreia/index.html" target="_blank">Inês Correia</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="pedro/index.html" target="_blank">Pedro Barbosa</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column is-3">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="tvieira/index.html" target="_blank">Tânia Vieira</a>
-                        </li>
-
-                        <li class="menu-item">
-                            <a href="vitor/index.html" target="_blank">Vitor Coelho</a>
-                        </li>
-                    </ul>
-                </div>
-
+            <div class="column is-3">
+                <figure class="logo">
+                    <img src="images/splash_logo.png" alt="Splash Logo">
+                    <span class="page-title">
+                        Splash
+                    </span>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iste!</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="column is-3">
+                <ul class="menu-list"> 
+                    <!-- lists | we can create many lists by ex:(ul>li*5) and create 5 lists -->
+                    <li class="menu-item">
+                        <!-- (a) from anchor | target attribute will inform us when will open the new window -->
+                        <a href="Alexandre/index.html" target="_blank">Alexandre Pires</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="Carlos/index.html" target="_blank">Carlos Campos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="inesfolder/index.html" target="_blank">Inês Correia</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="pedro/index.html" target="_blank">Pedrto Barbosa</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="tvieira/index.html" target="_blank">Tânia Vieira</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="jose/index.html" target="_blank">Vitor Coelho</a>
+                    </li>
+                </ul>
             </div>
         </nav>
-
     </footer>
 
+    <div>
+        <h6 class="rights"> Splash &copy; all rights reserved </h6>
+    </div>
+    
 </body>
-
 </html>

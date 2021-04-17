@@ -1,139 +1,179 @@
-/* Tag selector = 1 point ex:(div) */
-/* Class selector = 10 points ex:(.column) */
-/* Id selector = 100 points ex:(#specific...) */
-/* other exceptions (>) (!important) (!important-in-line) */
 body {
   margin: 0;
   background: #f1f1f1;
   font-family: Roboto;
   font-size: 16px; }
 
+/* questions about this */
+*, ::after, ::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box; }
+
+/* questions about this */
 .has-background-primary {
-  background-color: #099e76; }
+  background-color: #4a917e; }
 
+/* questions about this */
 .has-text-primary {
-  color: #099e76; }
+  color: #4a917e; }
 
-figure {
+p {
   margin: 0; }
 
-.title {
+.title, .hero-title {
   margin: 0 0 16px;
   font-weight: 600; }
+  .title.is-1, .hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    font-family: londina Solid; }
+  .title.is-2, .is-2.hero-title {
+    font-size: 32px; }
+  .title.is-3, .is-3.hero-title {
+    font-size: 24px; }
+  .title.is-5, .is-5.hero-title {
+    font-size: 20px; }
+  .title ~ .subtitle, .hero-title ~ .subtitle {
+    margin-top: -16px;
+    font-family: Londrina Solid; }
 
 .subtitle {
-  font-weight: 400;
-  font-size: 14px;
-  font-family: Roboto;
-  margin: -16px 0 24px 0; }
+  margin-top: -8px;
+  font-weight: 300; }
+  .subtitle.is-1 {
+    font-size: 64px;
+    font-weight: 800; }
+  .subtitle.is-2 {
+    font-size: 32px; }
+  .subtitle.is-3, .hero-subtitle {
+    font-size: 24px; }
+  .subtitle.is-4 {
+    font-size: 20px; }
+  .subtitle.is-5 {
+    font-size: 18px; }
 
-.title.is-1 {
-  font-size: 48px;
-  font-family: Londrina Solid; }
+.hero {
+  padding: 64px 0 32px;
+  margin: 0;
+  clear: both;
+  background: #04050A; }
 
-/* we put (~) to define hierarchies */
-.title.is-1 ~ .subtitle {
-  font-size: 18px;
-  font-family: Londrina Solid;
-  color: #df798c;
-  margin: -16px 0 24px 0; }
+.hero-title {
+  color: #f1f1f1; }
 
-.title.is-10 {
-  font-size: 11px;
-  color: #555;
-  font-weight: 300;
-  font-family: Roboto;
-  text-align: center;
-  padding: 8px; }
+.hero-subtitle {
+  color: #f1f1f1; }
+
+.hero p {
+  color: #bbb; }
+
+.hero .image {
+  max-width: 100%;
+  padding: 16px;
+  box-sizing: border-box; }
+
+.hero .button {
+  width: 100%; }
+
+.link {
+  color: #4a917e;
+  text-decoration: underline; }
+
+.link:hover {
+  color: #575757; }
 
 .header {
-  background: #DEF6E5;
-  padding: 8px;
-  min-height: 68px; }
-
-.header .logo img {
-  height: 60px; }
+  background: #04050A;
+  padding: 16px;
+  min-height: 40px; }
 
 .header .logo {
   float: left;
   padding: 8px;
-  margin: 0; }
+  margin: 0;
+  padding: 4px 0 0; }
+
+.header .logo img {
+  height: 60px; }
 
 .header .page-title {
   font-weight: 42px;
   vertical-align: 100%;
-  color: #212741;
+  color: #e6e6e6;
   font-family: Londrina Solid; }
 
-.header .navbar {
-  float: right; }
+.header {
+  display: flex;
+  justify-content: space-between; }
 
-.hero {
-  margin: 64px 0 28px;
-  clear: both; }
+figure {
+  margin: 0; }
 
-.hero .title {
-  margin-top: 72px; }
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  padding: 8px;
+  background: #fff;
+  border-radius: 4px;
+  width: 120px; }
 
-.hero .title
-.hero .subtitle
-.hero p {
-  color: #212741; }
+.dropdown-item {
+  display: block; }
+  .dropdown-item a {
+    display: block;
+    color: #04050A;
+    padding: 16px 12px;
+    text-decoration: none; }
 
-.hero .image {
-  max-width: 100%;
-  padding: 48px;
-  box-sizing: border-box; }
+.menu-item:hover .menu-dropdown, .menu-item-expandable:hover .menu-dropdown, .menu-item-active:hover .menu-dropdown {
+  display: block; }
 
 .menu-list {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-.navbar .menu-list .menu-item {
+.menu-item, .menu-item-expandable, .menu-item-active {
   display: inline-block;
+  position: relative;
   margin-top: 22px;
   padding: 8px; }
+  .menu-item > a:not(.button), .menu-item-expandable > a:not(.button), .menu-item-active > a:not(.button), .menu-item span, .menu-item-expandable span, .menu-item-active span {
+    text-decoration: none;
+    font-size: 14px;
+    color: #e6e6e6;
+    line-height: 18px; }
 
-.navbar .menu-list .menu-item a {
+.menu-item a, .menu-item-expandable a, .menu-item-active a {
   text-decoration: none;
   font-size: 14px;
-  color: #212741;
+  color: #e6e6e6;
   line-height: 18px; }
 
-.container {
-  width: 800px;
-  margin: 0 auto; }
+.menu-item-expandable:after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #04050A; }
 
-.card {
-  background: #fff; }
+.menu-item-expandable:hover:after {
+  content: "\f077"; }
 
-.card > .card-content {
-  padding: 16px;
-  box-shadow: #a1a1a1; }
-
-.icon {
-  padding: 8px;
-  border-radius: 100%; }
-
-.icon.is-green {
-  background: #DEF6E5;
-  color: #78c790; }
-
-.icon.is-blue {
-  background: #e9f2ff;
-  color: #82a9db; }
-
-.icon.is-red {
-  background: #ffe9ef;
-  color: #df798c; }
+.menu-item-active {
+  color: #4a917e; }
 
 .footer-nav .menu-list {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-.footer-nav .column.is-3 .menu-list .menu-item a {
+.footer-nav .column.is-3 .menu-list .menu-item a, .footer-nav .column.is-3 .menu-list .menu-item-expandable a, .footer-nav .column.is-3 .menu-list .menu-item-active a {
   text-decoration: none;
   font-size: 12px; }
 
@@ -147,7 +187,7 @@ figure {
   color: #ffffff;
   font-family: Londrina Solid; }
 
-.footer .title {
+.footer .title, .footer .hero-title {
   color: #fff; }
 
 .footer {
@@ -177,3 +217,10 @@ figure {
 
 .column.is-6 {
   width: 49.7%; }
+
+.rights {
+  font-size: 12px;
+  color: #555;
+  font-weight: 300;
+  font-family: Roboto;
+  text-align: center; }
