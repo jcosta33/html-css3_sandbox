@@ -17,6 +17,7 @@ $button-text-color:#fff;
   }
 }
 
+
 .button{
   &:not(.is-small){
     @extend %control;

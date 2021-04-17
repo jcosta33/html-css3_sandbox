@@ -1,0 +1,112 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+$button-border:1px solid transparent;
+$button-border-hover:1px solid transparent;
+$button-text-color:#fff;
+
+.buttons {
+  display: flex;
+  margin-top:16px;
+
+  &.is-aligned-right{
+    justify-content: flex-end;
+  }
+  &.is-spaced-between{
+    justify-content: space-between;
+  }
+}
+
+.button{
+  &:not(.is-small){
+    @extend %control;
+  }
+
+  &.is-small{
+    @extend %control-small;
+  }
+
+  color:$button-text-color;
+  background-color:#333;
+  text-decoration: none;
+
+  &:not(:last-child){
+    margin-right:8px;
+  }
+
+  &.is-fullwidth{
+    width:100%;
+  }
+
+  &.is-large{
+    font-size: 20px;
+  }
+
+  /*
+    Button primary
+  */
+
+  &.is-primary{
+    background: darken($primary, 10%);
+    background-color: $primary;
+    &:hover{
+      cursor: pointer;
+      background: darken($primary, 10%);
+    }
+  }
+
+  /*
+    Button success
+  */
+
+  &.is-success{
+    border-color: darken($success, 10%);
+    background-color:$success;
+    &:hover{
+      cursor: pointer;
+      background: darken($success, 10%);
+    }
+  }
+
+  &.is-info{
+    background-color:$info;
+    border-color: darken($info, 10%);
+
+    &:hover{
+      cursor: pointer;
+      background: darken($info, 10%);
+    }
+  }
+
+  &.is-danger{
+    border-color: darken($danger, 10%);
+    background-color:$danger;
+    &:hover{
+      cursor: pointer;
+      background: darken($danger, 10%);
+    }
+  }
+
+  /*
+    Button warning TODO
+  */
+
+  &.is-warning{
+    border-color:#c77802;
+    background-color:$warning;
+    &:hover{
+      cursor: pointer;
+      background-color: #c77802;
+    }
+  }
+}
+
+/*
+ Page specific styles, not to be used in component
+*/
+
+
+.buttons-page code{
+  float:right;
+  line-height:42px;
+}
