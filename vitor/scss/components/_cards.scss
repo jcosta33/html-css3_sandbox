@@ -1,1 +1,14 @@
-// page test
+@import 'variables.scss';
+
+$background:#fff;
+$padding:16px;
+
+.card{
+  display:block;
+  background:$background;
+  border-radius:$radius;
+  .card-content{
+    padding:$padding;
+    box-sizing: border-box;
+  }
+}
