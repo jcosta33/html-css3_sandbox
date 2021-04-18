@@ -1,0 +1,16 @@
+@import 'variables.scss';
+.tags{
+  display:flex;
+}
+
+.tag{
+  padding:8px;
+  &.is-primary{
+    background-color: $primary;
+    color:#fff;
+  }
+  &.is-yellow{
+    background-color: $warning;
+    color:#000;
+  }
+}

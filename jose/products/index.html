@@ -11,108 +11,263 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/products.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/products.css" />
 </head>
 
 <body>
   <header class="header">
-    <div class="navbar-wrapper">
-      <a href="index.html">
-        <figure class="logo">
-          <img src="images/company_logo.png" alt="Company logo">
-          <span class="page-title">
-            Sandbox
-          </span>
-        </figure>
-      </a>
+    <a href="index.html">
+      <figure class="logo">
+        <img src="images/company_logo.png" alt="Company logo">
+        <span class="logo__page-title">
+          Sandbox
+        </span>
+      </figure>
+    </a>
 
-      <nav class="navbar">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a href="../products/index.html">Products</a>
-          </li>
-          <li class="menu-item">
-            <a href="../dashboard.html">Dashboard</a>
-          </li>
-          <li class="menu-item">
-            <a href="../components/buttons/index.html">Buttons</a>
-          </li>
-          <li class="menu-item">
-            <a href="../components/cards/index.html">Cards</a>
-          </li>
-          <li class="menu-item">
-            <a href="../components/forms/index.html">Forms</a>
-          </li>
-          <li class="menu-item">
-            <a href="../components/sidebar/index.html">Sidebar</a>
-          </li>
-          <li class="menu-item">
-            <a href="../login.html" class="button is-success is-small" style="margin-left:16px;">Login</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item--active">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="products/index.html">Products</a>
+        </li>
+        <li class="menu__item">
+          <a href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="menu__item--expandable">
+          <span>Components</span>
+          <ul class="menu__dropdown menu__list">
+            <li class="dropdown__item">
+              <a href="components/cards/index.html">Cards</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/forms/index.html">Forms</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/grid/index.html">Grid</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/sidebar/index.html">Sidebar</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/table/index.html">Table</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/tabs/tabs.html">Tabs</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/slider/index.html">Slider</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="login.html" class="button is-success is-small" style="margin-left:16px;">Login</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main id="content">
-    <ul class="breadcrumb">
-      <li>Products</li>
-      <li>Maquinas de lavar roupa</li>
-    </ul>
-    <section class="section product-banner">
-      <figure class="image">
-        <img src="" alt="">
+    <div class="container">
+      <section class="section product-section">
+        <ul class="breadcrumb">
+          <li>Products</li>
+          <li>Maquinas de lavar roupa</li>
+        </ul>
+        <div class="banner">
+          <figure class="image">
+            <img src="https://unsplash.com/photos/qCbctB66bp4/download?force=true" alt="">
+          </figure>
+          <div class="banner__detail">
+            <h1 class="title is-3">
+              Lorem, ipsum dolor.
+            </h1>
+            <h2 class="subtitle is-4">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, ex!
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque non suscipit ipsa provident distinctio tempora voluptatem iste libero, nostrum natus.
+            </p>
+          </div>
         </div>
-    </section>
-    <section class="section product-section">
-      <div class="row">
-        <div class="columns is-3">
-          <div class="card">
-            <div class="card-content">
-              <label>
-                <span class="icon">
-                  <i class="fa fa-ico"></i>
-                </span>
-                What are your favorite movie genres (from a list of 3)
-              </label>
-              <div class="control">
-                <label for="checkbox-movies-comedy">Comedy</label>
-                <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
-              </div>
-              <div class="control">
-                <label for="checkbox-movies-action">Action</label>
-                <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
-              </div>
-              <div class="control">
-                <label for="checkbox-movies-thriller">Thriller</label>
-                <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox" checked />
+        <div class="row">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-content">
+                <label>
+                  <span class="icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  Best choices
+                </label>
+                <div class="control">
+                  <label for="checkbox-movies-comedy">Comedy</label>
+                  <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-action">Action</label>
+                  <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-thriller">Thriller</label>
+                  <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox"
+                    checked />
+                </div>
+                <label>
+                  <span class="icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  Best choices
+                </label>
+                <div class="control">
+                  <label for="checkbox-movies-comedy">Comedy</label>
+                  <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-action">Action</label>
+                  <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-thriller">Thriller</label>
+                  <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox"
+                    checked />
+                </div>
+                <label>
+                  <span class="icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  Best choices
+                </label>
+                <div class="control">
+                  <label for="checkbox-movies-comedy">Comedy</label>
+                  <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-action">Action</label>
+                  <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-thriller">Thriller</label>
+                  <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox"
+                    checked />
+                </div>
               </div>
             </div>
-          </div>
 
-        </div>
-        <div class="columns is-9">
-          <div class="card">
-            <div class="card-content">
-              <div class="product-controls">
-                <span>
-                  1 - 24 de 127 produtos | Artigos por página:
-                </span>
-                <!-- inputs -->
-                <!-- inputs -->
-              </div>
-              <div class="products-list">
-                <div class="row">
-                  <div class="column is-4">
-                    <!--Product card-->
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="product-controls">
+                  <span>
+                    1 - 24 de 127 produtos | Artigos por página:
+                  </span>
+                  <select name="select_pet" id="select-pet" class="select is-small">
+                    <option value="dog">
+                      24
+                    </option>
+                    <option value="cat">
+                      32
+                    </option>
+                  </select>
+
+                  <select name="select_pet" id="select-pet" class="select is-small">
+                    <option value="rel">
+                      Relevancia
+                    </option>
+                    <option value="nome">
+                      Nome
+                    </option>
+                    <option value="preco">
+                      Preço
+                    </option>
+                  </select>
+                </div>
+                <div class="products-list">
+                  <div class="row is-multiline">
+                    <div class="column is-4">
+                      <article class="product">
+                        <figure class="product__image">
+                          <img src="https://unsplash.com/photos/164_6wVEHfI/download?force=true" alt="">
+                        </figure>
+                        <a href="product-1.html" class="product__detail">
+                          <h3 class="title is-4">
+                            Jogo Nintendo Switch Super Mario 3D World + Bowser's Fury
+                          </h3>
+                          <div class="stars">
+                            <span class="icon">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="icon">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="icon">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="icon">
+                              <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="icon">
+                              <i class="far fa-star"></i>
+                            </span>
+                          </div>
+
+                          <p class="sales-price">$299</p>
+                          <p class="price">$399</p>
+
+                          <p style="margin-bottom:16px;">
+                            <span class="has-text-green">
+                              <i class="fas fa-star" style="display:inline-block;margin-right:4px;"></i>
+                              Disponível
+                            </span>
+                          </p>
+                        </a>
+
+                        <div class="product__tags">
+                          <span class="product__tag is-yellow">
+                            Something
+                          </span>
+                          <span class="product__tag is-yellow">
+                            Other thing
+                          </span>
+                        </div>
+
+                      </article>
+                    </div>
+
+                  </div>
+
+                  <div class="pagination">
+                    <div class="page--active">
+                      <a href="" class="page__item">1</a>
+                    </div>
+                    <div class="page">
+                      <a href="" class="page__item">2</a>
+                    </div>
+                    <div class="page">
+                      <a href="" class="page__item">3</a>
+                    </div>
+                    <div class="page">
+                      <span class="page__item--separator">...</span>
+                    </div>
+                    <div class="page">
+                      <span class="page__item">7</span>
+                    </div>
+                    <div class="page">
+                      <span class="page__item"><i class="fas fa-chevron-right" style="font-size:80%"></i></span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+
+      </section>
+    </div>
+
   </main>
 
 </body>
