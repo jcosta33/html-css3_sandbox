@@ -1,4 +1,4 @@
-
+@import 'components/buttons.scss';
 @import 'components/grid.scss';
 @import 'components/variables.scss';
 
@@ -102,7 +102,7 @@ section{
   padding: 24px 0 0;
   margin: 0;
   clear: both;
-  background: #04050A
+  background: #04050A;
 }
 
 .hero-title{
@@ -113,9 +113,23 @@ section{
   font-weight:400;
 }
 
+.hero-title-buttons {
+  @extend.title;
+  @extend.title.is-1;
+  margin-top: 68px;
+  color: #04050A;
+  font-weight:400;
+}
+
 .hero-subtitle{
   @extend.subtitle.is-5;
   color: #e6e6e6;
+  font-weight:200;
+}
+
+.hero-subtitle-buttons{
+  @extend.subtitle.is-5;
+  color: #04050A;
   font-weight:200;
 }
 

@@ -1,3 +1,132 @@
+.button:not(.is-small) {
+  position: relative;
+  line-height: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: .2s ease-in;
+  outline: 0 !important;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
+  line-height: 14px; }
+  .button:focus:not(.is-small), .is-focused.button:not(.is-small), .button:active:not(.is-small), .is-active.button:not(.is-small) {
+    outline: none;
+    box-shadow: none; }
+  .button[disabled]:not(.is-small),
+  fieldset[disabled] .button:not(.is-small) {
+    cursor: not-allowed; }
+
+.button.is-small {
+  position: relative;
+  line-height: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: .2s ease-in;
+  outline: 0 !important;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+  line-height: 12px; }
+  .button.is-small:focus, .is-focused.button.is-small, .button.is-small:active, .is-active.button.is-small {
+    outline: none;
+    box-shadow: none; }
+  .button.is-small[disabled],
+  fieldset[disabled] .button.is-small {
+    cursor: not-allowed; }
+
+.buttons {
+  display: flex;
+  margin-top: 16px; }
+
+.button {
+  border: 0.5px solid transparent;
+  padding: 8px 20px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #4a917e;
+  text-decoration: none; }
+  .button:not(:last-child) {
+    margin-right: 8px; }
+  .button.is-fullwidth {
+    width: 100%; }
+  .button.is-large {
+    font-size: 20px; }
+
+.button.is-primary {
+  border-color: #396f61;
+  background-color: #4a917e;
+  transition: background-color .2s ease-in; }
+  .button.is-primary:hover {
+    cursor: pointer;
+    background-color: #1e7c3e; }
+
+.button.is-secondary {
+  border-color: #3e3e3e;
+  background-color: #575757;
+  transition: background-color .2s ease-in; }
+  .button.is-secondary:hover {
+    cursor: pointer;
+    background-color: #3e3e3e; }
+
+.button.is-secondary .get-acess {
+  margin: 0px 60px 0 0; }
+  .button.is-secondary .get-acess:hover {
+    cursor: pointer;
+    background-color: #3e3e3e; }
+
+.button.is-danger {
+  border-color: #8d1121;
+  background-color: #bb162c;
+  transition: background-color .2s ease-in; }
+  .button.is-danger:hover {
+    cursor: pointer;
+    background-color: #8d1121; }
+
+/* button success */
+.button.is-success {
+  border-color: #145329;
+  background-color: #1e7c3e;
+  transition: background-color .2s ease-in; }
+  .button.is-success:hover {
+    cursor: pointer;
+    background-color: #145329; }
+
+/* button info */
+.button.is-info {
+  border-color: #1c3760;
+  background-color: #274e88;
+  transition: background-color .2s ease-in; }
+  .button.is-info:hover {
+    cursor: pointer;
+    background-color: #1c3760; }
+
+/* button warning */
+.button.is-warning {
+  border-color: #703607;
+  background-color: #a04d0a;
+  transition: background-color .2s ease-in; }
+  .button.is-warning:hover {
+    cursor: pointer;
+    background-color: #703607; }
+
+/*
+ Page specific styles, not to be used in component
+*/
+.buttons-page {
+  margin: 22px 28px; }
+
+.buttons-page code {
+  float: right;
+  line-height: 40px; }
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -74,20 +203,20 @@ main {
 section {
   margin: 32px 16px; }
 
-.title, .hero-title {
+.title, .hero-title, .hero-title-buttons {
   margin: 0 0 16px;
   font-weight: 600; }
-  .title.is-1, .hero-title {
+  .title.is-1, .hero-title, .hero-title-buttons {
     font-size: 48px;
     font-weight: 800;
     font-family: londrina Solid; }
-  .title.is-2, .is-2.hero-title {
+  .title.is-2, .is-2.hero-title, .is-2.hero-title-buttons {
     font-size: 32px; }
-  .title.is-3, .is-3.hero-title {
+  .title.is-3, .is-3.hero-title, .is-3.hero-title-buttons {
     font-size: 24px; }
-  .title.is-5, .is-5.hero-title {
+  .title.is-5, .is-5.hero-title, .is-5.hero-title-buttons {
     font-size: 20px; }
-  .title ~ .subtitle, .hero-title ~ .subtitle {
+  .title ~ .subtitle, .hero-title ~ .subtitle, .hero-title-buttons ~ .subtitle {
     margin-top: -16px;
     font-family: Londrina Solid; }
 
@@ -103,7 +232,7 @@ section {
     font-size: 24px; }
   .subtitle.is-4 {
     font-size: 20px; }
-  .subtitle.is-5, .hero-subtitle {
+  .subtitle.is-5, .hero-subtitle, .hero-subtitle-buttons {
     font-size: 18px; }
 
 .hero {
@@ -117,11 +246,20 @@ section {
   color: #e6e6e6;
   font-weight: 400; }
 
+.hero-title-buttons {
+  margin-top: 68px;
+  color: #04050A;
+  font-weight: 400; }
+
 .hero-subtitle {
   color: #e6e6e6;
   font-weight: 200; }
 
-.title.products, .products.hero-title {
+.hero-subtitle-buttons {
+  color: #04050A;
+  font-weight: 200; }
+
+.title.products, .products.hero-title, .products.hero-title-buttons {
   font-weight: 300;
   margin-top: 16px; }
 
@@ -298,7 +436,7 @@ figure {
   font-family: Londrina Solid;
   margin-left: 8px; }
 
-.footer .title, .footer .hero-title {
+.footer .title, .footer .hero-title, .footer .hero-title-buttons {
   color: #e6e6e6; }
 
 .footer {

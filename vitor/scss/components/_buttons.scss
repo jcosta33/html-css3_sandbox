@@ -1,3 +1,131 @@
 @import 'variables.scss';
+@import 'mixins.scss';
 
-// page test
+$button-border:1px solid transparent;
+$button-border-hover:1px solid transparent;
+$button-text-color:#fff;
+
+.buttons {
+    display: flex;
+    margin-top:16px;
+}
+
+.button {
+    &:not(.is-small){
+        @extend %control;
+        }
+
+    &.is-small{
+        @extend %control-small;
+        }
+
+    border: 0.5px solid transparent;
+    padding: 8px 20px;
+    color:$button-text-color;
+    border-radius: 4px;
+    background-color:$primary;
+    text-decoration: none;
+
+    &:not(:last-child){
+        margin-right:8px;
+      }
+    
+      &.is-fullwidth{
+        width:100%;
+      }
+    
+      &.is-large{
+        font-size: 20px;
+      }
+}
+
+.button.is-primary {
+    border-color: darken($primary, 10%);
+    background-color: $primary;
+    transition: background-color .2s ease-in;
+    &:hover {
+        cursor: pointer;
+        background-color: $success;
+    }
+}
+
+.button.is-secondary {
+    border-color: darken($secondary, 10%);
+    background-color: $secondary;
+    transition: background-color .2s ease-in;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($secondary, 10%);
+    }
+}
+
+.button.is-secondary .get-acess {
+    margin: 0px 60px 0 0;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($secondary, 10%);
+    }
+}
+
+
+.button.is-danger {
+    border-color: darken($danger, 10%);
+    background-color: $danger;
+    transition: background-color .2s ease-in;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($danger, 10%);
+    }
+}
+
+/* button success */
+
+.button.is-success {
+    border-color: darken($success, 10%);
+    background-color: $success;
+    transition: background-color .2s ease-in;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($success, 10%);
+    }
+}
+
+/* button info */
+
+.button.is-info {
+    border-color: darken($info, 10%);
+    background-color: $info;
+    transition: background-color .2s ease-in;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($info, 10%);
+    }
+}
+
+/* button warning */
+
+.button.is-warning {
+    border-color: darken($warning, 10%);
+    background-color: $warning;
+    transition: background-color .2s ease-in;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($warning, 10%);
+    }
+}
+
+
+/*
+ Page specific styles, not to be used in component
+*/
+
+
+
+.buttons-page{
+    margin:22px 28px;
+}
+
+.buttons-page code{
+  float:right;
+  line-height:40px;
+}
