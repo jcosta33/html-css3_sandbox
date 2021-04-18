@@ -1,5 +1,6 @@
 @import 'components/tabs.scss';
 @import 'components/sliders.scss';
+@import 'components/tags.scss';
 
 .stars .icon{
   color:#ff9800;
@@ -12,4 +13,146 @@
 }
 .products-section .price{
   font-size:18px;
+}
+
+.breadcrumb{
+  list-style: none;
+  margin:16px 0;
+  padding:0;
+  li{
+    display:inline-block;
+    padding:8px;
+    &:not(:last-child):after{
+      content: "\f054";
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      float: right;
+      margin-left: 8px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    &:nth-child(2n) {
+      padding:0;
+    }
+  }
+}
+
+.product-section{
+  .control{
+    display:flex;
+    justify-content: space-between;
+  }
+  label{
+    display: block;
+    margin-bottom:16px;
+    &:not(:first-child){
+      margin-top:16px;
+    }
+    .icon{
+      padding:0;
+    }
+  }
+  .product{
+    position:relative;
+  }
+
+  .product__image{
+    max-width: 100%;
+    padding:4px 4px 4px 0;
+    img{
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  .product__tags{
+    position: absolute;
+    right:0;
+    top:0;
+  }
+
+  .product__tag{
+    @extend .tag;
+    display:block;
+    font-size:22px;
+    &:not(:first-child){
+      margin-top:4px;
+    }
+  }
+
+  .product__detail{
+    text-decoration: none;
+
+    .title{
+      margin-top:8px;
+      margin-bottom:4px;
+      color:#333;
+      &:hover{
+        color:$primary;
+      }
+    }
+    .sales-price{
+      font-size:24px;
+      margin-top:16px;
+    }
+    .price{
+      font-size:16px;
+      margin-bottom:16px;
+    }
+  }
+  
+  .product-controls{
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom:16px;
+    span{
+      line-height:32px;
+    }
+    select:nth-child(2){
+      min-width: 0;
+      margin: 0 8px;
+      width:auto;
+
+    }
+    select:nth-child(3){
+      min-width: 0;
+      width:auto;
+    }
+  }
+
+  .pagination{
+    display: flex;
+    justify-content:center ;
+    .page{
+      &:not(:last-child){
+        margin-right:8px;
+      }
+      .page__item{
+        display:block;
+        text-decoration: none;
+        width: 35px;
+        height:35px;
+        text-align: center;
+        background:#e1e1e1;
+        line-height:35px;
+      }
+
+      .page__item--separator{
+        line-height:35px;
+      }
+
+      &:nth-child(5){
+        .page__item{
+          background:none;
+        }
+      }
+    }
+    .page--active{
+      @extend .page;
+      .page__item{
+        background:$primary;
+        color:#fff;
+      }
+    }
+  }
 }
