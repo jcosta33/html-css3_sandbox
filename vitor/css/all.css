@@ -1,4 +1,4 @@
-.button:not(.is-small) {
+.button:not(.is-small), .input:not(.is-small), .select:not(.is-small) {
   position: relative;
   line-height: 14px;
   border-width: 1px;
@@ -13,14 +13,16 @@
   padding-right: 24px;
   height: 48px;
   line-height: 14px; }
-  .button:focus:not(.is-small), .is-focused.button:not(.is-small), .button:active:not(.is-small), .is-active.button:not(.is-small) {
+  .button:focus:not(.is-small), .input:focus:not(.is-small), .select:focus:not(.is-small), .is-focused.button:not(.is-small), .is-focused.input:not(.is-small), .is-focused.select:not(.is-small), .button:active:not(.is-small), .input:active:not(.is-small), .select:active:not(.is-small), .is-active.button:not(.is-small), .is-active.input:not(.is-small), .is-active.select:not(.is-small) {
     outline: none;
     box-shadow: none; }
-  .button[disabled]:not(.is-small),
-  fieldset[disabled] .button:not(.is-small) {
+  .button[disabled]:not(.is-small), .input[disabled]:not(.is-small), .select[disabled]:not(.is-small),
+  fieldset[disabled] .button:not(.is-small),
+  fieldset[disabled] .input:not(.is-small),
+  fieldset[disabled] .select:not(.is-small) {
     cursor: not-allowed; }
 
-.button.is-small {
+.button.is-small, .input.is-small, .select.is-small {
   position: relative;
   line-height: 14px;
   border-width: 1px;
@@ -35,11 +37,13 @@
   padding-right: 12px;
   height: 36px;
   line-height: 12px; }
-  .button.is-small:focus, .is-focused.button.is-small, .button.is-small:active, .is-active.button.is-small {
+  .button.is-small:focus, .input.is-small:focus, .select.is-small:focus, .is-focused.button.is-small, .is-focused.input.is-small, .is-focused.select.is-small, .button.is-small:active, .input.is-small:active, .select.is-small:active, .is-active.button.is-small, .is-active.input.is-small, .is-active.select.is-small {
     outline: none;
     box-shadow: none; }
-  .button.is-small[disabled],
-  fieldset[disabled] .button.is-small {
+  .button.is-small[disabled], .input.is-small[disabled], .select.is-small[disabled],
+  fieldset[disabled] .button.is-small,
+  fieldset[disabled] .input.is-small,
+  fieldset[disabled] .select.is-small {
     cursor: not-allowed; }
 
 .buttons {
@@ -121,11 +125,132 @@
  Page specific styles, not to be used in component
 */
 .buttons-page {
-  margin: 22px 28px; }
+  margin: 22px 28px 84px 28px; }
 
 .buttons-page code {
   float: right;
   line-height: 40px; }
+
+.button:not(.is-small), .input:not(.is-small), .select:not(.is-small) {
+  position: relative;
+  line-height: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: .2s ease-in;
+  outline: 0 !important;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
+  line-height: 14px; }
+  .button:focus:not(.is-small), .input:focus:not(.is-small), .select:focus:not(.is-small), .is-focused.button:not(.is-small), .is-focused.input:not(.is-small), .is-focused.select:not(.is-small), .button:active:not(.is-small), .input:active:not(.is-small), .select:active:not(.is-small), .is-active.button:not(.is-small), .is-active.input:not(.is-small), .is-active.select:not(.is-small) {
+    outline: none;
+    box-shadow: none; }
+  .button[disabled]:not(.is-small), .input[disabled]:not(.is-small), .select[disabled]:not(.is-small),
+  fieldset[disabled] .button:not(.is-small),
+  fieldset[disabled] .input:not(.is-small),
+  fieldset[disabled] .select:not(.is-small) {
+    cursor: not-allowed; }
+
+.button.is-small, .input.is-small, .select.is-small {
+  position: relative;
+  line-height: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: .2s ease-in;
+  outline: 0 !important;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+  line-height: 12px; }
+  .button.is-small:focus, .input.is-small:focus, .select.is-small:focus, .is-focused.button.is-small, .is-focused.input.is-small, .is-focused.select.is-small, .button.is-small:active, .input.is-small:active, .select.is-small:active, .is-active.button.is-small, .is-active.input.is-small, .is-active.select.is-small {
+    outline: none;
+    box-shadow: none; }
+  .button.is-small[disabled], .input.is-small[disabled], .select.is-small[disabled],
+  fieldset[disabled] .button.is-small,
+  fieldset[disabled] .input.is-small,
+  fieldset[disabled] .select.is-small {
+    cursor: not-allowed; }
+
+.field:not(:last-child) {
+  margin-bottom: 32px; }
+
+.field:hover .icon {
+  color: #000;
+  display: block; }
+
+.field input textarea select {
+  box-sizing: border-box; }
+
+.forms-page .title.is-2, .forms-page .is-2.hero-title, .forms-page .is-2.hero-title-buttons {
+  margin-top: 32px; }
+
+.form {
+  margin-top: 32px; }
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500; }
+
+.input, .select {
+  min-width: 100px;
+  width: 96%;
+  border-color: #ccc;
+  background: #f1f1f1; }
+  .input:hover, .select:hover {
+    border: 1px solid #333; }
+  .input:focus, .select:focus {
+    border: 1px solid #575757; }
+  .input.is-dark, .select.is-dark {
+    color: #fff;
+    background: #333;
+    border: 0px solid #333; }
+  .input ~ .message, .select ~ .message {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #575757; }
+    .input ~ .message.is-danger, .select ~ .message.is-danger {
+      color: #bb162c; }
+    .input ~ .message.is-info, .select ~ .message.is-info {
+      color: #274e88; }
+
+.textarea {
+  min-width: 200px;
+  min-height: 80px;
+  padding: 8px;
+  background: none;
+  border: 1px solid #555;
+  border-radius: 8px;
+  outline: 0; }
+  .textarea:hover {
+    border: 1px solid #000; }
+  .textarea:focus {
+    border: 1px solid #575757; }
+
+.select {
+  height: 40px;
+  min-width: 200px;
+  padding: 4px 8px;
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid #555; }
+
+.control {
+  display: inline-block; }
+  .control label {
+    display: inline-block;
+    font-weight: 300; }
+  .control input {
+    display: inline-block; }
 
 .row {
   display: flex;
@@ -281,9 +406,21 @@ section {
 .link:hover {
   color: #575757; }
 
+.header.splash-header {
+  background: #04050A;
+  padding: 14px;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%; }
+  .header.splash-header .menu {
+    float: right;
+    margin-right: 24px; }
+
 .header {
   background: #04050A;
-  padding: 16px;
+  padding: 14px;
   min-height: 40px;
   display: flex;
   justify-content: space-between; }
@@ -309,6 +446,9 @@ section {
 
 figure {
   margin: 0; }
+
+#content-splash {
+  padding: 90px 0 0 0; }
 
 .menu-dropdown {
   display: none;

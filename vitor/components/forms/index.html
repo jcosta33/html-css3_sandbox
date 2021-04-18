@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Buttons | SPLASH</title>
+        <title>Forms | SPLASH</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
@@ -79,10 +79,10 @@
                 <div class="row">
                     <div class="column is-12 is-vertical-top">
                         <h1 class="hero-title-buttons">
-                            Creative color selection buttons!
+                            Forms
                         </h1>
                         <h2 class="hero-subtitle-buttons">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque cumque earum laboriosam modi velit pariatur voluptates libero ipsam porro?
+                            All form inputs for all sorts of uses!
                         </h2>
                     </div>
                 </div>
@@ -90,37 +90,79 @@
             </div>
         </section>
 
-        <section class="buttons-page">
-            <code>
-                &#x3C;button class=&#x22;button is-primary&#x22;&#x3E; Click me! &#x3C;/button&#x3E;
-            </code>
-                <button class="button is-primary"> Click me! </button>
-                <hr>
-            <code>
-                &#x3C;button class=&#x22;button is-secondary&#x22;&#x3E; Click me! &#x3C;/button&#x3E;
-            </code>
-                <button class="button is-secondary"> Click me! </button>
-                <hr>
-            <code>
-                &#x3C;button class=&#x22;button is-danger&#x22;&#x3E; Click me! &#x3C;/button&#x3E;
-            </code>
-                <button class="button is-danger"> Click me! </button>
-                <hr>
-            <code>
-                &#x3C;button class=&#x22;button is-success&#x22;&#x3E; Click me! &#x3C;/button&#x3E;
-            </code>
-                <button class="button is-success"> Click me! </button>
-                <hr>
-            <code>
-                &#x3C;button class=&#x22;button is-info&#x22;&#x3E; Click me! &#x3C;/button&#x3E;
-            </code>
-                <button class="button is-info"> Click me! </button>
-                <hr>
-            <code>
-                &#x3C;button class=&#x22;button is-warning&#x22;&#x3E; Click me! &#x3C;/button&#x3E;
-            </code>
-                <button class="button is-warning"> Click me! </button>
+        <section class="forms">
+            <form class="form">
+                <div class="field">
+                    <label for="input-name">Your name</label>
+                    <input type="text" id="input-name" placeholder="Please insert your name" class="input">
+                </div>
+                <div class="field">
+                    <label for="input-siblings">Your nr of siblings</label>
+                    <input type="number" id="input-siblings" placeholder="Your number of siblings" class="input">
+                </div>
+                <div class="field">
+                    <label for="input-birth">Date of birth</label>
+                    <input type="date" id="input-birth" class="input">
+                </div>
+                <div class="field">
+                    <label for="textarea-about">About me</label>
+                    <textarea id="textarea-about" class="textarea"> </textarea>
+                    <!-- maxlength="20" -->
+                </div>
+                <div class="field">
+                    <label for="select-pet">What's your favorite type of pet</label>
+                    <select name="select_pet" id="select-pet" class="select">
+                        <option value="dog" >
+                            Dog
+                        </option>
+                        <option value="cat" >
+                            Cat
+                        </option>
+                        <option value="bird" >
+                            Bird
+                        </option>
+                        <option value="iguana" >
+                            Iguana
+                        </option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>What are your favorite movie genres (from a list of 3)</label>
+                    <div class="control">
+                        <label for="checkbox-movies-comedy">Comedy</label>
+                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" checked />
+                    </div>
+                    <div class="control">
+                        <label for="checkbox-movies-action">Action</label>
+                        <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                    </div>
+                    <div class="control">
+                        <label for="checkbox-movies-thriller">Thriller</label>
+                        <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox" />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Select a thing</label>
+                    <div class="control">
+                        <label for="radio-thing-1">Thing 1</label>
+                        <input type="radio" id="radio-thing-1" value="thing-1" name="radio-thing" class="radio" />
+                    </div>
+                    <div class="control">
+                        <label for="cradio-thing-2">Thing 2</label>
+                        <input type="radio" id="radio-thing-2" value="thing-2" name="radio-thing" class="radio" />
+                    </div>
+                    <div class="control">
+                        <label for="radio-thing-3">Thing 3</label>
+                        <input type="radio" id="radio-thing-3" value="thing-3" name="radio-thing" class="radio" />
+                    </div>
+                </div>
+                <button class="button is-secondary"> Send hugs </button>
+                <button class="button is-primary"> Submit </button>
+            </form>
         </section>
+
+        
     </main>
     
     <footer class="footer">
