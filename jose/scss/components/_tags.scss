@@ -5,9 +5,16 @@
 
 .tag{
   padding:8px;
+  border-radius:8px;
+  height:35px;
+  font-weight:600;
   &.is-primary{
     background-color: $primary;
     color:#fff;
+  }
+  &.is-aqualight{
+    color: $success;
+    background:#C9F7F4;
   }
   &.is-yellow{
     background-color: $warning;

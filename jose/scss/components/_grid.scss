@@ -3,8 +3,7 @@
 .row {
   display:flex;
   justify-content: space-between;
-  margin-left: -16px;
-  margin-right: -16px;
+  margin: -16px;
   &.is-multiline{
     flex-wrap: wrap;
     .column{
@@ -16,6 +15,13 @@
     margin-right: -8px;
     .column{
       padding:8px;
+    }
+  }
+  &.is-large{
+    margin-left: -24px;
+    margin-right: -24px;
+    .column{
+      padding:24px;
     }
   }
   .column{

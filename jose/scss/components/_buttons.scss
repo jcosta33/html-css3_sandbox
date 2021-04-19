@@ -44,11 +44,24 @@ $button-text-color:#fff;
   }
 
   /*
+    Button white
+  */
+
+  &.is-white{
+    background-color: #fff;
+    color:#333;
+    &:hover{
+      cursor: pointer;
+      background: darken(#fff, 10%);
+    }
+  }
+
+  /*
     Button primary
   */
 
   &.is-primary{
-    background: darken($primary, 10%);
+    border-color: darken($primary, 10%);
     background-color: $primary;
     &:hover{
       cursor: pointer;
@@ -66,6 +79,28 @@ $button-text-color:#fff;
     &:hover{
       cursor: pointer;
       background: darken($success, 10%);
+    }
+  }
+  &.is-light{
+    border-color: darken($aqualight, 10%);
+    background-color:$aqualight;
+    color:$dark;
+    &:hover{
+      cursor: pointer;
+      background: darken($aqualight, 10%);
+    }
+  }
+
+
+
+  &.is-aqualight{
+    border-color: darken($aqualight, 10%);
+    background-color:$aqualight;
+    color:$success;
+    &:hover{
+      cursor: pointer;
+      background-color:$success;
+      color:#fff;
     }
   }
 
