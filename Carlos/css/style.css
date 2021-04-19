@@ -176,6 +176,53 @@ figure {
   display: inline-block;
   padding: 8px; }
 
+.menu__dropdown {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  padding: 8px;
+  background: #ccb369;
+  border-radius: 4px;
+  width: 120px; }
+
+.dropdown__item {
+  display: block; }
+  .dropdown__item a {
+    display: block;
+    color: black;
+    padding: 16px 12px;
+    text-decoration: none; }
+
+.menu__item:hover .menu__dropdown, .menu__item--expandable:hover .menu__dropdown {
+  display: block; }
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.menu__item, .menu__item--expandable {
+  display: inline-block;
+  position: relative;
+  padding: 8px; }
+  .menu__item > a:not(.button), .menu__item--expandable > a:not(.button), .menu__item span, .menu__item--expandable span {
+    text-decoration: none;
+    color: #f5f3f3;
+    line-height: 18px; }
+
+.menu__item--expandable:after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #f5f3f3; }
+
+.menu__item--expandable:hover:after {
+  content: "\f077"; }
+
 .hero {
   margin: 64px 0 32px;
   clear: both;
@@ -286,8 +333,7 @@ main#carousel {
   perspective: 600px;
   --items: 5;
   --middle: 3;
-  --position: 1;
-  pointer-events: none; }
+  --position: 1; }
 
 div.item {
   position: absolute;

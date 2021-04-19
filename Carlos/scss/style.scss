@@ -51,6 +51,60 @@ figure{
     display: inline-block;
     padding: 8px;
 }
+.menu__dropdown{
+  display:none;
+  position: absolute;
+  top:35px;
+  left:0;
+  padding:8px;
+  background:#ccb369;
+  border-radius:$radius;
+  width:120px;
+}
+.dropdown__item{
+  display:block;
+  a{
+    display:block;
+    color:black;
+    padding:16px 12px;
+    text-decoration: none;
+  }
+}
+.menu__item:hover {
+  .menu__dropdown{
+    display:block;
+  }
+}
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__item {
+  display: inline-block;
+  position:relative;
+  padding: 8px;
+  > a:not(.button), span {
+    text-decoration: none;
+    color: rgb(245, 243, 243);
+    line-height: 18px;
+  }
+}
+.menu__item--expandable{
+  @extend .menu__item;
+  &:after{
+    content: "\f078";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-left: 4px;
+    font-size: 12px;
+    line-height: 20px;
+    color:rgb(245, 243, 243);
+  }
+  &:hover:after{
+    content: "\f077";
+  }
+  }
 .hero{
     margin: 64px 0 32px;
     clear: both;
@@ -165,7 +219,6 @@ main#carousel {
 	--items: 5;
 	--middle: 3;
 	--position: 1;
-	pointer-events: none;
 }
 div.item{
 	position: absolute;

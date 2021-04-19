@@ -1,0 +1,68 @@
+.table {
+  background: #f1f1f1; }
+
+.table thead {
+  background-color: #e1e1e1; }
+
+.table th {
+  padding: 16px; }
+
+.table thead th {
+  border-bottom: 1px solid #bbb; }
+
+.table tbody tr th {
+  border-bottom: 1px solid #bbb; }
+
+.table tbody tr td {
+  border-bottom: 1px solid #bbb; }
+
+.table th > i {
+  float: right; }
+
+.table td {
+  padding: 24px; }
+
+.sidebar .logo {
+  height: 44px;
+  width: 44px;
+  margin: 8px;
+  padding: 2px;
+  background-color: #04050A;
+  border-radius: 4px; }
+
+.sidebar .menu-item-sidebar .fa-chevron-up {
+  display: none; }
+
+.sidebar .menu-item-sidebar .fa-chevron-down {
+  display: inline-block; }
+
+.sidebar .menu-item-sidebar:hover .fa-chevron-up {
+  display: inline-block; }
+
+.sidebar .menu-item-sidebar:hover .fa-chevron-down {
+  display: none; }
+
+.sidebar .menu-item-sidebar:hover .dropdown {
+  display: block; }
+
+.sidebar .menu-item-sidebar {
+  display: block; }
+
+.sidebar .menu-item-sidebar a {
+  display: block;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #04050A;
+  font-size: 14px; }
+
+.sidebar .menu-item-sidebar a:hover {
+  color: #575757; }
+
+.sidebar .dropdown {
+  padding: 0 8px 8px; }
+
+.sidebar .dropdown {
+  display: none; }
+
+.sidebar .fas {
+  margin-right: 8px; }
