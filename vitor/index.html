@@ -1,183 +1,265 @@
 <!-- The shortcut to make structure of HTML is (!) -->
-<!-- test 1 -->
-<!-- test 2 -->
-<!-- test 3 -->
-<!-- teste 4-->
-
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Splash | Creative color</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-        <link rel="stylesheet" href="styles/main.css" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLASH | HTML5-CSS3 </title>
+    <title>SPLASH | Creative colors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
 
 <!-- Body structure is (header) (section>content) and (footer) -->
 <body>
-
-        <!-- In header normally we have (nav) and (section>hero)-->
-        <header class="header">
+    <header class="header splash-header">
+        <div class="logo-container">
+            <a href="index.html">
                 <figure class="logo">
-                    <img src="images/Splash_logo_02.png" alt="Splash Logo">
+                    <img src="images/splash_logo.png" alt="Splash logo">
                     <span class="page-title">
                         Splash
                     </span>
                 </figure>
-                
-            <!-- navigation tab -->
-            <nav class="navbar">
-
-                <!-- under the list | used to create lists -->
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a href="components/buttons/index.html" target="_blank">Buttons</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="components/cards/index.html" target="_blank">Cards</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="components/forms/index.html" target="_blank">Forms</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="components/grid/index.html" target="_blank">Grid</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="components/sidebar/index.html" target="_blank">Sidebar</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Hero section, the good/best tag for this is (section) | it is important do a (id) -->
-            <section class="hero">
-                <div class="container">
-                    <!-- To insert images it is important  attributing the wrapped through tag (figure) | this component have a (id) too -->
-                    <figure class="column is-6">
-                        <img class="image" src="images/undraw_mello.svg" alt="Splash image">
-                    </figure>
-
-                    <div class="column is-6 is-vertical-top">
-                        <h1 class="title is-1">Splash</h1>
-                        <h2 class="subtitle">For a creative coloring</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Tempora saepe obcaecati accusamus perferendis
-                            velit dolor minima delectus nesciunt! Blanditiis, nam.
-                        </p>
-                    </div>
-
-                </div>
-            </section>
-
-        </header>
-
-        <main id="content">
-            <section class="main-section">
-                <div class="column is-4">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="icon is-green">
-                                <i class="fas fa-palette"></i>
-                            </span>
-                            <h3>Section 1</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Quasi fuga, tempora nulla harum magnam reiciendis
-                                temporibus dolor nisi ducimus deserunt?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="icon is-blue">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <h3>Section 2</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Quasi fuga, tempora nulla harum magnam reiciendis
-                                temporibus dolor nisi ducimus deserunt?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="icon is-red">
-                                <i class="fas fa-search"></i>
-                            </span>
-                            <h3>Section 3</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Quasi fuga, tempora nulla harum magnam reiciendis
-                                temporibus dolor nisi ducimus deserunt?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <nav class="footer-nav">
-                <div class="column is-3">
-                    <figure class="logo">
-                        <img src="images/Splash_logo_02.png" alt="Splash Logo">
-                        <span class="page-title">
-                            Splash
-                        </span>
-                    </figure>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iste!</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="column is-3">
-                    <ul class="menu-list"> 
-                        <!-- lists | we can create many lists by ex:(ul>li*5) and create 5 lists -->
-                        <li class="menu-item">
-                            <!-- (a) from anchor | target attribute will inform us when will open the new window -->
-                            <a href="Alexandre/index.html" target="_blank">Alexandre Pires</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="Carlos/index.html" target="_blank">Carlos Campos</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column is-3">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="inesCorreia/index.html" target="_blank">Inês Correia</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="pedro/index.html" target="_blank">Pedrto Barbosa</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column is-3">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="tvieira/index.html" target="_blank">Tânia Vieira</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="vitor/index.html" target="_blank">Vitor Coelho</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </footer>
-
-        <div>
-            <h6 class="title is-10"> Splash &copy; all rights reserved </h6>
+            </a>
         </div>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item-active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="products/index.html">Products</a>
+                </li>
+                <li class="menu-item">
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="menu-item-expandable">
+                    <span>Components</span>
+                    <ul class="menu-dropdown menu-list">
+                        <li class="dropdown-item">
+                            <a href="components/buttons/index.html" class="menu-dropdown-a">Buttons</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/cards/index.html">Cards</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/forms/index.html">Forms</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/grid/index.html">Grid</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/sidebar/index.html">Sidebar</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/slider/index.html">Slider</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/table/index.html">Table</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="components/tabs/index.html">Tabs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-login">
+                    <a href="login.html" class="button is-sucess is-small" style="margin-left: 16px;">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
+    <main id="content-splash">
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <figure class="column is-5">
+                        <img class="image" src="images/undraw_mello.svg" alt="Splash">
+                    </figure>
+                    <div class="column is-7 is-vertical-top">
+                        <h1 class="hero-title">
+                            The creative platform for your color selection.
+                        </h1>
+                        <h2 class="hero-subtitle">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque cumque earum laboriosam modi velit pariatur voluptates libero ipsam porro?
+                        </h2>
+                        <div class="row is-small">
+                            <div class="column is-7">
+                                <div class="field">
+                                    <input type="text" id="input-name" placeholder="Please insert your name"
+                                        class="input is-dark">
+                                </div>
+                            </div>
+                            <div class="column is-5">
+                                <button type="button" class="button is-primary get-acess">Get access</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </body>
+        <section class="main-section">
+            <div class="container">
+                <div class="row">
+                    <div class="column is-4">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="icon is-green">
+                                    <i class="fas fa-palette"></i>
+                                </span>
+                                <h3>Section 1</h3>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Quasi fuga, tempora nulla harum magnam reiciendis
+                                    temporibus dolor nisi ducimus deserunt?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="icon is-blue">
+                                    <i class="fas fa-users"></i>
+                                </span>
+                                <h3>Section 2</h3>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Quasi fuga, tempora nulla harum magnam reiciendis
+                                    temporibus dolor nisi ducimus deserunt?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="icon is-red">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <h3>Section 3</h3>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Quasi fuga, tempora nulla harum magnam reiciendis
+                                    temporibus dolor nisi ducimus deserunt?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="title is-3 products">
+                    Products
+                </h3>
+                <div class="row is multiline" id="producto-row">
+                    <div class="column is-6">
+                        <div class="card product-card">
+                            <div class="card-content">
+                                <figure class="product-image">
+                                </figure>
+                                <div class="product-detail">
+                                    <h4 class="title is-4">
+                                        SWISS WOOD Pencils Gift Set
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+                                    <span class="sales-price">€ 40,20</span>
+                                    <span class="price">€ 20,99</span>
+                                    <div class="buttons">
+                                        <button type="button" class="button is-primary">
+                                            Buy Now
+                                        </button>
+                                        <a href="products/product.html" type="button" class="button is-secondary">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="card product-card">
+                            <div class="card-content">
+                                <figure class="product-image">
+                                </figure>
+                                <div class="product-detail">
+                                    <h4 class="title is-4">
+                                        SWISS WOOD Pencils Gift Set
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+                                    <span class="sales-price">€ 40,20</span>
+                                    <span class="price">€ 20,99</span>
+                                    <div class="buttons">
+                                        <button type="button" class="button is-primary">
+                                            Buy Now
+                                        </button>
+                                        <a href="products/swiss-wood-pencils-set.html" type="button" class="button is-secondary">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="column is-3">
+                <figure class="logo">
+                    <img src="images/splash_logo.png" alt="Splash Logo">
+                    <div class="page-title">
+                        Splash
+                    </div>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iste!</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="column is-3">
+                <ul class="menu-list-footer"> 
+                        <li class="menu-item-footer">
+                            <a href="../Alexandre/index.html" target="_blank">Alexandre Barbosa</a>
+                        </li>
+                        <li class="menu-item-footer">
+                            <a href="../Carlos/index.html" target="_blank">Carlos Campos</a>
+                        </li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <ul class="menu-list-footer">
+                        <li class="menu-item-footer">
+                            <a href="../inesfolder/index.html" target="_blank">Inês Correia</a>
+                        </li>
+                        <li class="menu-item-footer">
+                            <a href="../pedro/index.html" target="_blank">Pedro Barbosa</a>
+                        </li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <ul class="menu-list-footer">
+                        <li class="menu-item-footer">
+                            <a href="../tvieira/index.html" target="_blank">Tânia Vieira</a>
+                        </li>
+                        <li class="menu-item-footer">
+                            <a href="../jose/index.html" target="_blank">José Costa</a>
+                        </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+    <div>
+        <h6 class="rights"> Splash &copy; all rights reserved </h6>
+    </div>
+    
+</body>
 </html>
