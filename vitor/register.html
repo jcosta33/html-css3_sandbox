@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
-        <link rel="stylesheet" href="../../css/all.css" />
+        <link rel="stylesheet" href="css/all.css" />
     </head>
 
 <body>
@@ -19,7 +19,7 @@
         <div class="logo-container">
             <a href="index.html">
                 <figure class="logo">
-                    <img src="../../images/splash_logo.png" alt="Splash logo">
+                    <img src="images/splash_logo.png" alt="Splash logo">
                     <span class="page-title">
                         Splash
                     </span>
@@ -29,59 +29,130 @@
         <nav class="menu">
             <ul class="menu-list">
                 <li class="menu-item">
-                    <a href="../index.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="../products/index.html">Products</a>
+                    <a href="products/index.html">Products</a>
                 </li>
                 <li class="menu-item">
-                    <a href="../dashboard.html">Dashboard</a>
+                    <a href="dashboard.html">Dashboard</a>
                 </li>
                 <li class="menu-item-expandable">
                     <span>Components</span>
                     <ul class="menu-dropdown menu-list">
                         <li class="dropdown-item">
-                            <a href="../../components/buttons/index.html">Buttons</a>
+                            <a href="../components/buttons/index.html">Buttons</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="../../components/cards/index.html">Cards</a>
+                            <a href="../components/cards/index.html">Cards</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="../../components/forms/index.html">Forms</a>
+                            <a href="../components/forms/index.html">Forms</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="../../components/grid/index.html">Grid</a>
+                            <a href="../components/grid/index.html">Grid</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="../../components/sidebar/index.html">Sidebar</a>
+                            <a href="../components/sidebar/index.html">Sidebar</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="../../components/slider/index.html">Slider</a>
+                            <a href="../components/slider/index.html">Slider</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="../../components/table/index.html">Table</a>
+                            <a href="../components/table/index.html">Table</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="../../components/tabs/index.html">Tabs</a>
+                            <a href="../components/tabs/index.html">Tabs</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item-login">
-                    <a href="../login.html" class="button is-sucess is-small" style="margin-left: 16px;">Login</a>
+                    <a href="login.html" class="button is-sucess is-small" style="margin-left: 16px;">Login</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-
+    <main class="register-page">
+        <div class="container is-small">
+            <section class="login-section">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4">Register</h3>
+                  <h4 class="subtitle-is-5">Sign up for a free account today</h4>
+                  <hr>
+                  <form class="form login-form">
+                    <div class="field">
+                      <label for="input-name">Name</label>
+                      <input type="text" id="input-name" name="input_name" placeholder="Please insert your name"
+                        class="input">
+                    </div>
+                    <div class="field">
+                      <label for="input-email">Email</label>
+                      <input type="text" id="input-email" name="input_email" placeholder="Please insert your email"
+                        class="input">
+                      <span class="message is-danger">
+                        <i class="fas fa-exclamation-circle"></i>
+                        Your email is invalid!
+                      </span>
+                    </div>
+                    <div class="field">
+                      <label for="input-name">Birthday</label>
+                      <input type="date" id="input-birthday" name="input_birthday" class="input">
+                    </div>
+                    <div class="field">
+                      <label>Select a thing</label>
+                      <div class="control">
+                        <label for="radio-thing-1">Thing 1</label>
+                        <input type="radio" id="radio-thing-1" value="thing-1" name="radio-thing" class="radio" checked />
+                      </div>
+                      <div class="control">
+                        <label for="radio-thing-2">Thing 2</label>
+                        <input type="radio" id="cradio-thing-2" value="thing-2" name="radio-thing" class="radio" />
+                      </div>
+                      <div class="control">
+                        <label for="radio-thing-3">Thing 3</label>
+                        <input type="radio" id="radio-thing-3" value="thing-3" name="radio-thing" class="radio" />
+                      </div>
+                    </div>
+                    <div class="field">
+      
+                      <label>What are your favorite movie genres (from a list of 3)</label>
+                      <div class="control">
+                        <label for="checkbox-movies-comedy">Comedy</label>
+                        <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                      </div>
+                      <div class="control">
+                        <label for="checkbox-movies-action">Action</label>
+                        <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                      </div>
+                      <div class="control">
+                        <label for="checkbox-movies-thriller">Thriller</label>
+                        <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox"
+                          checked />
+                      </div>
+                    </div>
+                    <div class="buttons is-spaced-between">
+                      <a href="login.html" class="button is-success">
+                        Login
+                      </a>
+      
+                      <a href="register-password.html" type="button" class="button is-primary">
+                        Next
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </div> 
     </main>
     
     <footer class="footer">
         <nav class="footer-nav">
             <div class="column is-3">
                 <figure class="logo">
-                    <img src="../../images/splash_logo.png" alt="Splash Logo">
+                    <img src="images/splash_logo.png" alt="Splash Logo">
                     <div class="page-title">
                         Splash
                     </div>

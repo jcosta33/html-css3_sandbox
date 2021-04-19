@@ -2,7 +2,14 @@
 @import 'components/cards.scss';
 @import 'components/forms.scss';
 @import 'components/grid.scss';
+@import 'components/mixins.scss';
+@import 'components/sidebar.scss';
+@import 'components/sliders.scss';
+@import 'components/table.scss';
+@import 'components/tabs.scss';
+@import 'components/tags.scss';
 @import 'components/variables.scss';
+
 
 
 body {
@@ -12,7 +19,7 @@ body {
   font-size: 16px;
 }
 
-/* make question about this */
+/* take question about this */
 
 *, ::after, ::before {
   -webkit-font-smoothing: antialiased;
@@ -20,13 +27,13 @@ body {
   box-sizing: border-box;
 }
 
-/* make question about this */
+/* mtke question about this */
 
 .has-background-primary {
     background-color: $primary;
 }
   
-/* questions about this */
+/* take questions about this */
 
 .has-text-primary {
     color: $primary;
@@ -63,6 +70,12 @@ section{
   
   &.is-3 {
     font-size: 24px;
+  }
+
+  &.is-4 {
+    font-size: 24px;
+    font-weight:200;
+    font-family: londrina Solid;
   }
   
   &.is-5 {
@@ -107,7 +120,7 @@ section{
   background: #04050A;
 }
 
-.hero-title{
+.hero-title {
   @extend.title;
   @extend.title.is-1;
   margin-top: 68px;
@@ -115,7 +128,21 @@ section{
   font-weight:400;
 }
 
-.hero-title-buttons {
+.sidebar-title, {
+  @extend.title;
+  @extend.title.is-4;
+  margin-top: 30px;
+  color: #04050A;
+}
+
+.hero-title-buttons,
+.hero-title-cards,
+.hero-title-forms,
+.hero-title-grid,
+.hero-title-sidebar,
+.hero-title-slider,
+.hero-title-table,
+.hero-title-tabs, {
   @extend.title;
   @extend.title.is-1;
   margin-top: 68px;
@@ -123,13 +150,20 @@ section{
   font-weight:400;
 }
 
-.hero-subtitle{
+.hero-subtitle {
   @extend.subtitle.is-5;
   color: #e6e6e6;
   font-weight:200;
 }
 
-.hero-subtitle-buttons{
+.hero-subtitle-buttons,
+.hero-subtitle-cards,
+.hero-subtitle-forms,
+.hero-subtitle-grid,
+.hero-subtitle-sidebar,
+.hero-subtitle-slider,
+.hero-subtitle-table,
+.hero-subtitle-tabs, {
   @extend.subtitle.is-5;
   color: #04050A;
   font-weight:200;
