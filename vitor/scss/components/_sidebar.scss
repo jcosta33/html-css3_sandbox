@@ -1,3 +1,63 @@
-.sidebar{
-    
-}
+@import 'variables.scss';
+
+.sidebar {
+  .logo {
+    height:44px;
+    width:44px;
+    margin:8px;
+    padding:2px;
+    background-color: #04050A;
+    border-radius:4px;
+  }
+  .menu-item-sidebar  .fa-chevron-up {
+    display:none;
+  }
+    .menu-item-sidebar  .fa-chevron-down {
+    display:inline-block;
+  }
+  
+    .menu-item-sidebar:hover .fa-chevron-up {
+    display:inline-block;
+  }
+  
+    .menu-item-sidebar:hover .fa-chevron-down {
+    display:none;
+  }
+  
+    .menu-item-sidebar:hover .dropdown {
+    display:block;
+  }
+  
+  .menu-item-sidebar {
+    display:block;
+  }
+  
+  .menu-item-sidebar a {
+    display:block;
+    padding:12px 0;
+    text-decoration: none;
+    color:#04050A;
+    font-size: 14px;
+  }
+  
+  .menu-item-sidebar a:hover {
+    color:$secondary
+  }
+  
+  .dropdown {
+    padding:0 8px 8px;
+  }
+  
+  .dropdown {
+    display:none;
+  }
+
+  .fas {
+    margin-right: 8px;
+  }
+
+} 
+
+
+
+
