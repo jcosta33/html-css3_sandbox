@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html">
+       <figure class="logo">
+           <img src="img/logo.png" alt="">
+           <span class="page-title">
+            Sandbox
+            </span>
+        </figure> 
+    </a>
+       <nav class="navbar">
+           <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="products/products.html">Products</a>
+                </li>
+                <li class="menu-item">
+                    <a href="components/buttons/buttons.html">Buttons</a>
+                </li>
+                <li class="menu-item">
+                    <a href="components/cards/cards.html">Cards</a>
+                </li>
+                <li class="menu-item">
+                    <a href="components/forms/index.html">Forms</a>
+                </li>
+                <li class="menu-item">
+                    <a href="components/sidebar/dashboard.html">Sidebar</a>
+                </li>     
+                <li class="menu-item">
+                    <a href="register.html" class="button is-success">Login</a>
+                </li>   
+           </ul>
+       </nav>
+    </header>
+  <main class="login-page">
+    <div class="container is-small">
+      <section class="login-section">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-3">Register</h3>
+            <h6 class="subtitle">Sign up for a free account today</h6>
+            <hr>
+            <form class="form login-form">
+              <div class="field">
+                <label for="input-name">Name</label>
+                <input type="text" id="input-name" name="input_name" placeholder="Please insert your name"
+                  class="input">
+              </div>
+              <div class="field">
+                <label for="input-email">Email</label>
+                <input type="text" id="input-email" name="input_email" placeholder="Please insert your email"
+                  class="input">
+                <span class="message is-danger">
+                  <i class="fas fa-exclamation-circle"></i>
+                  Your email is invalid!
+                </span>
+              </div>
+              <div class="field">
+                <label for="input-name">Birthday</label>
+                <input type="date" id="input-birthday" name="input_birthday" class="input">
+              </div>
+              <div class="field">
+                <label>Select a thing</label>
+                <div class="control">
+                  <label for="radio-thing-1">Thing 1</label>
+                  <input type="radio" id="radio-thing-1" value="thing-1" name="radio-thing" class="radio" checked />
+                </div>
+                <div class="control">
+                  <label for="radio-thing-2">Thing 2</label>
+                  <input type="radio" id="cradio-thing-2" value="thing-2" name="radio-thing" class="radio" />
+                </div>
+                <div class="control">
+                  <label for="radio-thing-3">Thing 3</label>
+                  <input type="radio" id="radio-thing-3" value="thing-3" name="radio-thing" class="radio" />
+                </div>
+              </div>
+              <div class="field">
+
+                <label>What are your favorite movie genres (from a list of 3)</label>
+                <div class="control">
+                  <label for="checkbox-movies-comedy">Comedy</label>
+                  <input type="checkbox" id="checkbox-movies-comedy" value="movies-comedy" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-action">Action</label>
+                  <input type="checkbox" id="checkbox-movies-action" value="movies-action" class="checkbox" />
+                </div>
+                <div class="control">
+                  <label for="checkbox-movies-thriller">Thriller</label>
+                  <input type="checkbox" id="checkbox-movies-thriller" value="movies-thriller" class="checkbox"
+                    checked />
+                </div>
+              </div>
+              <div class="buttons is-spaced-between">
+                <a href="index.html" class="button is-success">
+                  Login
+                </a>
+
+                <a href="register-password.html" type="button" class="button is-primary">
+                  Next
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

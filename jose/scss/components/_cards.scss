@@ -1,12 +1,16 @@
 @import 'variables.scss';
 
 $background:#fff;
-$padding:16px;
+$padding:32px;
 
 .card{
+  position: relative;
   display:block;
   background:$background;
   border-radius:$radius;
+  &:not(:last-child){
+    margin-bottom:30px;
+  }
   .card-content{
     padding:$padding;
     box-sizing: border-box;
