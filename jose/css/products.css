@@ -72,10 +72,16 @@
   display: flex; }
 
 .tag, .product-section .product__tag {
-  padding: 8px; }
+  padding: 8px;
+  border-radius: 8px;
+  height: 35px;
+  font-weight: 600; }
   .tag.is-primary, .product-section .is-primary.product__tag {
     background-color: #665df5;
     color: #fff; }
+  .tag.is-aqualight, .product-section .is-aqualight.product__tag {
+    color: #0bb783;
+    background: #C9F7F4; }
   .tag.is-yellow, .product-section .is-yellow.product__tag {
     background-color: #ff9800;
     color: #000; }
