@@ -116,3 +116,28 @@ body.sidebar-open {
 
 .product-section .price {
   font-size: 18px; }
+
+.product_breadcrumb {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0; }
+  .product_breadcrumb li {
+    display: inline-block;
+    padding: 8px;
+    padding-left: 0; }
+    .product_breadcrumb li:not(:last-child):after {
+      content: "\f054";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      float: right;
+      margin-left: 6px;
+      font-size: 12px;
+      line-height: 20px; }
+    .product_breadcrumb li:nth-last-child {
+      padding: 0; }
+
+.product-section h1.title.is-6 {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0; }

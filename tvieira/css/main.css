@@ -658,6 +658,58 @@ figure {
   line-height: 18px;
   color: #fff; }
 
+.menu__dropdown {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  padding: 8px;
+  background: #fff;
+  border-radius: 4px;
+  width: 120px; }
+
+.dropdown__item {
+  display: block; }
+
+.dropdown__item a {
+  display: block;
+  color: #04050A;
+  padding: 16px 12px;
+  text-decoration: none; }
+
+.menu__item:hover .menu__dropdown, .menu__item--expandable:hover .menu__dropdown, .menu__item--active:hover .menu__dropdown {
+  display: block; }
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.menu__item, .menu__item--expandable, .menu__item--active {
+  display: inline-block;
+  position: relative;
+  padding: 8px; }
+
+.menu__item > a:not(.button), .menu__item--expandable > a:not(.button), .menu__item--active > a:not(.button), .menu__item span, .menu__item--expandable span, .menu__item--active span {
+  text-decoration: none;
+  color: #bbb;
+  line-height: 18px; }
+
+.menu__item--expandable:after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #e1e1e1; }
+
+.menu__item--expandable:hover:after {
+  content: "\f077"; }
+
+.menu__item--active {
+  color: #fff; }
+
 .container {
   max-width: 1100px;
   margin: 0 auto; }
