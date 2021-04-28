@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product 1</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html">
+      <figure class="logo">
+        <img src="imagens/company_logo.png" alt="Company logo">
+        <span class="logo__page-title">
+          Sandbox
+        </span>
+      </figure>
+    </a>
+
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item--active">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="products/index.html">Products</a>
+        </li>
+        <li class="menu__item">
+          <a href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="menu__item--expandable">
+          <span>Components</span>
+          <ul class="menu__dropdown menu__list">
+            <li class="dropdown__item">
+              <a href="components/cards/index.html">Cards</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/forms/index.html">Forms</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/grid/index.html">Grid</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/sidebar/index.html">Sidebar</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/table/index.html">Table</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/tabs/tabs.html">Tabs</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="components/slider/index.html">Slider</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="login.html" class="button is-success is-small" style="margin-left:16px;">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+
+    <section class="section dashboard-section">
+      <div class="row">
+        <div class="column" style="width:20%;">
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-content">
+                <nav class="sidebar">
+                  <h5 class="title is-6 title--filled">
+                  
+                    Side navigation
+                    <span class="icon" style="float:right;padding:0">
+                      <i class="fas fa-home"></i>
+                    </span>
+                  </h5>
+
+                  <h6 class="title is-7 title--uppercased margin-t--40">
+                    Custom
+                  </h6>
+
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a href=""><i class="fas fa-home"></i> Applications</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href=""><i class="fas fa-user-cog"></i> Pages
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-up"></i>
+                      </a>
+                      <ul class="dropdown menu__list">
+                        <li class="menu__item">
+                          <a href="">Things</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="">Other things</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h6 class="title is-7 title--uppercased margin-t--40">
+                    Layout
+                  </h6>
+
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a href=""><i class="fas fa-home"></i> Skins</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href=""><i class="fas fa-user-cog"></i> Subheaders
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-up"></i>
+                      </a>
+                      <ul class="dropdown menu__list">
+                        <li class="menu__item">
+                          <a href="">Things</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="">Other things</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu__item is-active">
+                      <a href=""><i class="fas fa-table"></i> General</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+        <div class="column">
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="card-content">
+                  <h5 class="title is-5">Weekly Sales Stats</h5>
+                  <h6 class="subtitle">890,344 Sales </h6>
+                  <button class="button is-white sales__dropdown">
+                    <span class="icon">
+                      <i class="fas fa-ellipsis-h"></i> </span>
+                  </button>
+                  <section class="sales">
+                    <div class="row is-multiline is-large">
+                      <div class="column is-6">
+                        <div class="media">
+                          <div class="media-left">
+                            <span class="icon sales__icon">
+                              <i class="fas fa-shopping-cart"></i>
+                            </span>
+                          </div>
+                          <div class="media-content">
+                            <h5 class="title is-5 sales__price">$2,034 </h5>
+                            <h6 class="subtitle sales__type">Author Sales </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column is-6">
+                        <div class="media">
+                          <div class="media-left">
+                            <span class="icon sales__icon">
+                              <i class="fas fa-shopping-cart"></i>
+                            </span>
+                          </div>
+                          <div class="media-content">
+                            <h5 class="title is-5 sales__price">$2,034 </h5>
+                            <h6 class="subtitle sales__type">Author Sales </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column is-6">
+                        <div class="media">
+                          <div class="media-left">
+                            <span class="icon sales__icon">
+                              <i class="fas fa-shopping-cart"></i>
+                            </span>
+                          </div>
+                          <div class="media-content">
+                            <h5 class="title is-5 sales__price">$2,034 </h5>
+                            <h6 class="subtitle sales__type">Author Sales </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column is-6">
+                        <div class="media">
+                          <div class="media-left">
+                            <span class="icon sales__icon">
+                              <i class="fas fa-shopping-cart"></i>
+                            </span>
+                          </div>
+                          <div class="media-content">
+                            <h5 class="title is-5 sales__price">$2,034 </h5>
+                            <h6 class="subtitle sales__type">Author Sales </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <figure class="image">
+                  <img src="imagens/dashboard-section-bg.png" alt="">
+                </figure>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-content">
+                  <h5 class="title is-5">My Activity </h5>
+                  <h6 class="subtitle">890,344 Sales </h6>
+                  <button class="button is-white sales__dropdown">
+                    <span class="icon">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </span>
+                  </button>
+                  <section class="activities">
+                    <div class="media activity">
+                      <div class="media-left activity__time">
+                        <span>
+                          08:42
+                        </span>
+                      </div>
+                      <div class="media-content activity__dot">
+                        <span class="icon">
+                          <i class="far fa-circle"></i> </span>
+                      </div>
+                      <div class="media-right activity__description">
+                        <p class="text--grey">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nobis.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media activity">
+                      <div class="media-left activity__time">
+                        <span>
+                          08:42
+                        </span>
+                      </div>
+                      <div class="media-content activity__dot">
+                        <span class="icon">
+                          <i class="far fa-circle"></i> </span>
+                      </div>
+                      <div class="media-right activity__description">
+                        <a href="www.goodluck.com" class="text--black">
+                          Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit.
+                        </a>
+                      </div>
+                    </div>
+                    <div class="media activity">
+                      <div class="media-left activity__time">
+                        <span>
+                          08:42
+                        </span>
+                      </div>
+                      <div class="media-content activity__dot">
+                        <span class="icon">
+                          <i class="far fa-circle"></i> </span>
+                      </div>
+                      <div class="media-right activity__description">
+                        <p>
+                          Lorem ipsum dolor <b class="text--success text--uppercase">sit</b> amet.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media activity">
+                      <div class="media-left activity__time">
+                        <span>
+                          08:42
+                        </span>
+                      </div>
+                      <div class="media-content activity__dot">
+                        <span class="icon">
+                          <i class="far fa-circle"></i> </span>
+                      </div>
+                      <div class="media-right activity__description">
+                        <p class="text--grey">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nobis.
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="card" style="margin-top:30px">
+                <div class="card-content">
+                  <h5 class="title is-5">Todo
+                    <button class="button is-small is-light" style="float:right">
+                      <span>
+                        Create
+                      </span>
+
+                      <span class="icon">
+                        <i class="fas fa-chevron-down"></i> </span>
+                    </button>
+                  </h5>
+
+                  <section class="todo">
+                    <div class="media todo__item">
+                      <div class="media-left todo__border">
+                        <span class="todo__color">
+
+                        </span>
+                      </div>
+                      <div class="media-content">
+                        <h6 class="title is-6">Lorem ipsum dolor sit amet.</h6>
+                        <h6 class="subtitle">Due in 2 Days</h6>
+                      </div>
+                      <div class="media-right activity__description">
+                        <button class="button is-small is-light">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card background--red">
+                <div class="card-content">
+                  <h5 class="title is-5">Start Now</h5>
+                  <p class="lead width--75">
+                    Offering discounts for better
+                    online a store can loyalty
+                    weapon into driving
+                  </p>
+
+                  <button type="button" class="button is-success is-small">
+                    Join Now
+                  </button>
+
+                  <figure class="image">
+                    <img src="imagens/undraw_folder_files.svg" alt="Person">
+                  </figure>
+
+                </div>
+              </div>
+           
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column is-12">
+              <div class="card">
+                <div class="card-content">
+                  <h5 class="title is-5">Weekly Sales Stats</h5>
+                  <h6 class="subtitle">890,344 Sales </h6>
+                  <div class="arrivals">
+                    <ul class="arrivals__list">
+                      <li>
+                        <div class="media">
+                          <div class="media-left">
+                            <figure class="image">
+                              <img
+                                src="https://preview.keenthemes.com/metronic/theme/html/demo9/dist/assets/media/svg/misc/006-plurk.svg"
+                                alt="">
+                            </figure>
+                          </div>
+                          <div class="media-content">
+                            <h6 class="title is-6 margin-b--5">Sant Outsanding</h6>
+                            <p><b>Email:</b> cenas@wtv.com</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+
+                        <h6 class="title is-6 margin-b--5">
+                          <b>
+                            $2,000,000
+                          </b>
+                        </h6>
+                        <p><b>Email:</b> cenas@wtv.com</p>
+                      </li>
+                      <li>
+                        <p>ReactJs, HTML </p>
+                      </li>
+                      <li class="tags">
+                        <span class="tag is-aqualight">Approved</span>
+                      </li>
+                      <li>
+                        <div class="buttons">
+                          <button type="button" class="button is-small is-aqualight">
+                            <i class="fas fa-toggle-on"></i>
+                          </button>
+                          <button type="button" class="button is-small is-aqualight">
+                            <i class="fas fa-toggle-on"></i>
+                          </button>
+                          <button type="button" class="button is-small is-aqualight">
+                            <i class="fas fa-toggle-on"></i>
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</body>
+
+</html>
