@@ -547,6 +547,65 @@ body.sidebar-open {
 .tania {
   box-sizing: border-box; }
 
+.pagination {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
+  .pagination .page {
+    margin-right: 8px; }
+    .pagination .page .page__item {
+      display: block;
+      text-decoration: none;
+      height: 35px;
+      width: 35px;
+      background-color: #B0B0B0;
+      border-radius: 18px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+      opacity: 0.6; }
+      .pagination .page .page__item:hover {
+        opacity: 1; }
+      .pagination .page .page__item:active {
+        border-radius: 8px; }
+    .pagination .page span.page__item--separator {
+      color: black;
+      line-height: 50px;
+      font-weight: 300;
+      font-size: 10px; }
+    .pagination .page .page__item--separator {
+      display: block;
+      text-decoration: none;
+      height: 35px;
+      width: 35px;
+      background-color: none;
+      color: #EF6021;
+      text-align: center;
+      line-height: 35px;
+      font-size: 15px;
+      opacity: 0.8;
+      font-weight: 900; }
+      .pagination .page .page__item--separator:hover {
+        color: black; }
+      .pagination .page .page__item--separator:active {
+        font-size: 20px; }
+  .pagination .page--active {
+    display: block;
+    height: 35px;
+    width: 35px;
+    background-color: #EF6021;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 8px;
+    border-radius: 8px; }
+    .pagination .page--active a {
+      text-decoration: none;
+      color: #ffffff; }
+
+.tania {
+  box-sizing: border-box; }
+
 .buttons {
   display: flex;
   margin-top: 16px; }
@@ -2028,6 +2087,65 @@ body.sidebar-open {
 body.sidebar-open {
   padding-left: 60px; }
 
+.tania {
+  box-sizing: border-box; }
+
+.pagination {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
+  .pagination .page {
+    margin-right: 8px; }
+    .pagination .page .page__item {
+      display: block;
+      text-decoration: none;
+      height: 35px;
+      width: 35px;
+      background-color: #B0B0B0;
+      border-radius: 18px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+      opacity: 0.6; }
+      .pagination .page .page__item:hover {
+        opacity: 1; }
+      .pagination .page .page__item:active {
+        border-radius: 8px; }
+    .pagination .page span.page__item--separator {
+      color: black;
+      line-height: 50px;
+      font-weight: 300;
+      font-size: 10px; }
+    .pagination .page .page__item--separator {
+      display: block;
+      text-decoration: none;
+      height: 35px;
+      width: 35px;
+      background-color: none;
+      color: #EF6021;
+      text-align: center;
+      line-height: 35px;
+      font-size: 15px;
+      opacity: 0.8;
+      font-weight: 900; }
+      .pagination .page .page__item--separator:hover {
+        color: black; }
+      .pagination .page .page__item--separator:active {
+        font-size: 20px; }
+  .pagination .page--active {
+    display: block;
+    height: 35px;
+    width: 35px;
+    background-color: #EF6021;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 8px;
+    border-radius: 8px; }
+    .pagination .page--active a {
+      text-decoration: none;
+      color: #ffffff; }
+
 .stars .icon {
   color: #ff9800;
   padding: 0; }
@@ -2039,15 +2157,15 @@ body.sidebar-open {
 .product-section .price {
   font-size: 18px; }
 
-.product_breadcrumb {
+.product__breadcrumb {
   list-style: none;
   margin: 16px 0;
   padding: 0; }
-  .product_breadcrumb li {
+  .product__breadcrumb li {
     display: inline-block;
     padding: 8px;
     padding-left: 0; }
-    .product_breadcrumb li:not(:last-child):after {
+    .product__breadcrumb li:not(:last-child):after {
       content: "\f054";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
@@ -2055,8 +2173,24 @@ body.sidebar-open {
       margin-left: 6px;
       font-size: 12px;
       line-height: 20px; }
-    .product_breadcrumb li:nth-last-child {
+    .product__breadcrumb li:nth-last-child {
       padding: 0; }
+
+.product__banner {
+  background-color: red;
+  display: block;
+  position: relative;
+  padding: 50px 0; }
+  .product__banner .image {
+    display: flex-end;
+    width: 100%;
+    height: 100%; }
+  .product__banner .card {
+    display: flex;
+    position: absolute;
+    vertical-align: middle;
+    max-width: 200px;
+    left: 40%; }
 
 .product-section h1.title.is-6 {
   display: block;

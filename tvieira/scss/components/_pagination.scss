@@ -1,0 +1,78 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+
+
+.pagination{
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
+    .page {
+        margin-right: 8px;
+
+        .page__item{
+            display: block;
+            text-decoration: none;
+            height:35px;
+            width: 35px;
+            background-color: $FM-grey;
+            border-radius: 18px;
+            color:$FM-white;
+            text-align:center;
+            line-height: 35px;   
+            opacity: 0.6;
+            &:hover{
+                opacity: 1;
+            }
+            &:active{
+                border-radius: 8px;
+            }
+    
+        }
+        span {
+            &.page__item--separator{
+                color: black;
+                line-height: 50px;
+                font-weight:300;
+                font-size: 10px;            
+            }
+        }
+
+        .page__item--separator{
+            display: block;
+            text-decoration: none;
+            height:35px;
+            width: 35px;
+            background-color: none;
+            color:$FM-orange;
+            text-align:center;
+            line-height: 35px;
+            font-size: 15px;
+            opacity: 0.8;
+            font-weight: 900;
+            &:hover{
+                color:black;
+            }
+            &:active{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .page--active{
+        display: block;
+        height:35px;
+        width: 35px;
+        background-color: $FM-orange;
+        text-align:center;
+        line-height: 35px;
+        margin-right:8px;   
+        border-radius: 8px;
+        a{
+            text-decoration: none;
+            color:#ffffff;
+        }    
+    }
+}

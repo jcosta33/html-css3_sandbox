@@ -2,6 +2,8 @@
 @import 'components/mixin.scss';
 @import 'components/tabs.scss';
 @import 'components/slider.scss';
+@import 'components/pagination.scss';
+
 
 .stars .icon{
   color:#ff9800;
@@ -16,7 +18,7 @@
   font-size:18px;
 }
 
-.product_breadcrumb{
+.product__breadcrumb{
   list-style:none;
   margin:16px 0;
   padding:0;
@@ -38,6 +40,29 @@
     }
   } 
 } 
+
+.product__banner{
+  background-color: red;
+  display: block;
+  position:relative;
+  padding:50px 0;
+  .image{
+    display:flex-end;
+    width: 100%;
+    height: 100%;
+  }
+  .card{
+    display: flex;
+    position:absolute;
+    vertical-align:middle;
+    max-width: 200px;
+    left:40%
+
+    
+  }
+}
+
+
 
 .product-section{
   h1{

@@ -1,4 +1,30 @@
-uApontamentos
+Apontamentos
+<section id="Selectors">
+
+    1. PAI > FILHO      element > element	(div > p)	    
+    Selects all <p> elements where the parent is a <div> element 
+    <div>
+        <p>
+
+    ou
+
+    <div>
+        <h1>
+        <p>
+
+
+    2. IRMAO + IRMAO    element+element	(div + p)
+    Selects the first <p> element that is placed immediately after <div> elements
+    <div>
+    <h1>
+    <p>
+
+
+    3. PAI ~ FILHO INDIRECTO  element1~element2	(p ~ ul)	
+    Selects every <ul> element that is preceded by a <p> element
+
+
+</section>
 
 Font-weight: 
     /*300 Light , 400 Regular, 500/600 Medium, 700 Semibold, 800 bold, 900 Black - 400 é o regular */

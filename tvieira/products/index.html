@@ -32,52 +32,52 @@
 
             <nav class="menu">
                 <ul class="menu__list">
-                  <li class="menu__item--active">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="products/index.html">Products</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="dashboard.html">Dashboard</a>
-                  </li>
-                  <li class="menu__item--expandable">
-                    <span>Components</span>
-                    <ul class="menu__dropdown menu__list">
-                      <li class="dropdown__item">
-                        <a href="components/cards/index.html">Cards</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="components/forms/index.html">Forms</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="components/grid/index.html">Grid</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="components/sidebar/index.html">Sidebar</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="components/table/index.html">Table</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="components/tabs/tabs.html">Tabs</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="components/slider/index.html">Slider</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu__item">
-                    <a href="login.html" class="button is-success is-small" style="margin-left:16px;">Login</a>
-                  </li>
+                    <li class="menu__item--active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="products/index.html">Products</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="menu__item--expandable">
+                        <span>Components</span>
+                        <ul class="menu__dropdown menu__list">
+                            <li class="dropdown__item">
+                                <a href="components/cards/index.html">Cards</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="components/forms/index.html">Forms</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="components/grid/index.html">Grid</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="components/sidebar/index.html">Sidebar</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="components/table/index.html">Table</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="components/tabs/tabs.html">Tabs</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="components/slider/index.html">Slider</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="login.html" class="button is-success is-small" style="margin-left:16px;">Login</a>
+                    </li>
                 </ul>
-              </nav>
+            </nav>
     </header>
 
     <main id="content">
         <div class="container">
             <section class="section product-section">
-                <ul class="product_breadcrumb">
+                <ul class="product__breadcrumb">
                     <li>Grandes electrodomésticos</li>
                     <li>Máquinas de Roupa</li>
                 </ul>
@@ -87,32 +87,34 @@
             </section>
         </div>
 
-        <div class="product-banner">
-            <a href="#">
-                <div class="container wrapper">
-                    <div class="row">
-                        <div class="column is-4">
-                            <figure>
-                                <img src="" alt="">
-                            </figure>
-                        </div>
-                        <div class="column-is-4">
-                            <div class="card">
-                                <div class="content">
-                                    <p class="title">Até 35% desconto direto</p>
-                                    <p class="subtitle">numa selecção de Máquinas Roupa</p>
-                                    <p class="text">Válido de 13 de abril a 19 de abril. Limitado ao stock
-                                        existente. *Em artigos vendidos e entregues pela Worten.</p>
+        <div class="container">
+            <section class="section product-section">
+                    <div class="product__banner">
+                        <div class="row">
+                            <div class="column is-4">
+                                <figure class="image">
+                                    <img src="/tvieira/images/products/maquina1.webp" alt="">
+                                </figure>
+                            </div>
+                            <div class="column-is-4">
+                                <div class="card">
+                                    <div class="content">
+                                        <a href="#">
+                                            <p class="title">Até 35% desconto direto</p>
+                                            <p class="subtitle">numa selecção de Máquinas Roupa</p>
+                                            <p class="text">Válido de 13 de abril a 19 de abril. Limitado ao stock
+                                                existente. *Em artigos vendidos e entregues pela Worten.</p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </a>
+            </section>
         </div>
 
-        <div>
-            <section class="product-section">
+        <div class="container">
+            <section class="section product-section">
                 <div class="row">
                     <div class="column is-3">
                         <div class="card">
@@ -528,14 +530,28 @@
                             </div>
                         </div>
                         <div class="container">
-                            <div class="row">
-                                <span class="page-number">1</span>
-                                <span class="page-number">2</span>
-                                <span class="page-number">3</span>
-                                <span class="page-number">...</span>
-                                <span class="page-number">6</span>
-                                <span class="page-number"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                            </div>
+                            <ul class="pagination">
+                                <li class="page--active">
+                                    <a href="" class="page__item">1</a>
+                                </li>
+                                <li class="page">
+                                    <a href="" class="page__item">2</a>
+                                </li>
+                                <li class="page">
+                                    <a href="" class="page__item">3</a>
+                                </li>
+                                <li class="page">
+                                    <span class="page__item--separator"><i class="fa fa-ellipsis-h"
+                                            aria-hidden="true"></i></span>
+                                </li>
+                                <li class="page">
+                                    <a href="" class="page__item">7</a>
+                                </li>
+                                <li class="page">
+                                    <a href="" class="page__item--separator"><i class="fa fa-chevron-right"
+                                            aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
